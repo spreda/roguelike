@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -102,6 +102,7 @@
     {"id":{"name":"list_shuffle","path":"scripts/list_shuffle/list_shuffle.yy",},},
     {"id":{"name":"next_wave","path":"scripts/next_wave/next_wave.yy",},},
     {"id":{"name":"pause","path":"scripts/pause/pause.yy",},},
+    {"id":{"name":"player_debug","path":"scripts/player_debug/player_debug.yy",},},
     {"id":{"name":"player_movement","path":"scripts/player_movement/player_movement.yy",},},
     {"id":{"name":"shooting_attack","path":"scripts/shooting_attack/shooting_attack.yy",},},
     {"id":{"name":"swipe_attack","path":"scripts/swipe_attack/swipe_attack.yy",},},
