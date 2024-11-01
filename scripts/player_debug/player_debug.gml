@@ -13,4 +13,9 @@ function player_debug()
 		// Level up player
 		global.xp = global.xp_goal;
 	}
+	
+	if (keyboard_check(ord("D")))
+	{
+	show_debug_message(string(direction));
+	}
 }

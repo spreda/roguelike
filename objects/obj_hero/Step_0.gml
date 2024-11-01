@@ -18,13 +18,6 @@ if (instance_exists(obj_upgrade) || instance_exists(obj_template_complete) || in
 // Execute player movement function.
 player_movement();
 
-// Check if debug mode is enabled
-if (global.debug)
-{
-	// Debug tools
-	player_debug();
-}
-
 // Execute function that keeps the player in the room.
 keep_in_room();
 
