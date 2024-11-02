@@ -9,9 +9,9 @@ nearest_enemy = undefined;
 nearest_distance = 1000;
 
 // Variables for tracking actions and movement states.
-dash_speed = 20;
+dash_speed = 25;
 dash_duration = 15;
-dash_cooldown = 30;
+dash_cooldown = 25;
 dash_time_counter = 0;
 
 // Cooldowns for the weapon attacks (from frames to seconds).

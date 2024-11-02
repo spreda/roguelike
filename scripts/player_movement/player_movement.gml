@@ -14,11 +14,7 @@ function player_movement()
 		obj_hero.dash_time_counter += 1;
 	}
 	
-	if (keyboard_check(vk_space) and obj_hero.dash_time_counter == 0)
-	{
-		dash();
-	}
-	else if (obj_hero.dash_time_counter > 0)
+	if (obj_hero.dash_time_counter > 0)
 	{
 		dash();
 	}
