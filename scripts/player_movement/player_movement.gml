@@ -12,6 +12,12 @@ function player_movement()
 	if (obj_hero.dash_time_counter < 0)
 	{
 		obj_hero.dash_time_counter += 1;
+		
+	}
+	
+	if (obj_hero.dash_time_counter == 0 and obj_hero.dash_queued)
+	{
+		dash();
 	}
 	
 	if (obj_hero.dash_time_counter > 0)
@@ -153,4 +159,5 @@ function dash()
 	}
 	speed = obj_hero.dash_speed;
 	obj_hero.dash_time_counter += 1;
+	obj_hero.dash_queued = false;
 }

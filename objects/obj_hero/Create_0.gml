@@ -11,8 +11,10 @@ nearest_distance = 1000;
 // Variables for tracking actions and movement states.
 dash_speed = 25;
 dash_duration = 15;
-dash_cooldown = 25;
+dash_cooldown = 20;
 dash_time_counter = 0;
+dash_queued = false;
+dash_coyote_time = 10
 
 // Cooldowns for the weapon attacks (from frames to seconds).
 hero_shoot_cooldown = 30 * (1 / 60);

@@ -1,6 +1,17 @@
 /// @description Dash
-// Dash of available
-if (keyboard_check(vk_space) and obj_hero.dash_time_counter == 0)
+// Dash if available
+if (keyboard_check(vk_space))
 {
-	dash();
+	if (dash_time_counter > 0)
+	{
+		exit;
+	}
+	if (dash_time_counter == 0)
+	{
+		dash();
+	}
+	else if (dash_time_counter >= -dash_coyote_time)
+	{
+		dash_queued = true;
+	}
 }
