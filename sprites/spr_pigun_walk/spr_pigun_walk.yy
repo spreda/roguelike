@@ -3,7 +3,7 @@
   "%Name":"spr_pigun_walk",
   "bboxMode":2,
   "bbox_bottom":97,
-  "bbox_left":76,
+  "bbox_left":78,
   "bbox_right":171,
   "bbox_top":63,
   "collisionKind":1,
