@@ -99,8 +99,6 @@
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_upgrade_screen","path":"objects/obj_upgrade_screen/obj_upgrade_screen.yy",},},
     {"id":{"name":"obj_upgrade","path":"objects/obj_upgrade/obj_upgrade.yy",},},
-    {"id":{"name":"Object28","path":"objects/Object28/Object28.yy",},},
-    {"id":{"name":"Object29","path":"objects/Object29/Object29.yy",},},
     {"id":{"name":"Object30","path":"objects/Object30/Object30.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
