@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"ХОДИЛКИ БРОДИЛКИ",
+  "%Name":"Survivor Game Template",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -63,7 +63,7 @@
   "MetaData":{
     "IDEVersion":"2024.8.1.171",
   },
-  "name":"ХОДИЛКИ БРОДИЛКИ",
+  "name":"Survivor Game Template",
   "resources":[
     {"id":{"name":"fnt_card_description","path":"fonts/fnt_card_description/fnt_card_description.yy",},},
     {"id":{"name":"fnt_card_name","path":"fonts/fnt_card_name/fnt_card_name.yy",},},
