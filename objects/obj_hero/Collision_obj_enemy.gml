@@ -1,5 +1,5 @@
-// If the hero is NOT currently being hit...
-if (sprite_index != spr_hero_hit)
+// If the hero is NOT currently being hit and NOT dashing...
+if (sprite_index != spr_hero_hit and obj_hero.dash_time_counter <= 0)
 {
 	// Reduce hitpoints.
 	hitpoints -= 1;
