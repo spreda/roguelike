@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite60",
-    "path":"sprites/Sprite60/Sprite60.yy",
+    "name":"spr_button_small",
+    "path":"sprites/spr_button_small/spr_button_small.yy",
   },
   "spriteMaskId":null,
   "visible":true,

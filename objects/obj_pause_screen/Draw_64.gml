@@ -20,5 +20,3 @@ draw_set_font(fnt_large);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-// Draw pause text.
-draw_text(1920 / 2, 1080 / 2, string("PAUSED"));
