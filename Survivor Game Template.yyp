@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"ХОДИЛКИ БРОДИЛКИ",
+  "%Name":"Survivor Game Template",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -63,7 +63,7 @@
   "MetaData":{
     "IDEVersion":"2024.8.1.171",
   },
-  "name":"ХОДИЛКИ БРОДИЛКИ",
+  "name":"Survivor Game Template",
   "resources":[
     {"id":{"name":"fnt_card_description","path":"fonts/fnt_card_description/fnt_card_description.yy",},},
     {"id":{"name":"fnt_card_name","path":"fonts/fnt_card_name/fnt_card_name.yy",},},
@@ -99,8 +99,6 @@
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_upgrade_screen","path":"objects/obj_upgrade_screen/obj_upgrade_screen.yy",},},
     {"id":{"name":"obj_upgrade","path":"objects/obj_upgrade/obj_upgrade.yy",},},
-    {"id":{"name":"Object28","path":"objects/Object28/Object28.yy",},},
-    {"id":{"name":"Object29","path":"objects/Object29/Object29.yy",},},
     {"id":{"name":"Object30","path":"objects/Object30/Object30.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
@@ -110,6 +108,7 @@
     {"id":{"name":"list_shuffle","path":"scripts/list_shuffle/list_shuffle.yy",},},
     {"id":{"name":"next_wave","path":"scripts/next_wave/next_wave.yy",},},
     {"id":{"name":"pause","path":"scripts/pause/pause.yy",},},
+    {"id":{"name":"player_debug","path":"scripts/player_debug/player_debug.yy",},},
     {"id":{"name":"player_movement","path":"scripts/player_movement/player_movement.yy",},},
     {"id":{"name":"shooting_attack","path":"scripts/shooting_attack/shooting_attack.yy",},},
     {"id":{"name":"swipe_attack","path":"scripts/swipe_attack/swipe_attack.yy",},},
@@ -201,7 +200,6 @@
     {"id":{"name":"spr_well_done_banner","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},},
     {"id":{"name":"spr_xpbar_back","path":"sprites/spr_xpbar_back/spr_xpbar_back.yy",},},
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
-    {"id":{"name":"Sprite54","path":"sprites/Sprite54/Sprite54.yy",},},
     {"id":{"name":"Sprite55","path":"sprites/Sprite55/Sprite55.yy",},},
     {"id":{"name":"Sprite56","path":"sprites/Sprite56/Sprite56.yy",},},
     {"id":{"name":"Sprite59","path":"sprites/Sprite59/Sprite59.yy",},},
