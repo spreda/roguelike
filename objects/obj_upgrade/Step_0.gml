@@ -99,13 +99,13 @@ if (roll_alpha >= 0)
 	mouse_over = false;
 	
 	// Decreases life timer.
-	roll_life -= delta_time * 0.000001;
+	roll_life -= delta_time * 0.00001;
 	
 	// Checks if life timer is finished
 	if (roll_life <= 0)
 	{
 		// Reduces alpha of upgrade reveal.
-		roll_alpha -= delta_time * 0.000001 * 2;
+		roll_alpha -= delta_time * 0.000005 * 2;
 	}
 }
 

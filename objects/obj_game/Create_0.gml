@@ -1,6 +1,9 @@
 // Start the game music on a loop.
 audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 
+// Debug mode toggle
+global.debug = true;
+
 // Set the experience goal to reach the next level.
 global.xp_goal = 10;
 
@@ -34,7 +37,7 @@ weapon_swipe_reset();
 weapon_trail_reset();
 
 // Create the pause button.
-instance_create_layer(1820, 20, "UpgradeScreen", obj_pause_button);
+instance_create_layer(1820, 70, "UpgradeScreen", obj_pause_button);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);

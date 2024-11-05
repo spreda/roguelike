@@ -12,5 +12,3 @@ draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 draw_set_alpha(1.0);
 
-// Draw reroll text.
-draw_text_transformed(x, y + 15, "REROLL", image_xscale, image_yscale, image_angle);
