@@ -166,7 +166,6 @@
     {"id":{"name":"spr_collectible_heart","path":"sprites/spr_collectible_heart/spr_collectible_heart.yy",},},
     {"id":{"name":"spr_game_over_banner","path":"sprites/spr_game_over_banner/spr_game_over_banner.yy",},},
     {"id":{"name":"spr_gem_icon","path":"sprites/spr_gem_icon/spr_gem_icon.yy",},},
-    {"id":{"name":"spr_healthbar_back","path":"sprites/spr_healthbar_back/spr_healthbar_back.yy",},},
     {"id":{"name":"spr_healthbar_fill_red","path":"sprites/spr_healthbar_fill_red/spr_healthbar_fill_red.yy",},},
     {"id":{"name":"spr_healthbar_fill","path":"sprites/spr_healthbar_fill/spr_healthbar_fill.yy",},},
     {"id":{"name":"spr_hero_hit","path":"sprites/spr_hero_hit/spr_hero_hit.yy",},},
