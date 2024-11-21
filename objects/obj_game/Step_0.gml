@@ -32,16 +32,16 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 	if (global.xp >= global.xp_goal)
 	{
 		// Destroy the enemies.
-		with (obj_enemy) instance_destroy();
+		// with (obj_enemy) instance_destroy();
 	
 		// Destroy any bullets.
-		with (obj_hero_bullet) instance_destroy();
+		// with (obj_hero_bullet) instance_destroy();
 	
 		// Destroy any xp pickups.
-		with (obj_collectable) instance_destroy();
+		// with (obj_collectable) instance_destroy();
 	
 		// Destroy any health pickups.
-		with (obj_heart) instance_destroy();
+		// with (obj_heart) instance_destroy();
 	
 		// If we are on the last wave...
 		if (global.level == 10)

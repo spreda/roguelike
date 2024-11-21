@@ -8,9 +8,15 @@ function unpause()
 	with (all) 
 	{
 		// Set speed to saved speed.
-		speed = paused_speed;
+		if (variable_instance_exists(id, "paused_speed"))
+		{
+			speed = paused_speed;
+		}
 	
 		// Set animation speed to saved value.
-		image_speed = paused_animation;
+		if (variable_instance_exists(id, "paused_animation"))
+		{
+			image_speed = paused_animation;
+		}
 	}
 }
