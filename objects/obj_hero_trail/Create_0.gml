@@ -6,3 +6,5 @@ depth = -3000;
 // Set scale.
 image_xscale = 2;
 image_yscale = 2;
+
+lifespan = 4;

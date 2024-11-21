@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_trail",
-    "path":"sprites/spr_trail/spr_trail.yy",
+    "name":"spr_trail_start",
+    "path":"sprites/spr_trail_start/spr_trail_start.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -73,7 +73,7 @@ hero_swipe = function()
 hero_trail = function()
 {
 	// If the nearest enemy is within 300 pixels...
-	if(nearest_distance < 300)
+	if(nearest_distance < 1000)
 	{
 		// Reset the cooldown for this weapon.
 		hero_trail_cooldown = max(global.trail[? "attack_speed"], 1) * (1 / 60);
