@@ -7,4 +7,4 @@ depth = -3000;
 image_xscale = 2;
 image_yscale = 2;
 
-lifespan = 4;
+lifespan = 3;

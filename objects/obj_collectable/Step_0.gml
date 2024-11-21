@@ -1,5 +1,5 @@
 // Checks if the game is not paused to update.
-if (!global.paused)
+if (!global.paused and instance_exists(obj_hero))
 {
 	// Get the distance from this instance to the hero.
 	var _distance = point_distance(x, y, obj_hero.x, obj_hero.y);

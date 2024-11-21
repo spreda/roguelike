@@ -7,6 +7,12 @@ function player_debug()
 		global.xp = global.xp_goal;
 	}
 	
+	// Timeskip
+	if (keyboard_check(ord("T")))
+	{
+		obj_game.game_time += 60 * 60;
+	}
+	
 	// Show debug message
 	if (keyboard_check(ord("D")))
 	{

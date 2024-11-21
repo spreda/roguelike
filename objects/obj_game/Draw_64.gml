@@ -46,4 +46,9 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draw our current level.
-draw_text(1580, 65, "LVL: " + string(global.level));
+draw_text(1580, 65, "LVL: " + string(obj_hero.level));
+
+// Draw timer.
+var _time_left = game_duration - time_seconds;
+draw_set_font(fnt_small_medium);
+draw_text(60, 180, string(int64(_time_left/60)) + ":" + string(_time_left%60));

@@ -4,7 +4,15 @@
 depth = -y;
 
 // Set direction towards the hero.
-direction = point_direction(x, y, obj_hero.x, obj_hero.y);
+if (instance_exists(obj_hero))
+{
+	direction = point_direction(x, y, obj_hero.x, obj_hero.y);
+}
+
+if (obj_game.time_seconds > obj_game.game_duration)
+{
+	direction *= -1;
+}
 
 // If horizontal speed is NOT 0.
 if(hspeed != 0)

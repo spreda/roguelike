@@ -1,3 +1,6 @@
+// Set RNG seed
+randomize();
+
 // Start the game music on a loop.
 audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 
@@ -10,7 +13,7 @@ global.xp_goal = 15;
 // Set current experience.
 global.xp = 0;
 
-// Set the current level.
+// Set the current world level.
 global.level = 1;
 
 // Set the cooldown time for spawning enemies.
@@ -41,6 +44,10 @@ instance_create_layer(1820, 70, "UpgradeScreen", obj_pause_button);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);
+
+game_duration = 5 * 60; // 5 minutes
+game_time = 0; // in ticks
+time_seconds = 0;
 
 // Function handles enemy spawning.
 spawn_enemy = function()

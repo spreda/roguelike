@@ -7,18 +7,6 @@ if (!instance_exists(obj_game_over))
 		// Destroy the player.
 		with (obj_hero) instance_destroy();
 	
-		// Destroy any bullets.
-		with (obj_hero_bullet) instance_destroy();
-	
-		// Destroy the enemies.
-		with (obj_enemy) instance_destroy();
-	
-		// Destroy any xp pickups.
-		with (obj_collectable) instance_destroy();
-	
-		// Destroy any health pickups.
-		with (obj_heart) instance_destroy();
-	
 		// Create game over object.
 		instance_create_layer(1920 / 2, 1080 / 2 - 150, "UpgradeScreen", obj_game_over);
 	}
@@ -28,38 +16,50 @@ if (!instance_exists(obj_game_over))
 // We do this by checking is an end game screen is present.
 if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 {
+	// If time runs out
+	if (time_seconds >= game_duration)
+	{
+		// Create the upgrade screen.
+		instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_template_complete);
+		
+		// Hero invincibility
+		obj_hero.hitpoints = obj_hero.hitpoints_max;
+		spawn_enemy_cooldown = 1;
+	}
+	else
+	{
+		// Game clock
+		game_time += 1;
+		time_seconds = int64(game_time/60);
+	}
+	
+	// If we have reached the time goal...
+	if (time_seconds >= global.level * 30)
+	{	
+		// World level up!
+		global.level += 1;
+		
+		// Execute function to go to the next wave.
+		next_wave();
+	}
+	
 	// If we have reached the experience goal...
 	if (global.xp >= global.xp_goal)
-	{
-		// Destroy the enemies.
-		// with (obj_enemy) instance_destroy();
-	
-		// Destroy any bullets.
-		// with (obj_hero_bullet) instance_destroy();
-	
-		// Destroy any xp pickups.
-		// with (obj_collectable) instance_destroy();
-	
-		// Destroy any health pickups.
-		// with (obj_heart) instance_destroy();
-	
-		// If we are on the last wave...
-		if (global.level == 10)
-		{
-			// Create the upgrade screen.
-			instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_template_complete);
-		}
-		else
-		{
-			// Level up!
-			global.level += 1;
+	{	
+		// Levelup the hero
+		obj_hero.level += 1;
+		obj_hero.hitpoints_max *= 1.1;
+		obj_hero.hitpoints *= 1.1;
 		
-			// Execute function to go to the next wave.
-			next_wave();
+		// Subtract experience goal from current experience.
+		// Basically this is the cost of levelling up.
+		global.xp -= global.xp_goal;
+
+		// Increase the experience goal for the next wave.
+		global.xp_goal = floor(global.xp_goal * 1.35);
 		
-			// Create the upgrade screen.
-			instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
-		}
+		// Create the upgrade screen.
+		instance_create_layer(0, 0, "Instances", obj_upgrade_screen);
 	}
 }
 
