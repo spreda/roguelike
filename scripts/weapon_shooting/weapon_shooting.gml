@@ -28,14 +28,14 @@ function weapon_shooting_upgrades(_upgrade_list)
 		// Create map to strore the upgrade.
 		var _map = ds_map_create();
 	
-		// Upgrade to unlock shooting weapon.
+		// Upgrade to Unlock shooting weapon.
 		ds_map_replace(_map, "description", "Unlock Shooting\nWeapon");
-		ds_map_replace(_map, "title", "UNLOCK");
+		ds_map_replace(_map, "title", "Unlock");
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "unlocked");
 		ds_map_replace(_map, "amount", 1);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
-		ds_map_replace(_map, "weapon_name", "PROJECTILE");
+		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
 		ds_list_add(_upgrade_list, _map);
@@ -55,12 +55,12 @@ function weapon_shooting_upgrades(_upgrade_list)
 	
 		// Upgrade to increase attack speed of shooting weapon.
 		ds_map_replace(_map, "description", "Increase Attack Speed");
-		ds_map_replace(_map, "title", "SPEED");
+		ds_map_replace(_map, "title", "Speed");
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "attack_speed");
 		ds_map_replace(_map, "amount", -5);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
-		ds_map_replace(_map, "weapon_name", "PROJECTILE");
+		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
 		ds_list_add(_upgrade_list, _map);
@@ -78,12 +78,12 @@ function weapon_shooting_upgrades(_upgrade_list)
 		// Upgrade to increase the number of shots
 		// from the shooting weapon.
 		ds_map_replace(_map, "description", "Number of shots +2");
-		ds_map_replace(_map, "title", "BARRAGE");
+		ds_map_replace(_map, "title", "Barrage");
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "number_of_shots");
 		ds_map_replace(_map, "amount", 2);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
-		ds_map_replace(_map, "weapon_name", "PROJECTILE");
+		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
 		ds_list_add(_upgrade_list, _map);
@@ -99,13 +99,13 @@ function weapon_shooting_upgrades(_upgrade_list)
 		var _map = ds_map_create();
 	
 		// Upgrade to increase damage.
-		ds_map_replace(_map, "description", "Increase Damage");
-		ds_map_replace(_map, "title", "DAMAGE");
+		ds_map_replace(_map, "description", "Increase damage");
+		ds_map_replace(_map, "title", "Damage");
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "damage");
 		ds_map_replace(_map, "amount", 0.4);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
-		ds_map_replace(_map, "weapon_name", "PROJECTILE");
+		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
 		ds_list_add(_upgrade_list, _map);

@@ -28,12 +28,12 @@ function weapon_swipe_upgrades(_upgrade_list)
 	
 		// Unlock this weapon.
 		ds_map_replace(_map, "description", "Small but fast\narea of effect\nattack around\nthe player");
-		ds_map_replace(_map, "title", "UNLOCK");
+		ds_map_replace(_map, "title", "Unlock");
 		ds_map_replace(_map, "object", global.swipe);
 		ds_map_replace(_map, "key", "unlocked");
 		ds_map_replace(_map, "amount", 1);
 		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-		ds_map_replace(_map, "weapon_name", "SWIPE");
+		ds_map_replace(_map, "weapon_name", "Swing");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);
@@ -55,12 +55,12 @@ function weapon_swipe_upgrades(_upgrade_list)
 		// Increase attack speed.
 		// Note that this would actually decreasing a cooldown.
 		ds_map_replace(_map, "description", "Increase Attack Speed");
-		ds_map_replace(_map, "title", "SPEED");
+		ds_map_replace(_map, "title", "Speed");
 		ds_map_replace(_map, "object", global.swipe);
 		ds_map_replace(_map, "key", "attack_speed");
 		ds_map_replace(_map, "amount", -10);
 		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-		ds_map_replace(_map, "weapon_name", "SWIPE");
+		ds_map_replace(_map, "weapon_name", "Swing");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);
@@ -76,13 +76,13 @@ function weapon_swipe_upgrades(_upgrade_list)
 		var _map = ds_map_create();
 	
 		// Increment damage by 1.
-		ds_map_replace(_map, "description", "Increase Damage");
-		ds_map_replace(_map, "title", "DAMAGE");
+		ds_map_replace(_map, "description", "Increase damage");
+		ds_map_replace(_map, "title", "Damage");
 		ds_map_replace(_map, "object", global.swipe);
 		ds_map_replace(_map, "key", "damage");
 		ds_map_replace(_map, "amount", 1);
 		ds_map_replace(_map, "icon", spr_arcing_attack_big);
-		ds_map_replace(_map, "weapon_name", "SWIPE");
+		ds_map_replace(_map, "weapon_name", "Swing");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);
