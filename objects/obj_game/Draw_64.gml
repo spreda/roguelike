@@ -19,24 +19,24 @@ if (instance_exists(obj_upgrade))
 
 // Draw the shooting weapon icon, using the "unlocked"
 // property of the shooting weapon.
-draw_sprite(spr_shooting_attack_small, global.shooting[? "unlocked"], 40, 20);
+draw_sprite(spr_shooting_attack_small, global.shooting[? "unlocked"], 80, 75);
 
 // Draw the trail weapon icon, using the "unlocked"
 // property of the trail weapon.
-draw_sprite(spr_trail_attack_small, global.trail[? "unlocked"], 40 + 120, 20);
+draw_sprite(spr_trail_attack_small, global.trail[? "unlocked"], 80 + 150, 75);
 
 // Draw the swipe weapon icon, using the "unlocked"
 // property of the swipe weapon.
-draw_sprite(spr_arcing_attack_small, global.swipe[? "unlocked"], 40 + 240, 20);
+draw_sprite(spr_arcing_attack_small, global.swipe[? "unlocked"], 80 + 300, 75);
 
 // Draw the back of the experience bar.
-draw_sprite_ext(spr_xpbar_back, 0, 540, 63, 1120 / 65, 1, 0, c_white, 1);
+draw_sprite_ext(spr_xpbar_back, 0, 540, 63, 1120 / 56, 1, 0, c_white, 1);
 
 // Get how much the bar should be filled.
 var _fill = min(global.xp / global.xp_goal, 1);
 
 // Draw the experince bar filling.
-draw_sprite_ext(spr_xpbar_fill, 0, 544, 63, (1172 / 54) * _fill, 1, 0, c_white, 1);
+draw_sprite_ext(spr_xpbar_fill, 0, 544, 63, (1172 / 48) * _fill, 1, 0, c_white, 1);
 
 // Set the font.
 draw_set_font(fnt_small);
@@ -46,4 +46,4 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draw our current level.
-draw_text(1450, 65, "LVL: " + string(global.level));
+draw_text(1580, 65, "LVL: " + string(global.level));

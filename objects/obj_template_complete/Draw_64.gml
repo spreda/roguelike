@@ -21,13 +21,13 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draw game over text.
-draw_text(x, y - 10, string("WELL DONE"));
+draw_text(x, y - 35, string("WELL DONE"));
 
 // Set font.
 draw_set_font(fnt_small_medium);
 
 // Draw game over text.
-draw_text(x, y + 30, string("You have completed the template!"));
+draw_text(x, y + 55, string("You have completed the game!"));
 
 // Set font.
 draw_set_font(fnt_large);
