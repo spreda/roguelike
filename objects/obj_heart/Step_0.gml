@@ -6,7 +6,7 @@ if (!global.paused)
 
 	// If we are within 300 pixels,
 	// OR we are already moving...
-	if (_distance <= 300 || speed > 0)
+	if (_distance <= 150 || speed > 0)
 	{
 		// Get the direction from this instance to the hero.
 		direction = point_direction(x, y, obj_hero.x, obj_hero.y);
