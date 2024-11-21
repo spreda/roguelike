@@ -1,5 +1,5 @@
 // Create variable for max hitpoints.
-hitpoints_max = 2 * global.enemy_health_bonus;
+hitpoints_max = 4 * global.enemy_health_bonus;
 
 // Create variable for hitpoints.
 hitpoints = hitpoints_max;

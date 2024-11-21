@@ -5,7 +5,7 @@ audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 global.debug = true;
 
 // Set the experience goal to reach the next level.
-global.xp_goal = 10;
+global.xp_goal = 15;
 
 // Set current experience.
 global.xp = 0;
@@ -14,7 +14,7 @@ global.xp = 0;
 global.level = 1;
 
 // Set the cooldown time for spawning enemies.
-global.enemy_spawn_speed = 60;
+global.enemy_spawn_speed = 30;
 
 // Set starting enemy health bonus.
 // This is a multiplier, and is increased each wave.

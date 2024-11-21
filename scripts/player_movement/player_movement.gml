@@ -106,8 +106,8 @@ function walk()
 				if (gamepad_axis_value(0, gp_axislv) != 0 || gamepad_axis_value(0, gp_axislh) != 0)
 				{
 					// Adds movement speed to player based on left stick input.
-					vspeed += 10 * gamepad_axis_value(0, gp_axislv);
-					hspeed += 10 * gamepad_axis_value(0, gp_axislh);
+					vspeed += 6 * gamepad_axis_value(0, gp_axislv);
+					hspeed += 6 * gamepad_axis_value(0, gp_axislh);
 				}
 			}
 		}
@@ -116,28 +116,28 @@ function walk()
 		if (keyboard_check(ord("W")))
 		{
 			// Add -10 to vertical speed.
-			vspeed += -10;
+			vspeed += -6;
 		}
 	
 		// If the S key is down...
 		if (keyboard_check(ord("S")))
 		{
 			// Add 10 to vertical speed.
-			vspeed += 10;
+			vspeed += 6;
 		}
 	
 		// If the A key is down...
 		if (keyboard_check(ord("A")))
 		{
 			// Add -10 to horizontal speed.
-			hspeed += -10;
+			hspeed += -6;
 		}
 	
 		// If the D key is down...
 		if (keyboard_check(ord("D")))
 		{
 			// Add 10 to horizontal speed.
-			hspeed += 10;
+			hspeed += 6;
 		}
 	}
 

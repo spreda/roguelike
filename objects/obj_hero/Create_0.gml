@@ -1,5 +1,5 @@
 // Set the maximum hitpoints that the player can have.
-hitpoints_max = 10;
+hitpoints_max = 20;
 
 // Set the starting hitpoints of the player (to the max).
 hitpoints = hitpoints_max;
@@ -9,7 +9,7 @@ nearest_enemy = undefined;
 nearest_distance = 1000;
 
 // Variables for tracking actions and movement states.
-dash_speed = 25;
+dash_speed = 15;
 dash_duration = 15;
 dash_cooldown = 20;
 dash_time_counter = 0;
