@@ -11,8 +11,11 @@ hitpoints = hitpoints_max;
 nearest_enemy = undefined;
 nearest_distance = 1000;
 
+// Set movement variables
+walk_speed = 6;
+
 // Variables for tracking actions and movement states.
-dash_speed = 12;
+dash_speed = 15;
 dash_duration = 15;
 dash_cooldown = 20;
 dash_time_counter = 0;

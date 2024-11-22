@@ -58,7 +58,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 		ds_map_replace(_map, "title", "Speed");
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "attack_speed");
-		ds_map_replace(_map, "amount", -5);
+		ds_map_replace(_map, "amount", - 5);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
 		ds_map_replace(_map, "weapon_name", "Projectile");
 	
@@ -93,7 +93,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 	var _damage = ds_map_find_value(global.shooting, "damage");
 
 	// If damage is under 4...
-	if (_damage < 4)
+	if (_damage < 5)
 	{
 		// Create map to strore the upgrade.
 		var _map = ds_map_create();
@@ -103,7 +103,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 		ds_map_replace(_map, "title", "Damage");
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "damage");
-		ds_map_replace(_map, "amount", 0.4);
+		ds_map_replace(_map, "amount", 0.6);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
 		ds_map_replace(_map, "weapon_name", "Projectile");
 	

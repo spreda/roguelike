@@ -17,7 +17,7 @@ global.xp = 0;
 global.level = 1;
 
 // Set the cooldown time for spawning enemies.
-global.enemy_spawn_speed = 30;
+global.enemy_spawn_speed = 35;
 
 // Set starting enemy health bonus.
 // This is a multiplier, and is increased each wave.

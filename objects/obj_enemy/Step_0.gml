@@ -11,7 +11,31 @@ if (instance_exists(obj_hero))
 
 if (obj_game.time_seconds > obj_game.game_duration)
 {
-	direction *= -1;
+	direction += 160;
+}
+
+// Apply status effects
+if (burn > 0)
+{
+	hitpoints -= burn / 60;
+	burn = max(burn - 1/60, 0);
+}
+if (knockback > 0)
+{
+	direction = knockback_direction;
+	speed = knockback;
+	knockback -= 1;
+	if (knockback <= 0)
+	{
+		speed = walk_speed;
+	}
+}
+
+// If our hitpoints has reached zero...
+if (hitpoints <= 0)
+{
+	// Destroy this instance.
+	instance_destroy();
 }
 
 // If horizontal speed is NOT 0.

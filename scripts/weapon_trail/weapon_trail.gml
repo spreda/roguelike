@@ -9,8 +9,8 @@ weapon_trail_reset();
 function weapon_trail_reset() 
 {
 	// Unlock weapon upgrade.
-	ds_map_replace(global.trail, "damage", 1);
-	ds_map_replace(global.trail, "attack_speed", 90);
+	ds_map_replace(global.trail, "damage", 0.5);
+	ds_map_replace(global.trail, "attack_speed", 350);
 	ds_map_replace(global.trail, "unlocked", false);
 }
 
@@ -79,7 +79,7 @@ function weapon_trail_upgrades(_upgrade_list)
 		ds_map_replace(_map, "title", "Damage");
 		ds_map_replace(_map, "object", global.trail);
 		ds_map_replace(_map, "key", "damage");
-		ds_map_replace(_map, "amount", 1);
+		ds_map_replace(_map, "amount", 0.5);
 		ds_map_replace(_map, "icon", spr_trail_attack_big);
 		ds_map_replace(_map, "weapon_name", "Trail");
 	
