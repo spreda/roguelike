@@ -1,4 +1,4 @@
-hitpoints = min(hitpoints + hitpoints_max/4, hitpoints_max);
+obj_collectable.pickup_distance = 5000;
 
 // Chooses sound effect.
 _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);

@@ -5,6 +5,3 @@ _shadow.owner_object = self;
 // Set shadows image scale.
 _shadow.image_xscale = 0.5;
 _shadow.image_yscale = 0.5;
-
-pickup_distance = 150;
-max_speed = 50;

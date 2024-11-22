@@ -13,7 +13,19 @@ function player_debug()
 		obj_game.game_time += 60 * 60;
 	}
 	
-	// Show debug message
+	// Collect all xp
+	if (keyboard_check(ord("M")))
+	{
+		obj_collectable.pickup_distance = 5000;
+	}
+	
+	// Kill all enemies
+	if (keyboard_check(ord("K")))
+	{
+		obj_enemy.hitpoints = 0;
+	}
+	
+	// Print debug message
 	if (keyboard_check(ord("D")))
 	{
 		show_debug_message(string(direction));

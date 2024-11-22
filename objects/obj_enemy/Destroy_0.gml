@@ -16,5 +16,10 @@ if (random(1) + 0.5 < obj_hero.hitpoints/obj_hero.hitpoints_max)
 	_drop = obj_collectable
 }
 
+if (_drop == obj_collectable and random(1) > 0.998)
+{
+	_drop = obj_magnet;
+}
+
 // Create the chosen drop.
 instance_create_layer(x + 0, y + 0, "Instances", _drop);

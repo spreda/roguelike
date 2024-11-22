@@ -9,9 +9,10 @@ if (instance_exists(obj_hero))
 	direction = point_direction(x, y, obj_hero.x, obj_hero.y);
 }
 
-if (obj_game.time_seconds > obj_game.game_duration)
+// Make enemies run off from the player
+if (instance_exists(obj_template_complete))
 {
-	direction += 160;
+	direction += 160 + sin(direction/20) * 60;
 }
 
 // Apply status effects
