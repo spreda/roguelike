@@ -5,7 +5,7 @@ randomize();
 audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 
 // Debug mode toggle
-global.debug = true;
+global.debug = false;
 
 // Set the experience goal to reach the next level.
 global.xp_goal = 15;

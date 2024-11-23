@@ -28,6 +28,6 @@ function player_debug()
 	// Print debug message
 	if (keyboard_check(ord("D")))
 	{
-		show_debug_message(string(direction));
+		show_debug_message(string(global.mouse_anchor_x));
 	}
 }

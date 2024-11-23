@@ -76,3 +76,18 @@ if (!global.paused)
 		spawn_enemy();	
 	}
 }
+
+if (device_mouse_check_button_pressed(1, mb_left) and instance_exists(obj_hero))
+{
+	with(obj_hero)
+	{
+		if (dash_time_counter == 0)
+		{
+			dash();
+		}
+		else if (dash_time_counter >= -dash_coyote_time)
+		{
+		    dash_queued = true;
+		}
+	}
+}
