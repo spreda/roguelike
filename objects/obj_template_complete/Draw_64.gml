@@ -27,7 +27,7 @@ draw_text(x, y - 35, string("WELL DONE"));
 draw_set_font(fnt_small_medium);
 
 // Draw game over text.
-draw_text(x, y + 55, string("You have completed the game!"));
+draw_text(x, y + 55, string("You have won the game!"));
 
 // Set font.
 draw_set_font(fnt_large);

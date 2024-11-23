@@ -160,9 +160,11 @@ function dash()
 	if (obj_hero.dash_time_counter > obj_hero.dash_duration)
 	{
 		obj_hero.dash_time_counter = -obj_hero.dash_cooldown;
+		image_angle= 0;
 		exit;
 	}
 	speed = obj_hero.dash_speed;
 	obj_hero.dash_time_counter += 1;
 	obj_hero.dash_queued = false;
+	image_angle += 360 / obj_hero.dash_duration * sign(image_xscale);
 }

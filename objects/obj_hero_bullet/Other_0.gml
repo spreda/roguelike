@@ -2,7 +2,7 @@
 if (!global.paused)
 {
 	// Reduces the image alpha.
-	image_alpha -= delta_time * 0.000001 * 4;
+	image_alpha -= delta_time * 0.00001 * 4;
 }
 
 // Checks if the bullet is visable

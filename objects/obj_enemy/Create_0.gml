@@ -5,7 +5,7 @@ hitpoints_max = 7 * global.enemy_health_bonus;
 hitpoints = hitpoints_max;
 
 // Set speed.
-speed = 4;
+speed = 5;
 walk_speed = speed;
 
 // Set image scale.

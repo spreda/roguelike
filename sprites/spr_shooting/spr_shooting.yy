@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_shooting",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":23,
-  "bbox_left":0,
-  "bbox_right":199,
+  "bbox_left":120,
+  "bbox_right":196,
   "bbox_top":0,
   "collisionKind":5,
   "collisionTolerance":0,
