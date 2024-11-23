@@ -1,6 +1,9 @@
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 
+// Set current level
+level = 1;
+
 // Set the starting hitpoints of the player (to the max).
 hitpoints = hitpoints_max;
 
@@ -8,9 +11,12 @@ hitpoints = hitpoints_max;
 nearest_enemy = undefined;
 nearest_distance = 1000;
 
+// Set movement variables
+walk_speed = 7;
+
 // Variables for tracking actions and movement states.
-dash_speed = 25;
-dash_duration = 15;
+dash_speed = 15;
+dash_duration = 20;
 dash_cooldown = 20;
 dash_time_counter = 0;
 dash_queued = false;
@@ -73,7 +79,7 @@ hero_swipe = function()
 hero_trail = function()
 {
 	// If the nearest enemy is within 300 pixels...
-	if(nearest_distance < 300)
+	if(nearest_distance < 1000)
 	{
 		// Reset the cooldown for this weapon.
 		hero_trail_cooldown = max(global.trail[? "attack_speed"], 1) * (1 / 60);

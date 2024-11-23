@@ -1,18 +1,20 @@
 // Checks if the game is not paused to update.
-if (!global.paused)
+if (!global.paused and instance_exists(obj_hero))
 {
 	// Get the distance from this instance to the hero.
 	var _distance = point_distance(x, y, obj_hero.x, obj_hero.y);
 
-	// If we are within 300 pixels,
+	// If we are within pickup distance,
 	// OR we are already moving...
-	if (_distance <= 300 || speed > 0)
+	if (_distance <= pickup_distance || speed > 0)
 	{
-		// Get the direction from this instance to the hero.
-		direction = point_direction(x, y, obj_hero.x, obj_hero.y);
-
 		// Set speed increasingly to reach the hero.
-		speed += 0.3;
+		hspeed += 0.03 * ((obj_hero.x-x));
+		vspeed += 0.03 * ((obj_hero.y-y));
+		
+		// Prevents items to infinetely orbit the hero
+		speed *= 0.98;
+		speed = min(speed, max_speed);
 	}
 }
 else

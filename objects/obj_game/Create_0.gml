@@ -1,20 +1,23 @@
+// Set RNG seed
+randomize();
+
 // Start the game music on a loop.
 audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 
 // Debug mode toggle
-global.debug = true;
+global.debug = false;
 
 // Set the experience goal to reach the next level.
-global.xp_goal = 10;
+global.xp_goal = 15;
 
 // Set current experience.
 global.xp = 0;
 
-// Set the current level.
+// Set the current world level.
 global.level = 1;
 
 // Set the cooldown time for spawning enemies.
-global.enemy_spawn_speed = 60;
+global.enemy_spawn_speed = 35;
 
 // Set starting enemy health bonus.
 // This is a multiplier, and is increased each wave.
@@ -41,6 +44,10 @@ instance_create_layer(1820, 70, "UpgradeScreen", obj_pause_button);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);
+
+game_duration = 5 * 60; // 5 minutes
+game_time = 0; // in ticks
+time_seconds = 0;
 
 // Function handles enemy spawning.
 spawn_enemy = function()
@@ -96,13 +103,13 @@ spawn_enemy = function()
 	// So we first get a random direction (0 to 360).
 	var _dir = random(360);
 
-	// Then we get the position 1200 pixels away
+	// Then we get the position 1500 pixels away
 	// from the hero on the x axis.
-	var _x = obj_hero.x + lengthdir_x(1200, _dir);
+	var _x = obj_hero.x + lengthdir_x(1500, _dir);
 
-	// Then we get the position 1200 pixels away
+	// Then we get the position 1500 pixels away
 	// from the hero on the y axis.
-	var _y = obj_hero.y + lengthdir_y(1200, _dir);
+	var _y = obj_hero.y + lengthdir_y(1500, _dir);
 
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);

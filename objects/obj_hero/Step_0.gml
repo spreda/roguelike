@@ -33,7 +33,7 @@ nearest_enemy = instance_nearest(x, y, obj_enemy);
 nearest_distance = 1000;
 
 // If an enemy instance is found.
-if (nearest_enemy)
+if (nearest_enemy and point_in_rectangle(nearest_enemy.x, nearest_enemy.y, 0, 0, room_width, room_height))
 {
 	// Get the distance to that enemy.
 	nearest_distance = point_distance(x, y, nearest_enemy.x, nearest_enemy.y);

@@ -16,6 +16,9 @@ if (hitpoints > 0)
 
 	// Reduce hitpoints by the damage caused by the shooting weapon.
 	hitpoints -= global.shooting[? "damage"];
+	
+	// Inflict burn
+	burn += 1.5;
 
 	// Create text popup to indicate damage.
 	var _text = instance_create_layer(x + 0, y + 0, "UpgradeScreen", obj_text_popup);
@@ -26,11 +29,4 @@ if (hitpoints > 0)
 	// Set our sprite to the hit sprite.
 	sprite_index = hit_sprite;
 	image_index = 0;
-
-	// If our hitpoints has reached zero...
-	if (hitpoints <= 0)
-	{
-		// Destroy this instance.
-		instance_destroy();
-	}
 }

@@ -2,5 +2,5 @@
 var _direction = point_direction(x, y, other.x, other.y);
 
 // Push away from the other instance.
-x += lengthdir_x(-1, _direction);
-y += lengthdir_y(-1, _direction);
+x += lengthdir_x(-1, _direction) / 1;
+y += lengthdir_y(-1, _direction) / 1;

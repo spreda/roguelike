@@ -9,8 +9,8 @@ weapon_trail_reset();
 function weapon_trail_reset() 
 {
 	// Unlock weapon upgrade.
-	ds_map_replace(global.trail, "damage", 1);
-	ds_map_replace(global.trail, "attack_speed", 90);
+	ds_map_replace(global.trail, "damage", 0.75);
+	ds_map_replace(global.trail, "attack_speed", 350);
 	ds_map_replace(global.trail, "unlocked", false);
 }
 
@@ -28,12 +28,12 @@ function weapon_trail_upgrades(_upgrade_list)
 	
 		// Upgrade to unlock the trail weapon.
 		ds_map_replace(_map, "description", "Large but slow\narea of effect\nattack around\nthe player");
-		ds_map_replace(_map, "title", "UNLOCK");
+		ds_map_replace(_map, "title", "Unlock");
 		ds_map_replace(_map, "object", global.trail);
 		ds_map_replace(_map, "key", "unlocked");
 		ds_map_replace(_map, "amount", 1);
 		ds_map_replace(_map, "icon", spr_trail_attack_big);
-		ds_map_replace(_map, "weapon_name", "TRAIL");
+		ds_map_replace(_map, "weapon_name", "Trail");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);
@@ -54,12 +54,12 @@ function weapon_trail_upgrades(_upgrade_list)
 	
 		// Upgrade to increase attack speed.
 		ds_map_replace(_map, "description", "Increase Attack Speed");
-		ds_map_replace(_map, "title", "SPEED");
+		ds_map_replace(_map, "title", "Speed");
 		ds_map_replace(_map, "object", global.trail);
 		ds_map_replace(_map, "key", "attack_speed");
 		ds_map_replace(_map, "amount", -15);
 		ds_map_replace(_map, "icon", spr_trail_attack_big);
-		ds_map_replace(_map, "weapon_name", "TRAIL");
+		ds_map_replace(_map, "weapon_name", "Trail");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);
@@ -75,13 +75,13 @@ function weapon_trail_upgrades(_upgrade_list)
 		var _map = ds_map_create();
 	
 		// Upgrade from increasing trail weapon damage.
-		ds_map_replace(_map, "description", "Increase Damage");
-		ds_map_replace(_map, "title", "DAMAGE");
+		ds_map_replace(_map, "description", "Increase damage");
+		ds_map_replace(_map, "title", "Damage");
 		ds_map_replace(_map, "object", global.trail);
 		ds_map_replace(_map, "key", "damage");
-		ds_map_replace(_map, "amount", 1);
+		ds_map_replace(_map, "amount", 0.75);
 		ds_map_replace(_map, "icon", spr_trail_attack_big);
-		ds_map_replace(_map, "weapon_name", "TRAIL");
+		ds_map_replace(_map, "weapon_name", "Trail");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);

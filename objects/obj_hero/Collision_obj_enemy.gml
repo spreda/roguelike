@@ -19,13 +19,9 @@ if (sprite_index != spr_hero_hit and obj_hero.dash_time_counter <= 0)
 	// With the enemy...
 	with (other) 
 	{
-		// Check if enemy is walking pigun.
-		if (sprite_index == spr_pigun_walk)
-		{
 			// Change to attack sprite.
-			sprite_index = attack_sprite;
+		    sprite_index = attack_sprite;
 			// Reset image index.
 			image_index = 0;
-		}
 	}
 }

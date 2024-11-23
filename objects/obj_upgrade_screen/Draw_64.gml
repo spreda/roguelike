@@ -20,4 +20,4 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draws the heading.
-draw_text(1920 / 2, 175, "UPGRADE");
+draw_text(1920 / 2, 190, "Upgrade");

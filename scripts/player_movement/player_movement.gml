@@ -1,3 +1,8 @@
+if (global.paused)
+{
+	exit;
+}
+
 // Create variables for the mouse anchor position.
 global.mouse_anchor_x = 0;
 global.mouse_anchor_y = 0;
@@ -106,8 +111,8 @@ function walk()
 				if (gamepad_axis_value(0, gp_axislv) != 0 || gamepad_axis_value(0, gp_axislh) != 0)
 				{
 					// Adds movement speed to player based on left stick input.
-					vspeed += 10 * gamepad_axis_value(0, gp_axislv);
-					hspeed += 10 * gamepad_axis_value(0, gp_axislh);
+					vspeed += walk_speed * gamepad_axis_value(0, gp_axislv);
+					hspeed += walk_speed * gamepad_axis_value(0, gp_axislh);
 				}
 			}
 		}
@@ -116,28 +121,28 @@ function walk()
 		if (keyboard_check(ord("W")))
 		{
 			// Add -10 to vertical speed.
-			vspeed += -10;
+			vspeed += -walk_speed;
 		}
 	
 		// If the S key is down...
 		if (keyboard_check(ord("S")))
 		{
 			// Add 10 to vertical speed.
-			vspeed += 10;
+			vspeed += walk_speed;
 		}
 	
 		// If the A key is down...
 		if (keyboard_check(ord("A")))
 		{
 			// Add -10 to horizontal speed.
-			hspeed += -10;
+			hspeed += -walk_speed;
 		}
 	
 		// If the D key is down...
 		if (keyboard_check(ord("D")))
 		{
 			// Add 10 to horizontal speed.
-			hspeed += 10;
+			hspeed += walk_speed;
 		}
 	}
 
@@ -147,7 +152,7 @@ function walk()
 	
 	// Set speed to a fixed value in the current direction.
 	// This essentially normalizes the curent hspeed and vspeed values.
-	speed = min(speed, 10);
+	speed = min(speed, walk_speed);
 }
 
 function dash()
@@ -155,9 +160,11 @@ function dash()
 	if (obj_hero.dash_time_counter > obj_hero.dash_duration)
 	{
 		obj_hero.dash_time_counter = -obj_hero.dash_cooldown;
+		image_angle= 0;
 		exit;
 	}
 	speed = obj_hero.dash_speed;
 	obj_hero.dash_time_counter += 1;
 	obj_hero.dash_queued = false;
+	image_angle += 360 / obj_hero.dash_duration * sign(image_xscale);
 }
