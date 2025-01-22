@@ -8,8 +8,13 @@
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"sfx\", \"path\":\"audiogroups/sfx\" }",
+    },
+  },
   "conversionMode":0,
-  "duration":0.81075,
+  "duration":0.810771,
   "name":"snd_lightning_impact_1",
   "parent":{
     "name":"Shooting",

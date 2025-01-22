@@ -3,6 +3,7 @@
   "%Name":"Survivor Game Template",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"sfx","name":"sfx","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[
@@ -36,6 +37,7 @@
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Jingles","folderPath":"folders/Sounds/Jingles.yy","name":"Jingles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Music","folderPath":"folders/Sounds/Music.yy","name":"Music","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"группа1","folderPath":"folders/Sounds/Music/группа1.yy","name":"группа1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shooting","folderPath":"folders/Sounds/Shooting.yy","name":"Shooting","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/Sounds/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -75,12 +77,13 @@
     {"id":{"name":"fnt_small_medium","path":"fonts/fnt_small_medium/fnt_small_medium.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
-    {"id":{"name":"obj_button_audio","path":"objects/obj_button_audio/obj_button_audio.yy",},},
     {"id":{"name":"obj_button_exit","path":"objects/obj_button_exit/obj_button_exit.yy",},},
+    {"id":{"name":"obj_button_music","path":"objects/obj_button_music/obj_button_music.yy",},},
     {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},
     {"id":{"name":"obj_button_reroll","path":"objects/obj_button_reroll/obj_button_reroll.yy",},},
     {"id":{"name":"obj_button_resume","path":"objects/obj_button_resume/obj_button_resume.yy",},},
     {"id":{"name":"obj_button_retry","path":"objects/obj_button_retry/obj_button_retry.yy",},},
+    {"id":{"name":"obj_button_sfx","path":"objects/obj_button_sfx/obj_button_sfx.yy",},},
     {"id":{"name":"obj_button_start","path":"objects/obj_button_start/obj_button_start.yy",},},
     {"id":{"name":"obj_collectable","path":"objects/obj_collectable/obj_collectable.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
@@ -165,6 +168,7 @@
     {"id":{"name":"spr_button_grey","path":"sprites/spr_button_grey/spr_button_grey.yy",},},
     {"id":{"name":"spr_button_pause","path":"sprites/spr_button_pause/spr_button_pause.yy",},},
     {"id":{"name":"spr_button_small","path":"sprites/spr_button_small/spr_button_small.yy",},},
+    {"id":{"name":"spr_button_sound","path":"sprites/spr_button_sound/spr_button_sound.yy",},},
     {"id":{"name":"spr_card_glow","path":"sprites/spr_card_glow/spr_card_glow.yy",},},
     {"id":{"name":"spr_collectible_gen","path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",},},
     {"id":{"name":"spr_collectible_heart","path":"sprites/spr_collectible_heart/spr_collectible_heart.yy",},},

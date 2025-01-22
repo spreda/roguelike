@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_audio",
+  "%Name":"obj_button_sfx",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -10,7 +10,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_audio",
+  "name":"obj_button_sfx",
   "overriddenProperties":[],
   "parent":{
     "name":"Menu",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite60",
-    "path":"sprites/Sprite60/Sprite60.yy",
+    "name":"spr_button_sound",
+    "path":"sprites/spr_button_sound/spr_button_sound.yy",
   },
   "spriteMaskId":null,
   "visible":true,

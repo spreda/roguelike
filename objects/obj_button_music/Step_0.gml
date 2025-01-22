@@ -7,9 +7,6 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	// If left mouse button is pressed...
 	if (mouse_check_button_pressed(mb_left))
 	{
-		// Play click sound effect.
-		audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
-		
 		// Sets click state to true.
 		is_clicked = true;
 		
@@ -48,9 +45,6 @@ if (_max_pads > 0)
 		// Checks if gamepad button has been pressed.
 		if (gamepad_button_check_pressed(0, gp_face4))
 		{
-			// Play click sound effect.
-			audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
-	
 			// Get current volume.
 			var _volume = audio_get_master_gain(0);
 	

@@ -1,4 +1,6 @@
-global.music = audio_play_sound(snd_music_menu, 0, 1, 1.0, undefined, 1.0);
+volume = 0.5;
+audio_group_set_gain(1, volume, 0);
+
 // Variable used for clicked state.
 is_clicked = false;
 
@@ -14,9 +16,13 @@ function toggle_sound()
 	// Play click sound effect.
 	audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
 	
-	// Get current volume.
-	var _volume = audio_get_master_gain(0);
-	
 	// Toggle volume on/off.
-	audio_set_master_gain(0, !_volume);	
+	if (audio_group_get_gain(1) > 0)
+	{
+		audio_group_set_gain(1, 0, 100);	
+	}
+	else
+	{
+		audio_group_set_gain(1, volume, 100);	
+	}
 }

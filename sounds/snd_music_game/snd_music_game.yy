@@ -7,7 +7,12 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":1,
+  "compression":3,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"audiogroup_default\", \"path\":\"audiogroups/audiogroup_default\" }",
+    },
+  },
   "conversionMode":0,
   "duration":118.0,
   "name":"snd_music_game",
@@ -21,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"snd_music_game.ogg",
   "type":0,
-  "volume":1.0,
+  "volume":0.85,
 }

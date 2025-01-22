@@ -2,8 +2,9 @@
 randomize();
 
 // Start the game music on a loop.
+global.sfx_volume = 0.5;
+global.music_volume = 0.5;
 global.music = audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
-global.uparade_sound = 0;
 
 // Debug mode toggle
 global.debug = true;

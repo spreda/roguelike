@@ -14,7 +14,7 @@ function shooting_attack()
 		var _angle = -_angle_difference / 2;
 	
 		// Play the sound effect.
-		audio_play_sound(snd_lightning_throw, 0, 0, 1, undefined, 1.0);
+		audio_play_sound(snd_lightning_throw, 0, 0, 1.0, undefined, 1.0);
 	
 		// Repeat the following code for each bullet we need to spawn.
 		repeat (global.shooting[? "number_of_shots"])
