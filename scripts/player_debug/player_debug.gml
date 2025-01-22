@@ -30,4 +30,11 @@ function player_debug()
 	{
 		show_debug_message(string(global.mouse_anchor_x));
 	}
+	
+	// Toggle audio debugging UI
+	if (keyboard_check(ord("A")))
+	{
+		global.debug_audio = !global.debug_audio;
+		audio_debug(global.debug_audio);
+	}
 }
