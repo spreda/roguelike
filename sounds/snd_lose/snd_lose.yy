@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":4.875,
+  "duration":4.875011,
   "name":"snd_lose",
   "parent":{
     "name":"Jingles",

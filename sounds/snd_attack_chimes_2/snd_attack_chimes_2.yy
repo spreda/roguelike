@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"snd_attack_chimes_2",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sfx",
+    "path":"audiogroups/sfx",
   },
   "bitDepth":1,
   "bitRate":128,

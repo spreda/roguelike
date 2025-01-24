@@ -13,19 +13,6 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// Reduce target scale size further.
 		target_scale = 0.9;
 	}
-	
-	// Checks if mouse has been clicked on this button.
-	if (is_clicked)
-	{
-		// Reduce target scale size further.
-		target_scale = 0.9;
-		
-		// If left mouse button is released...
-		if (mouse_check_button_released(mb_left))
-		{
-			toggle_sound();
-		}	
-	}
 }
 else
 {
@@ -33,24 +20,12 @@ else
 	target_scale = 1.0;	
 }
 
-// Stores how many gamepad count.
-var _max_pads = gamepad_get_device_count();
-
-// Checks when at least 1 gamepad is present.
-if (_max_pads > 0)
+if (instance_exists(slider_id))
 {
-	// Checks the gamepad is connected.
-	if (gamepad_is_connected(0))
+	if (volume != slider_id.value)
 	{
-		// Checks if gamepad button has been pressed.
-		if (gamepad_button_check_pressed(0, gp_face4))
-		{
-			// Get current volume.
-			var _volume = audio_get_master_gain(0);
-	
-			// Toggle volume on/off.
-			audio_set_master_gain(0, !_volume);
-		}
+		volume = slider_id.value;
+		audio_group_set_gain(1,  power(volume, 2), 100);
 	}
 }
 
