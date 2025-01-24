@@ -42,20 +42,3 @@ function create_slider()
 	}
 	is_clicked = false;
 }
-
-function toggle_slider()
-{
-	
-	if (instance_exists(slider_id))
-	{
-		audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
-		instance_destroy(slider_id);
-		is_clicked = false;
-	}
-	else
-	{
-		slider_id = instance_create_layer(x, y+72, layer, obj_slider)
-		slider_id.value = volume;
-	}
-	is_clicked = false;
-}

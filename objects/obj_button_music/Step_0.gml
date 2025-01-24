@@ -17,7 +17,9 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 else
 {
 	// Reset target scale size.
-	target_scale = 1.0;	
+	target_scale = 1.0;
+	
+	is_clicked = false;
 }
 
 if (instance_exists(slider_id))

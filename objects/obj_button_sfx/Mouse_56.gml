@@ -11,3 +11,4 @@ if (is_clicked)
 }
 
 is_disabled = false;
+is_clicked = false;
