@@ -16,7 +16,7 @@ function player_debug()
 	// Collect all xp
 	if (keyboard_check(ord("M")))
 	{
-		obj_collectable.pickup_distance = 5000;
+		obj_xp.pickup_distance = 5000;
 	}
 	
 	// Kill all enemies

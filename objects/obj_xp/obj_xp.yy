@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shadow",
+  "%Name":"obj_xp",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shadow",
+  "name":"obj_xp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Objects/Game.yy",
+    "name":"Pickups",
+    "path":"folders/Objects/Game/Pickups.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collectable",
+    "path":"objects/obj_collectable/obj_collectable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_collectible_gen",
+    "path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

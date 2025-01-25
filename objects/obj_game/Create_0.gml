@@ -106,11 +106,11 @@ spawn_enemy = function()
 
 	// Then we get the position 1500 pixels away
 	// from the hero on the x axis.
-	var _x = obj_hero.x + lengthdir_x(1500, _dir);
+	var _x = obj_hero.x + lengthdir_x(1200, _dir);
 
 	// Then we get the position 1500 pixels away
 	// from the hero on the y axis.
-	var _y = obj_hero.y + lengthdir_y(1500, _dir);
+	var _y = obj_hero.y + lengthdir_y(1200, _dir);
 
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);

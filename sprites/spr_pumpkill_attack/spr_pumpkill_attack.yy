@@ -5,7 +5,7 @@
   "bbox_bottom":59,
   "bbox_left":12,
   "bbox_right":51,
-  "bbox_top":20,
+  "bbox_top":32,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -33,7 +33,7 @@
     "name":"Pumpkill",
     "path":"folders/Sprites/Enemies/Pumpkill.yy",
   },
-  "preMultiplyAlpha":false,
+  "preMultiplyAlpha":true,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{

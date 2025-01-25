@@ -1,7 +1,3 @@
-function utils(){
-
-}
-
 function inv_lerp(a, b, val)
 {
 	// Inverse Linar Interpolation, get the fraction between a and b on which v resides.

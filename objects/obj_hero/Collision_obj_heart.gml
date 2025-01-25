@@ -1,7 +1,7 @@
 hitpoints = min(hitpoints + hitpoints_max/2, hitpoints_max);
 
 // Chooses sound effect.
-_sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);
+var _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);
 
 // Plays sound effect.
 audio_play_sound(_sound, 0, 0, 1.0, undefined, 1.0);
