@@ -2,12 +2,17 @@
   "$GMSound":"",
   "%Name":"snd_click",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sfx",
+    "path":"audiogroups/sfx",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"sfx\", \"path\":\"audiogroups/sfx\" }",
+    },
+  },
   "conversionMode":0,
   "duration":0.25,
   "name":"snd_click",

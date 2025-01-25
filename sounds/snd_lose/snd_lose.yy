@@ -8,8 +8,13 @@
   "bitDepth":1,
   "bitRate":128,
   "compression":1,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"audiogroup_default\", \"path\":\"audiogroups/audiogroup_default\" }",
+    },
+  },
   "conversionMode":0,
-  "duration":4.875,
+  "duration":4.875011,
   "name":"snd_lose",
   "parent":{
     "name":"Jingles",

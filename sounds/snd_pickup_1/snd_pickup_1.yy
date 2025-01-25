@@ -2,14 +2,19 @@
   "$GMSound":"",
   "%Name":"snd_pickup_1",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sfx",
+    "path":"audiogroups/sfx",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":1,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"sfx\", \"path\":\"audiogroups/sfx\" }",
+    },
+  },
   "conversionMode":0,
-  "duration":0.379062,
+  "duration":0.37907,
   "name":"snd_pickup_1",
   "parent":{
     "name":"Sounds",
@@ -21,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"snd_pickup_1.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.4,
 }

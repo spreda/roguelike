@@ -2,12 +2,17 @@
   "$GMSound":"",
   "%Name":"snd_melee_hit_2",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sfx",
+    "path":"audiogroups/sfx",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":1,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"sfx\", \"path\":\"audiogroups/sfx\" }",
+    },
+  },
   "conversionMode":0,
   "duration":2.0,
   "name":"snd_melee_hit_2",

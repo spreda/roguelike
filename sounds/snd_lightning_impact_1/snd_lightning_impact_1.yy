@@ -2,14 +2,19 @@
   "$GMSound":"",
   "%Name":"snd_lightning_impact_1",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"sfx",
+    "path":"audiogroups/sfx",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
+  "ConfigValues":{
+    "NewConfig1":{
+      "audioGroupId":"{ \"name\":\"sfx\", \"path\":\"audiogroups/sfx\" }",
+    },
+  },
   "conversionMode":0,
-  "duration":0.81075,
+  "duration":0.810771,
   "name":"snd_lightning_impact_1",
   "parent":{
     "name":"Shooting",

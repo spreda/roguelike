@@ -52,3 +52,13 @@ draw_text(1580, 65, "LVL: " + string(obj_hero.level));
 var _time_left = game_duration - time_seconds;
 draw_set_font(fnt_small_medium);
 draw_text(60, 180, string(int64(_time_left/60)) + ":" + string(_time_left%60));
+
+
+// Audio debugger UI
+if (global.debug_audio)
+{
+	var _audio_name = audio_get_name(global.music);
+	var _audio_pos = string_format(audio_sound_get_track_position(global.music), 6, 2);
+	draw_set_halign(fa_left);
+	draw_text(60, 280, string("{0} / Position: {1}", _audio_name, _audio_pos));
+}
