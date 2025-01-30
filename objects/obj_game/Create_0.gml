@@ -40,8 +40,12 @@ weapon_swipe_reset();
 // initializing values for that weapon.
 weapon_trail_reset();
 
+// UI settings
+xp_margin_x = 20;
+xp_margin_y = 30;
+
 // Create the pause button.
-instance_create_layer(1820, 70, "UpgradeScreen", obj_pause_button);
+instance_create_layer(1820, 120, "UpgradeScreen", obj_pause_button);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);
