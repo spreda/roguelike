@@ -40,8 +40,12 @@ weapon_swipe_reset();
 // initializing values for that weapon.
 weapon_trail_reset();
 
+// UI settings
+xp_margin_x = 20;
+xp_margin_y = 30;
+
 // Create the pause button.
-instance_create_layer(1820, 70, "UpgradeScreen", obj_pause_button);
+instance_create_layer(1820, 120, "UpgradeScreen", obj_pause_button);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);
@@ -106,11 +110,11 @@ spawn_enemy = function()
 
 	// Then we get the position 1500 pixels away
 	// from the hero on the x axis.
-	var _x = obj_hero.x + lengthdir_x(1500, _dir);
+	var _x = obj_hero.x + lengthdir_x(1200, _dir);
 
 	// Then we get the position 1500 pixels away
 	// from the hero on the y axis.
-	var _y = obj_hero.y + lengthdir_y(1500, _dir);
+	var _y = obj_hero.y + lengthdir_y(1200, _dir);
 
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);

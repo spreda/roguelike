@@ -16,11 +16,11 @@ function player_debug()
 	// Collect all xp
 	if (keyboard_check(ord("M")))
 	{
-		obj_collectable.pickup_distance = 5000;
+		instance_create_layer(x + 100, y, "Instances", obj_magnet);
 	}
 	
 	// Kill all enemies
-	if (keyboard_check(ord("K")))
+	if (keyboard_check(ord("K")) and instance_exists(obj_enemy))
 	{
 		obj_enemy.hitpoints = 0;
 	}

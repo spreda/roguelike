@@ -97,7 +97,7 @@ Game
 				Step					Updates the players movements, restricts them to the room and sets their nearest enemy, also calls the players attacks when needed.
 				Draw End				Draws the players back and front health bars based on the offsets to the players position as well as its current health.
 				Draw GUI				Draws the vitual joystick on screen when player is not in pause screen or menu for mouse based movement.
-				-><- obj_collectable	Adds experience points and plays sound effect before destroying the pickup collected.
+				-><- obj_xp	Adds experience points and plays sound effect before destroying the pickup collected.
 				-><- obj_enemy			Checks if the hero is being hit already then deducts health points before creating text popups for the hit changing then enemy animations to their attack ones.
 				-><- obj_heart			Adds health to the hero while playing sound effect before destroying the pickups.
 				Animation End			Checks the players current speed to set animation to an idle or running one.
@@ -151,7 +151,7 @@ Game
 				Draw GUI		Draws the background and banner for screen. 
 			
 		Pickups
-			obj_collectable
+			obj_xp
 				Pickup object for player experience dropped by defeated enemies.
 				
 				Create			Creates shadow object and sets itself as the owner.

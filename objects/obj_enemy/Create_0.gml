@@ -20,7 +20,6 @@ burn = 0;
 knockback = 0;
 knockback_direction = 0;
 
-// Create shadow object to follow.
-var _shadow = instance_create_layer(x, y, "Shadows", obj_shadow);
-// Set shadow owner.
-_shadow.owner_object = self;
+
+
+

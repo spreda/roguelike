@@ -12,8 +12,8 @@ if (!instance_exists(obj_game_over))
 	}
 }
 
-// If the game is over...
-// We do this by checking is an end game screen is present.
+// If the game is not over...
+// We do this by checking is an end game screen is not present.
 if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 {
 	// If time runs out
@@ -26,7 +26,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 		obj_hero.hitpoints = obj_hero.hitpoints_max;
 		spawn_enemy_cooldown = 1;
 	}
-	else
+	else if (!global.paused)
 	{
 		// Game clock
 		game_time += 1;
@@ -48,8 +48,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 	{	
 		// Levelup the hero
 		obj_hero.level += 1;
-		obj_hero.hitpoints_max *= 1.1;
-		obj_hero.hitpoints *= 1.1;
+		obj_hero.hitpoints = obj_hero.hitpoints_max;
 		
 		// Subtract experience goal from current experience.
 		// Basically this is the cost of levelling up.

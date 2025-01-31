@@ -5,7 +5,7 @@ text = "NO TEXT";
 color = c_white;
 
 // Create a variable to hold the lifetime of the text.
-lifetime = 60;
+lifetime = 30;
 
 // Set vertical speed, making the text "float" upwards.
 vspeed -= 2;

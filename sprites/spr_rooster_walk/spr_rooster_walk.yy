@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_rooster_walk",
   "bboxMode":2,
-  "bbox_bottom":56,
+  "bbox_bottom":55,
   "bbox_left":8,
   "bbox_right":55,
   "bbox_top":16,

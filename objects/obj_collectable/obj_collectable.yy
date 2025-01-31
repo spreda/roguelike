@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_collectible_gen",
-    "path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
