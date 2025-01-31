@@ -26,24 +26,6 @@ var _fill = min(global.xp / global.xp_goal, 1);
 // Draw the experince bar filling.
 draw_sprite_ext(spr_xpbar_fill, 0, xp_margin_x+4, xp_margin_y,  (1920-2*xp_margin_x-8) / 48 * _fill, 1, 0, c_white, 1);
 
-// Set the font.
-draw_set_font(fnt_small);
-
-// Center the text vertically and horizontally.
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-
-// Draw our current level.
-draw_set_font(fnt_small_large);
-draw_set_halign(fa_left);
-draw_text(24, 160, "LVL: " + string(obj_hero.level));
-
-// Draw timer.
-var _time_left = game_duration - time_seconds;
-draw_set_font(fnt_small_large);
-draw_set_halign(fa_center);
-draw_text(1920/2, 100, string(int64(_time_left/60)) + ":" + string(_time_left%60));
-
 // Draw healthbar
 with (obj_hero)
 {
@@ -61,6 +43,24 @@ with (obj_hero)
 		draw_sprite_ext(spr_healthbar_fill, 0, _pos_x + i * (sprite_get_width(spr_healthbar_back) + _bars_margin) + 4, _pos_y - 4, 1, 1, 0, c_white, 1);
 	}
 }
+
+// Set the font.
+draw_set_font(fnt_small);
+
+// Center the text vertically and horizontally.
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+// Draw our current level.
+draw_set_font(fnt_small_large);
+draw_set_halign(fa_left);
+draw_text(24, 160, "LVL: " + string(obj_hero.level));
+
+// Draw timer.
+var _time_left = game_duration - time_seconds;
+draw_set_font(fnt_small_large);
+draw_set_halign(fa_center);
+draw_text(1920/2, 100, string(int64(_time_left/60)) + ":" + string(_time_left%60));
 
 // Audio debugger UI
 if (global.debug_audio)
