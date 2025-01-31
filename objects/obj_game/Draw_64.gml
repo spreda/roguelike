@@ -36,7 +36,7 @@ draw_set_valign(fa_middle);
 // Draw our current level.
 draw_set_font(fnt_small_large);
 draw_set_halign(fa_left);
-draw_text(80, 100, "LVL: " + string(obj_hero.level));
+draw_text(24, 160, "LVL: " + string(obj_hero.level));
 
 // Draw timer.
 var _time_left = game_duration - time_seconds;
@@ -44,17 +44,21 @@ draw_set_font(fnt_small_large);
 draw_set_halign(fa_center);
 draw_text(1920/2, 100, string(int64(_time_left/60)) + ":" + string(_time_left%60));
 
-
+// Draw healthbar
 with (obj_hero)
-{	// Draw the healthbar "background".
+{
+	var _pos_x = 20;
+	var _pos_y = 100;
+	var _bars_margin = -16;
+	// Draw the healthbar "background".
 	for (i = 0; i < hitpoints_max; i++)
 	{
-		draw_sprite_ext(spr_healthbar_back, 0, 20 + i * (sprite_get_width(spr_healthbar_back) - 16), 1080 - 8, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_healthbar_back, 0, _pos_x + i * (sprite_get_width(spr_healthbar_back) + _bars_margin), _pos_y, 1, 1, 0, c_white, 1);
 	}
 	// Draw the healthbar "filling".
 	for (i = 0; i < hitpoints; i++)
 	{
-		draw_sprite_ext(spr_healthbar_fill, 0, 20 + i * (sprite_get_width(spr_healthbar_back) - 16) + 4, 1080 - 8 - 4, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_healthbar_fill, 0, _pos_x + i * (sprite_get_width(spr_healthbar_back) + _bars_margin) + 4, _pos_y - 4, 1, 1, 0, c_white, 1);
 	}
 }
 

@@ -48,8 +48,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 	{	
 		// Levelup the hero
 		obj_hero.level += 1;
-		obj_hero.hitpoints_max *= 1.1;
-		obj_hero.hitpoints *= 1.1;
+		obj_hero.hitpoints = obj_hero.hitpoints_max;
 		
 		// Subtract experience goal from current experience.
 		// Basically this is the cost of levelling up.
