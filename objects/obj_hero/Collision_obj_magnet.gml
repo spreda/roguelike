@@ -1,4 +1,8 @@
-obj_xp.pickup_distance = 10000;
+// Pick up all of the xp on the map
+if (instance_exists(obj_xp))
+{
+	obj_xp.pickup_distance = 10000;
+}
 
 // Chooses sound effect.
 var _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);
