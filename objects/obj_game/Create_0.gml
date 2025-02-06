@@ -49,6 +49,26 @@ xp_margin_y = 30;
 // Create the pause button.
 instance_create_layer(1820, 120, "UpgradeScreen", obj_pause_button);
 
+// Create assets layer colliders.
+var _assets = layer_get_all_elements("Assets_1");
+for (var i = 0; i < array_length(_assets); i++;)
+{
+    var _x = layer_sprite_get_x(_assets[i]);
+	var _y = layer_sprite_get_y(_assets[i]);
+		
+	var _x_scale = layer_sprite_get_xscale(_assets[i]);
+	var _y_scale = layer_sprite_get_yscale(_assets[i]);
+		
+	var _id = instance_create_layer(0, 0, "Instances", obj_collider);
+	
+	variable_instance_set(_id, "sprite_index", layer_sprite_get_sprite(_assets[i]));
+	variable_instance_set(_id, "x", _x);
+	variable_instance_set(_id, "y",_y);
+	variable_instance_set(_id, "image_xscale", _x_scale);
+	variable_instance_set(_id, "image_yscale", _y_scale);
+}
+
+
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);
 
@@ -105,19 +125,27 @@ spawn_enemy = function()
 		// pigun, pumpkill or rooster.
 		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
 	}
+	
+	// Find free space to spawn
+	var _x, _y;
+	do
+	{
+		// We want to spawn enemyes around the player.
+		// So we first get a random direction (0 to 360).
+		var _dir = random(360);
 
-	// We want to spawn enemyes around the player.
-	// So we first get a random direction (0 to 360).
-	var _dir = random(360);
+		// Then we get the position 1500 pixels away
+		// from the hero on the x axis.
+		_x = obj_hero.x + lengthdir_x(1200, _dir);
 
-	// Then we get the position 1500 pixels away
-	// from the hero on the x axis.
-	var _x = obj_hero.x + lengthdir_x(1200, _dir);
+		// Then we get the position 1500 pixels away
+		// from the hero on the y axis.
+		_y = obj_hero.y + lengthdir_y(1200, _dir);
+	
+		// Create an enemy at that generated positon if it's free.
+	}
+	until (place_empty(_x, _y, _enemy));
 
-	// Then we get the position 1500 pixels away
-	// from the hero on the y axis.
-	var _y = obj_hero.y + lengthdir_y(1200, _dir);
-
-	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);
+
 }

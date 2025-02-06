@@ -88,6 +88,7 @@
     {"id":{"name":"obj_button_sfx","path":"objects/obj_button_sfx/obj_button_sfx.yy",},},
     {"id":{"name":"obj_button_start","path":"objects/obj_button_start/obj_button_start.yy",},},
     {"id":{"name":"obj_collectable","path":"objects/obj_collectable/obj_collectable.yy",},},
+    {"id":{"name":"obj_collider","path":"objects/obj_collider/obj_collider.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},

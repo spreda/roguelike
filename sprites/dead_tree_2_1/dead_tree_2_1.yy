@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"dead_tree_2_1",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":59,
   "bbox_left":24,
   "bbox_right":39,
-  "bbox_top":36,
+  "bbox_top":40,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

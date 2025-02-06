@@ -5,8 +5,7 @@ hitpoints_max = 7 * global.enemy_health_bonus;
 hitpoints = hitpoints_max;
 
 // Set speed.
-speed = 5;
-walk_speed = speed;
+walk_speed = 3;
 
 // Set image scale.
 image_xscale = global.hero_xscale;
@@ -20,6 +19,8 @@ burn = 0;
 knockback = 0;
 knockback_direction = 0;
 
-
-
-
+while (!(place_empty(x, y, obj_collider))) 
+{
+	x += random(100) - 50;
+	y += random(100) - 50;
+} 
