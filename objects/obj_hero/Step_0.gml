@@ -1,3 +1,7 @@
+image_xscale = global.hero_xscale;
+
+image_yscale = global.hero_xscale;
+
 // If the game is paused...
 if (global.paused)
 {

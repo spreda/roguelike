@@ -44,6 +44,6 @@ if(hspeed != 0)
 {
 	// Set our xscale to the sign of hspeed
 	// (can only be -1 or 1 at this point).
-	image_xscale = -sign(hspeed);
-	image_yscale = 1;
+	image_xscale = -sign(hspeed) * global.hero_xscale;;
+	image_yscale = global.hero_xscale;
 }

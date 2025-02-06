@@ -9,8 +9,8 @@ speed = 5;
 walk_speed = speed;
 
 // Set image scale.
-image_xscale = 0.5;
-image_yscale = 0.5;
+image_xscale = global.hero_xscale;
+image_yscale = global.hero_xscale;
 
 // Create variable to show/hide the healthbar.
 show_healthbar = 0;

@@ -38,8 +38,8 @@ function player_movement()
 	if (hspeed != 0)
 	{
 		// Flip sprite horizontally based on hspeed.
-		image_xscale = 1 * -sign(hspeed);
-		image_yscale = 1;
+		image_xscale = global.hero_xscale * -sign(hspeed);
+		image_yscale = global.hero_xscale;
 	}
 
 	// If sprite is not the hit sprite,
