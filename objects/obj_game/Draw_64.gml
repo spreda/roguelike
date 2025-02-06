@@ -30,7 +30,7 @@ draw_sprite_ext(spr_xpbar_fill, 0, xp_margin_x+4, xp_margin_y,  (1920-2*xp_margi
 with (obj_hero)
 {
 	var _pos_x = 20;
-	var _pos_y = 100;
+	var _pos_y = 112;
 	var _bars_margin = -16;
 	// Draw the healthbar "background".
 	for (i = 0; i < hitpoints_max; i++)
