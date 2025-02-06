@@ -1,3 +1,7 @@
+image_xscale = 1.5;
+
+Image_yscale = 1.5;
+
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 
