@@ -68,3 +68,9 @@ if (hero_trail_cooldown <= 0)
 	// Call function.
 	hero_trail();	
 }
+
+if (keyboard_check_pressed(vk_enter))
+{
+var rm_name = room_get_name(room);
+surface_save(application_surface, "screenshot_" + string(rm_name) +".png");
+}
