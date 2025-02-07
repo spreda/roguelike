@@ -10,4 +10,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draw our current level name.
-draw_text(room_width / 2, room_height / 2, levels[selected_level][0]);
+draw_text(room_width / 2, room_height / 2 + 50, levels[selected_level][0]);
+
+// Draw room preview
+draw_sprite_ext(levels[selected_level][2], 0, room_width / 2, room_height / 2 - 250, 0.5, 0.5, 0, c_white, 1);

@@ -5,3 +5,6 @@ is_clicked = false;
 target_scale = 1.0;
 
 sprite_index = spr_button_back;
+
+hotkey = vk_backspace;
+hotkey_alt = vk_backspace;
