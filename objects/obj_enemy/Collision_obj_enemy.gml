@@ -1,3 +1,8 @@
+if (global.paused)
+{
+	exit;
+}
+
 // Get direction from this instance to the other.
 var _direction = point_direction(x, y, other.x, other.y);
 
