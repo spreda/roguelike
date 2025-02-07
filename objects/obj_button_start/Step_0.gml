@@ -52,7 +52,7 @@ if (_max_pads > 0)
 			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 			
 			// Go to main game room.
-			room_goto(rm_game);
+			start_game();
 		}
 	}
 }
