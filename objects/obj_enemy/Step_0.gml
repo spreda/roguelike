@@ -3,11 +3,6 @@ if (global.paused)
 	exit;
 }
 
-// Set depth to negative y.
-// This will cause instances to draw from
-// top to bottom.
-depth = -y;
-
 speed = walk_speed;
 
 // Set direction towards the hero.
@@ -55,7 +50,7 @@ if(hspeed != 0)
 	image_yscale = global.hero_xscale;
 }
 
-if (!place_empty(x+hspeed, y+vspeed, obj_collider))
+if (!place_empty(x, y, obj_collider))
 {
 	// Get direction from this instance to the other.
 	var _collider = instance_nearest(x, y, obj_collider);
@@ -68,3 +63,8 @@ if (!place_empty(x+hspeed, y+vspeed, obj_collider))
 	move_and_collide(hspeed, vspeed, obj_collider, 2);
 	speed = 0;
 }
+
+// Set depth to negative y.
+// This will cause instances to draw from
+// top to bottom.
+depth = -y - sprite_height/2;
