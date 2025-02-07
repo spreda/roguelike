@@ -47,7 +47,7 @@
     ],
     "top":0,
   },
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Pumpkill",
     "path":"folders/Sprites/Enemies/Pumpkill.yy",
@@ -115,7 +115,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":32,
+    "yorigin":46,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
