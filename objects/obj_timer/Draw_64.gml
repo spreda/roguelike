@@ -5,7 +5,7 @@ draw_set_colour(c_white);
 draw_set_alpha(1.0);
 
 // Select font
-draw_set_font(global.fnt_bm_small_x6_outline_thin);
+draw_set_font(global.fnt_bm_small_x4_outline_thin);
 draw_set_halign(fa_center);
 
 // Draw timer.

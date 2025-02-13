@@ -52,7 +52,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draw our current level.
-draw_set_font(global.fnt_bm_small_x6_outline_thin);
+draw_set_font(global.fnt_bm_small_x4_outline_thin);
 draw_set_halign(fa_left);
 draw_text(24, 160, "Lvl:" + string(obj_hero.level));
 
