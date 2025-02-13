@@ -1,16 +1,16 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_menu",
+  "%Name":"rm_main_menu",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_6A59EED3","path":"rooms/rm_menu/rm_menu.yy",},
-    {"name":"inst_36B83061","path":"rooms/rm_menu/rm_menu.yy",},
-    {"name":"inst_478FA91E","path":"rooms/rm_menu/rm_menu.yy",},
-    {"name":"inst_2AD00CD9","path":"rooms/rm_menu/rm_menu.yy",},
-    {"name":"inst_46B61D64","path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"inst_6A59EED3","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_36B83061","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_478FA91E","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_2AD00CD9","path":"rooms/rm_main_menu/rm_main_menu.yy",},
+    {"name":"inst_46B61D64","path":"rooms/rm_main_menu/rm_main_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,10 +23,10 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Sprite59","path":"sprites/Sprite59/Sprite59.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"rm_menu",
+  "name":"rm_main_menu",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"menu",
+    "path":"folders/Rooms/menu.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

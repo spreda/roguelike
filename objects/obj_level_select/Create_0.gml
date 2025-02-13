@@ -1,6 +1,7 @@
 levels = [
-	["Level 1", rm_game, spr_rm_1_preview],
-	["Level 2", rm_game_2, spr_rm_2_preview]
+	["Trail", rm_map_path, spr_map_path_preview],
+	["Forest", rm_map_forest, spr_map_forest_preview],
+	["Taiga", rm_map_taiga, spr_map_taiga_preview]
 ];
 
 selected_level = 0;

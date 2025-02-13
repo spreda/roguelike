@@ -1,12 +1,12 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_game",
+  "%Name":"rm_map_path",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_4E407A27","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_4E407A27","path":"rooms/rm_map_path/rm_map_path.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -141,10 +141,10 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet2_1","path":"tilesets/TileSet2_1/TileSet2_1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
-  "name":"rm_game",
+  "name":"rm_map_path",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"maps",
+    "path":"folders/Rooms/maps.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
