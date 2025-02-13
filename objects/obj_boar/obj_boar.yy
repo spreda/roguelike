@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pigun",
+  "%Name":"obj_boar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pigun",
+  "name":"obj_boar",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_rooster_walk",
+    "path":"sprites/spr_rooster_walk/spr_rooster_walk.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
