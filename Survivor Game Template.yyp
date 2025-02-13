@@ -313,7 +313,6 @@
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_game_2","path":"rooms/rm_game_2/rm_game_2.yy",},},
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
-    {"roomId":{"name":"rm_game_3","path":"rooms/rm_game_3/rm_game_3.yy",},},
     {"roomId":{"name":"rm_level_select","path":"rooms/rm_level_select/rm_level_select.yy",},},
   ],
   "templateType":"game",
