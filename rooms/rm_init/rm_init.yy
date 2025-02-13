@@ -17,8 +17,8 @@
   ],
   "name":"rm_init",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"menu",
+    "path":"folders/Rooms/menu.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
