@@ -52,15 +52,9 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draw our current level.
-draw_set_font(fnt_small_large);
+draw_set_font(global.fnt_bm_small_x4_outline_thin);
 draw_set_halign(fa_left);
-draw_text(24, 160, "LVL: " + string(obj_hero.level));
-
-// Draw timer.
-var _time_left = game_duration - time_seconds;
-draw_set_font(fnt_small_large);
-draw_set_halign(fa_center);
-draw_text(1920/2, 100, string(int64(_time_left/60)) + ":" + string(_time_left%60));
+draw_text(24, 160, "Lvl:" + string(obj_hero.level));
 
 // Audio debugger UI
 if (global.debug_audio)

@@ -49,6 +49,9 @@ xp_margin_y = 30;
 // Create the pause button.
 instance_create_layer(1820, 120, "UpgradeScreen", obj_pause_button);
 
+// Create timer
+instance_create_layer(1920/2, 100,  "Instances", obj_timer);
+
 // Create assets layer colliders.
 var _assets = layer_get_all_elements("Assets_1");
 for (var i = 0; i < array_length(_assets); i++;)

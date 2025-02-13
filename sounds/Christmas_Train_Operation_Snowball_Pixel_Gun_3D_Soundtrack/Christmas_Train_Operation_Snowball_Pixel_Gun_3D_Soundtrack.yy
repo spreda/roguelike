@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":199.18077,
+  "name":"Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack.mp3",
+  "type":0,
+  "volume":1.0,
+}
