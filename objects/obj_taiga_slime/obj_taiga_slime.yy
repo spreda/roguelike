@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_taigaminotaur",
+  "%Name":"obj_taiga_slime",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_taigaminotaur",
+  "name":"obj_taiga_slime",
   "overriddenProperties":[],
   "parent":{
     "name":"Snow",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_taigaminotaur_walk",
-    "path":"sprites/spr_taigaminotaur_walk/spr_taigaminotaur_walk.yy",
+    "name":"spr_taigaslime_walk",
+    "path":"sprites/spr_taigaslime_walk/spr_taigaslime_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

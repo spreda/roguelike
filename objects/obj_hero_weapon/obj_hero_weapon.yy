@@ -11,8 +11,8 @@
   "name":"obj_hero_weapon",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hero and Weapons",
-    "path":"folders/Objects/Game/Hero and Weapons.yy",
+    "name":"Weapons",
+    "path":"folders/Objects/Game/Weapons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

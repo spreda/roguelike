@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Deprecated",
-    "path":"folders/Objects/Game/Hero and Weapons/Deprecated.yy",
+    "path":"folders/Objects/Game/Weapons/Deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

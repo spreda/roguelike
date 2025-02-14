@@ -3,7 +3,7 @@ global.burning_ground = ds_map_create();
 
 // Call the function to reset the burning_ground weapon.
 // First time, this essentially setps it up.
-weapon_burning_ground_reset();
+weapon_reset();
 
 // Define the reset function for the burning_ground weapon.
 function weapon_reset(_weapon) 

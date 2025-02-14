@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_taigaorc",
+  "%Name":"obj_taiga_minotaur",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_taigaorc",
+  "name":"obj_taiga_minotaur",
   "overriddenProperties":[],
   "parent":{
     "name":"Snow",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_taigaorc_walk",
-    "path":"sprites/spr_taigaorc_walk/spr_taigaorc_walk.yy",
+    "name":"spr_taigaminotaur_walk",
+    "path":"sprites/spr_taigaminotaur_walk/spr_taigaminotaur_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

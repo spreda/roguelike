@@ -6,7 +6,7 @@
   "name":"weapon_swipe",
   "parent":{
     "name":"Sword",
-    "path":"folders/Scripts/Weapons/Sword.yy",
+    "path":"folders/Scripts/Weapons/Deprecated/Sword.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

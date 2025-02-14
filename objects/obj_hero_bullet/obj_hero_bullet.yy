@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Fire",
-    "path":"folders/Objects/Game/Hero and Weapons/Fire.yy",
+    "path":"folders/Objects/Game/Weapons/Fire.yy",
   },
   "parentObjectId":{
     "name":"obj_hero_weapon",
