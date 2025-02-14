@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Pause",
-    "path":"folders/Objects/Game/Pause.yy",
+    "path":"folders/Objects/Game/UI/Screens/Pause.yy",
   },
   "parentObjectId":null,
   "persistent":false,

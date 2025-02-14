@@ -10,8 +10,8 @@
   "name":"obj_text_popup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Objects/Game.yy",
+    "name":"UI",
+    "path":"folders/Objects/Game/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

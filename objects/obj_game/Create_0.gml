@@ -62,7 +62,7 @@ for (var i = 0; i < array_length(_assets); i++;)
 	var _x_scale = layer_sprite_get_xscale(_assets[i]);
 	var _y_scale = layer_sprite_get_yscale(_assets[i]);
 		
-	var _id = instance_create_layer(0, 0, "Instances", obj_collider);
+	var _id = instance_create_layer(0, 0, "Instances", obj_static_prop);
 	
 	variable_instance_set(_id, "sprite_index", layer_sprite_get_sprite(_assets[i]));
 	variable_instance_set(_id, "x", _x);
@@ -103,7 +103,7 @@ spawn_enemy = function()
 
 	// If an instance of obj_upgrade exists then
 	// that means we are on the upgrade screen...
-	if (instance_exists(obj_template_complete))
+	if (instance_exists(obj_game_complete))
 	{
 		// Exit event, stopping any enemies from spawning.
 		exit;
@@ -111,14 +111,14 @@ spawn_enemy = function()
 
 	// Declare a temp variable to hold an enemy type.
 	// By default this will be the pumpkill enemy.
-	var _enemy = obj_pumpkill;
+	var _enemy = obj_slime;
 
 	// If we are over level 2...
 	if (global.level > 2)
 	{
 		// Change the enemy type to either
 		// pigun or pumpkill.
-		_enemy = choose(obj_pigun, obj_pumpkill);
+		_enemy = choose(obj_goblin, obj_slime);
 	}
 
 	// If we are over level 4...
@@ -126,7 +126,7 @@ spawn_enemy = function()
 	{
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
-		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
+		_enemy = choose(obj_goblin, obj_slime, obj_orc);
 	}
 	
 	// Find free space to spawn

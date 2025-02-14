@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "name":"Card",
+    "path":"folders/Sprites/GUI/Game/Card.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

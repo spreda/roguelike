@@ -44,8 +44,8 @@
   },
   "origin":3,
   "parent":{
-    "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "name":"XP",
+    "path":"folders/Sprites/GUI/Game/XP.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

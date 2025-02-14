@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"weapon_shooting",
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Scripts/Weapons.yy",
+    "name":"Fire",
+    "path":"folders/Scripts/Weapons/Fire.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"trees",
-    "path":"folders/Sprites/Background/trees.yy",
+    "path":"folders/Sprites/Background/Nature/trees.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

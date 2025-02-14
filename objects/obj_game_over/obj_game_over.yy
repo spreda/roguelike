@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Game Over",
-    "path":"folders/Objects/Game/Game Over.yy",
+    "path":"folders/Objects/Game/UI/Screens/Game Over.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_game_over_banner",
+    "path":"sprites/spr_game_over_banner/spr_game_over_banner.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

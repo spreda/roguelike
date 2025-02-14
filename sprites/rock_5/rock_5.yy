@@ -45,7 +45,7 @@
   "origin":9,
   "parent":{
     "name":"rocks",
-    "path":"folders/Sprites/Background/rocks.yy",
+    "path":"folders/Sprites/Background/Nature/rocks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

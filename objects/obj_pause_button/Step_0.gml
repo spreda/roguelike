@@ -1,5 +1,5 @@
 // Checks no menus are showing.
-if (!instance_exists(obj_pause_screen) && !instance_exists(obj_upgrade_screen) && !instance_exists(obj_game_over) && !instance_exists(obj_template_complete))
+if (!instance_exists(obj_pause_screen) && !instance_exists(obj_upgrade_screen) && !instance_exists(obj_game_over) && !instance_exists(obj_game_complete))
 {
 	// Stores how many gamepad count.
 	var _max_pads = gamepad_get_device_count();

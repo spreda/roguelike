@@ -13,7 +13,7 @@ if (instance_exists(obj_game_over))
 }
 
 // If the end screen is open...
-if (instance_exists(obj_template_complete))
+if (instance_exists(obj_game_complete))
 {
 	// Exit event.
 	exit;

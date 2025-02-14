@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Game Over",
-    "path":"folders/Objects/Game/Game Over.yy",
+    "path":"folders/Objects/Game/UI/Screens/Game Over.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite62",
-    "path":"sprites/Sprite62/Sprite62.yy",
+    "name":"spr_button_retry",
+    "path":"sprites/spr_button_retry/spr_button_retry.yy",
   },
   "spriteMaskId":null,
   "visible":true,

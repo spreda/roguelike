@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Upgrade",
-    "path":"folders/Objects/Game/Upgrade.yy",
+    "path":"folders/Objects/Game/UI/Screens/Upgrade.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite61",
-    "path":"sprites/Sprite61/Sprite61.yy",
+    "name":"spr_button_reroll",
+    "path":"sprites/spr_button_reroll/spr_button_reroll.yy",
   },
   "spriteMaskId":null,
   "visible":true,

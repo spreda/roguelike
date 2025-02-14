@@ -13,8 +13,8 @@
   "name":"obj_button_quit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Controls",
+    "path":"folders/Objects/Menu/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_small",
-    "path":"sprites/spr_button_small/spr_button_small.yy",
+    "name":"spr_button_close",
+    "path":"sprites/spr_button_close/spr_button_close.yy",
   },
   "spriteMaskId":null,
   "visible":true,
