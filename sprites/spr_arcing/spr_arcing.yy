@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Sword",
-    "path":"folders/Sprites/Weapons/Sword.yy",
+    "path":"folders/Sprites/Weapons/Deprecated/Sword.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

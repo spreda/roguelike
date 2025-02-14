@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Trail",
-    "path":"folders/Sprites/Weapons/Fire/Trail.yy",
+    "path":"folders/Sprites/Weapons/Deprecated/Trail.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
