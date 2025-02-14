@@ -16,8 +16,8 @@
   "name":"obj_button_music",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Controls",
+    "path":"folders/Objects/Menu/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite60",
-    "path":"sprites/Sprite60/Sprite60.yy",
+    "name":"spr_button_sound_music",
+    "path":"sprites/spr_button_sound_music/spr_button_sound_music.yy",
   },
   "spriteMaskId":null,
   "visible":true,

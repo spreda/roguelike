@@ -9,8 +9,8 @@
   "name":"obj_level_select",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Screens",
+    "path":"folders/Objects/Menu/Screens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

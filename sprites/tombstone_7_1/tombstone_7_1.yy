@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"tombstones",
-    "path":"folders/Sprites/Background/tombstones.yy",
+    "path":"folders/Sprites/Background/Village/tombstones.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

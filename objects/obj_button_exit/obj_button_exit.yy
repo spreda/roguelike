@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Game Over",
-    "path":"folders/Objects/Game/Game Over.yy",
+    "path":"folders/Objects/Game/UI/Screens/Game Over.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_grey",
-    "path":"sprites/spr_button_grey/spr_button_grey.yy",
+    "name":"spr_button_quit",
+    "path":"sprites/spr_button_quit/spr_button_quit.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"wheat",
-    "path":"folders/Sprites/Background/wheat.yy",
+    "path":"folders/Sprites/Background/Village/wheat.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

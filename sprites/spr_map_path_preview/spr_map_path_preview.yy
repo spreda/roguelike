@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Room_previews",
-    "path":"folders/Sprites/GUI/Room_previews.yy",
+    "path":"folders/Sprites/GUI/Splash/Room_previews.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -14,13 +14,13 @@ if (!instance_exists(obj_game_over))
 
 // If the game is not over...
 // We do this by checking is an end game screen is not present.
-if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
+if (!instance_exists(obj_upgrade) && !instance_exists(obj_game_complete))
 {
 	// If time runs out
 	if (time_seconds >= game_duration)
 	{
 		// Create the upgrade screen.
-		instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_template_complete);
+		instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_game_complete);
 		
 		// Hero invincibility
 		obj_hero.hitpoints = obj_hero.hitpoints_max;

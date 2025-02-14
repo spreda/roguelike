@@ -17,8 +17,8 @@
   "name":"obj_button_sfx",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Controls",
+    "path":"folders/Objects/Menu/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_sound",
-    "path":"sprites/spr_button_sound/spr_button_sound.yy",
+    "name":"spr_button_sound_sfx",
+    "path":"sprites/spr_button_sound_sfx/spr_button_sound_sfx.yy",
   },
   "spriteMaskId":null,
   "visible":true,

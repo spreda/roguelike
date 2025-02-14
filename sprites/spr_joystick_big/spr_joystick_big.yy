@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "name":"Joystick",
+    "path":"folders/Sprites/GUI/Controls/Joystick.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

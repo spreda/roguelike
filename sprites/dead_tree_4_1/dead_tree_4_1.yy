@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"dead_trees",
-    "path":"folders/Sprites/Background/dead_trees.yy",
+    "path":"folders/Sprites/Background/Nature/dead_trees.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

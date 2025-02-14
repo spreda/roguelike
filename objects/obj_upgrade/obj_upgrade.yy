@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Upgrade",
-    "path":"folders/Objects/Game/Upgrade.yy",
+    "path":"folders/Objects/Game/UI/Screens/Upgrade.yy",
   },
   "parentObjectId":null,
   "persistent":false,

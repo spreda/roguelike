@@ -10,8 +10,8 @@
   "name":"obj_hero_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hero and Weapons",
-    "path":"folders/Objects/Game/Hero and Weapons.yy",
+    "name":"Fire",
+    "path":"folders/Objects/Game/Hero and Weapons/Fire.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shooting",
-    "path":"sprites/spr_shooting/spr_shooting.yy",
+    "name":"spr_fireball",
+    "path":"sprites/spr_fireball/spr_fireball.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"wells",
-    "path":"folders/Sprites/Background/wells.yy",
+    "path":"folders/Sprites/Background/Village/wells.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

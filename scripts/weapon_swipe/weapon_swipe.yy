@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"weapon_swipe",
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Scripts/Weapons.yy",
+    "name":"Sword",
+    "path":"folders/Scripts/Weapons/Sword.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
