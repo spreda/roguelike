@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_taigaminotaur",
+  "%Name":"obj_taiga_minotaur",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_taigaminotaur",
+  "name":"obj_taiga_minotaur",
   "overriddenProperties":[],
   "parent":{
     "name":"Snow",

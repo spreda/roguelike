@@ -64,3 +64,34 @@ if (global.debug_audio)
 	draw_set_halign(fa_left);
 	draw_text(60, 280, string("{0} / Position: {1}", _audio_name, _audio_pos));
 }
+
+if (global.debug_fonts)
+{
+	// Set the drawing color to white.
+	draw_set_colour(c_white);
+	draw_set_alpha(1.0);
+
+	// Select font
+	draw_set_halign(fa_left);
+	
+	var _sample_text = "The quick brown fox jumps over the lazy dog.";
+	
+	// Draw sample text.
+	draw_set_font(global.fnt_bm_small_x4);
+	draw_text(100, 300, _sample_text);
+	
+	draw_set_font(global.fnt_bm_small_x4_outline_thin);
+	draw_text(100, 400, _sample_text);
+	
+	draw_set_font(global.fnt_bm_small_x4_outline);
+	draw_text(100, 500, _sample_text);
+	
+	draw_set_font(global.fnt_bm_small_x6);
+	draw_text(100, 600, _sample_text);
+	
+	draw_set_font(global.fnt_bm_small_x6_outline_thin);
+	draw_text(100, 700, _sample_text);
+	
+	draw_set_font(global.fnt_bm_small_x6_outline);
+	draw_text(100, 800, _sample_text);
+}

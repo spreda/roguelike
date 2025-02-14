@@ -18,8 +18,8 @@
   "name":"obj_hero",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hero and Weapons",
-    "path":"folders/Objects/Game/Hero and Weapons.yy",
+    "name":"Game",
+    "path":"folders/Objects/Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -39,7 +39,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_hero_idle",
+    "path":"sprites/spr_hero_idle/spr_hero_idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

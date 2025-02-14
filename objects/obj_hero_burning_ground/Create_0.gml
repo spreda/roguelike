@@ -1,7 +1,13 @@
-// Set scale.
-scale = 1;
+// Call parent event to set up general weapon stuff.
+event_inherited();
 
-image_xscale = 2 * scale;
-image_yscale = 2 * scale;
+// Set sprites for this weapon type.
+start_sprite = spr_explosion_start;
+loop_sprite = spr_fire;
+end_sprite = spr_explosion_end;
 
-lifespan = 10;
+// Set sprite scale.
+scale = 2;
+
+// Set ammout of animation loops
+lifespan = 5;

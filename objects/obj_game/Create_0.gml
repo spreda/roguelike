@@ -1,3 +1,4 @@
+// Hero sprite scale
 global.hero_xscale = 1.5;
 
 // Set RNG seed
@@ -9,6 +10,7 @@ global.music = audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 // Debug mode toggle
 global.debug = true;
 global.debug_audio = false;
+global.debug_fonts = false;
 
 // Set the experience goal to reach the next level.
 global.xp_goal = 15;
@@ -111,14 +113,14 @@ spawn_enemy = function()
 
 	// Declare a temp variable to hold an enemy type.
 	// By default this will be the pumpkill enemy.
-	var _enemy = obj_slime;
+	var _enemy = obj_taiga_slime;
 
 	// If we are over level 2...
 	if (global.level > 2)
 	{
 		// Change the enemy type to either
 		// pigun or pumpkill.
-		_enemy = choose(obj_goblin, obj_slime);
+		_enemy = choose(obj_taiga_orc, obj_taiga_slime);
 	}
 
 	// If we are over level 4...
@@ -126,7 +128,7 @@ spawn_enemy = function()
 	{
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
-		_enemy = choose(obj_goblin, obj_slime, obj_orc);
+		_enemy = choose(obj_taiga_minotaur, obj_taiga_slime, obj_taiga_orc);
 	}
 	
 	// Find free space to spawn

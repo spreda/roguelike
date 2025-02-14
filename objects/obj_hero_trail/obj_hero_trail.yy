@@ -10,8 +10,8 @@
   "name":"obj_hero_trail",
   "overriddenProperties":[],
   "parent":{
-    "name":"Fire",
-    "path":"folders/Objects/Game/Hero and Weapons/Fire.yy",
+    "name":"Deprecated",
+    "path":"folders/Objects/Game/Weapons/Deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

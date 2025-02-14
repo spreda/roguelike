@@ -10,8 +10,8 @@
   "name":"obj_hero_swipe",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hero and Weapons",
-    "path":"folders/Objects/Game/Hero and Weapons.yy",
+    "name":"Deprecated",
+    "path":"folders/Objects/Game/Weapons/Deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

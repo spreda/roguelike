@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"swipe_attack",
+  "%Name":"weapon_create",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"swipe_attack",
+  "name":"weapon_create",
   "parent":{
-    "name":"Sword",
-    "path":"folders/Scripts/Weapons/Deprecated/Sword.yy",
+    "name":"Fire",
+    "path":"folders/Scripts/Weapons/Fire.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
