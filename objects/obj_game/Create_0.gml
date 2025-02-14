@@ -111,14 +111,14 @@ spawn_enemy = function()
 
 	// Declare a temp variable to hold an enemy type.
 	// By default this will be the pumpkill enemy.
-	var _enemy = obj_slime;
+	var _enemy = obj_taigaslime;
 
 	// If we are over level 2...
 	if (global.level > 2)
 	{
 		// Change the enemy type to either
 		// pigun or pumpkill.
-		_enemy = choose(obj_goblin, obj_slime);
+		_enemy = choose(obj_taigaorc, obj_taigaslime);
 	}
 
 	// If we are over level 4...
@@ -126,7 +126,7 @@ spawn_enemy = function()
 	{
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
-		_enemy = choose(obj_goblin, obj_slime, obj_orc);
+		_enemy = choose(obj_taigaminotaur, obj_taigaslime, obj_taigaorc);
 	}
 	
 	// Find free space to spawn
