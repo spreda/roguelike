@@ -20,6 +20,9 @@ function get_upgrades()
 
 	// Get upgrades for the trail weapon and place them in the list.
 	weapon_trail_upgrades(_upgrade_list);
+	
+	// Get upgrades for the burning_ground weapon and place them in the list.
+	weapon_burning_ground_upgrades(_upgrade_list);
 
 	// Shuffle the list containing all the retrieved upgrades.
 	list_shuffle(_upgrade_list);
