@@ -232,6 +232,7 @@
     {"id":{"name":"spr_collectible_gen","path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",},},
     {"id":{"name":"spr_collectible_heart","path":"sprites/spr_collectible_heart/spr_collectible_heart.yy",},},
     {"id":{"name":"spr_collectible_magnet","path":"sprites/spr_collectible_magnet/spr_collectible_magnet.yy",},},
+    {"id":{"name":"spr_fireearth_start","path":"sprites/spr_fireearth_start/spr_fireearth_start.yy",},},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},},
     {"id":{"name":"spr_fire","path":"sprites/spr_fire/spr_fire.yy",},},
     {"id":{"name":"spr_fireball","path":"sprites/spr_fireball/spr_fireball.yy",},},
