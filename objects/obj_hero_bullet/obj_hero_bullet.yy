@@ -13,7 +13,10 @@
     "name":"Fire",
     "path":"folders/Objects/Game/Hero and Weapons/Fire.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_hero_weapon",
+    "path":"objects/obj_hero_weapon/obj_hero_weapon.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

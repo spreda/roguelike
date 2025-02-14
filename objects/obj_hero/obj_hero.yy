@@ -39,7 +39,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_hero_idle",
+    "path":"sprites/spr_hero_idle/spr_hero_idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

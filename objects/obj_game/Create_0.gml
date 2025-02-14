@@ -1,3 +1,4 @@
+// Hero sprite scale
 global.hero_xscale = 1.5;
 
 // Set RNG seed

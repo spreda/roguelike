@@ -2,8 +2,6 @@
   "$GMObject":"",
   "%Name":"obj_hero_burning_ground",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -13,7 +11,10 @@
     "name":"Fire",
     "path":"folders/Objects/Game/Hero and Weapons/Fire.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_hero_weapon",
+    "path":"objects/obj_hero_weapon/obj_hero_weapon.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

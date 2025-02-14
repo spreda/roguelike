@@ -1,7 +1,12 @@
+// Call parent event to set up general weapon stuff.
+event_inherited();
+
+// Set sprites for this weapon type.
+//start_sprite = spr_explosion_start;
+loop_sprite = spr_fire;
+//end_sprite = spr_explosion_end;
+
 // Set scale.
 scale = 1;
 
-image_xscale = 2 * scale;
-image_yscale = 2 * scale;
-
-lifespan = 10;
+lifespan = 5;
