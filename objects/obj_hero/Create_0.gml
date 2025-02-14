@@ -1,3 +1,9 @@
+image_xscale = global.hero_xscale;
+
+image_yscale = global.hero_xscale;
+
+rotation = 0;
+
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 

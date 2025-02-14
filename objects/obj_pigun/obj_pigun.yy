@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_pigun_walk",
-    "path":"sprites/spr_pigun_walk/spr_pigun_walk.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

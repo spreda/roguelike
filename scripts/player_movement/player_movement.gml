@@ -38,8 +38,8 @@ function player_movement()
 	if (hspeed != 0)
 	{
 		// Flip sprite horizontally based on hspeed.
-		image_xscale = 1 * -sign(hspeed);
-		image_yscale = 1;
+		image_xscale = global.hero_xscale * -sign(hspeed);
+		image_yscale = global.hero_xscale;
 	}
 
 	// If sprite is not the hit sprite,
@@ -62,6 +62,10 @@ function player_movement()
 			image_index += 0;
 		}
 	}
+	
+	move_and_collide(hspeed, vspeed, obj_collider, 2);
+	
+	speed = 0;
 }
 
 function walk()
@@ -157,14 +161,14 @@ function walk()
 
 function dash()
 {
-	if (obj_hero.dash_time_counter > obj_hero.dash_duration)
+	if (obj_hero.dash_time_counter >= obj_hero.dash_duration)
 	{
 		obj_hero.dash_time_counter = -obj_hero.dash_cooldown;
-		image_angle= 0;
+		obj_hero.rotation = 0;
 		exit;
 	}
 	speed = obj_hero.dash_speed;
 	obj_hero.dash_time_counter += 1;
 	obj_hero.dash_queued = false;
-	image_angle += 360 / obj_hero.dash_duration * sign(image_xscale);
+	obj_hero.rotation += 360 / obj_hero.dash_duration * sign(image_xscale);
 }

@@ -1,3 +1,7 @@
+image_xscale = global.hero_xscale;
+
+image_yscale = global.hero_xscale;
+
 // If the game is paused...
 if (global.paused)
 {
@@ -25,7 +29,7 @@ keep_in_room();
 // This is also done in enemies, with the
 // result being instances higher up on the screen
 // being drawn first.
-depth = -y;
+depth = -y  + sprite_height - sprite_yoffset;
 
 // Find the nearest enemy.
 // And reset the distance to some high number.
