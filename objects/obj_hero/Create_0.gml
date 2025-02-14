@@ -32,6 +32,7 @@ dash_coyote_time = 10
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
+hero_burning_ground_cooldown = 30 * (1 / 60);
 
 // Function for the shooting weapon.
 hero_shoot = function()
@@ -106,6 +107,30 @@ hero_trail = function()
 	}
 }
 
+// Function for the trail weapon
+hero_burning_ground = function()
+{
+	// If the nearest enemy is within 300 pixels...
+	if(nearest_distance < 1000)
+	{
+		// Reset the cooldown for this weapon.
+		hero_burning_ground_cooldown = max(global.burning_ground[? "attack_speed"], 1) * (1 / 60);
+
+		// If this weapon is unlocked...
+		if(global.burning_ground[? "unlocked"])
+		{
+			// Execute the function that handles the weapon.
+			attack_burning_ground();
+		}
+	}
+
+	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
+	else
+	{
+		// So set the cooldown to test again next frame.
+		hero_burning_ground_cooldown = 1 * (1 / 60);
+	}
+}
 
 
 
