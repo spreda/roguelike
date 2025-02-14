@@ -2,11 +2,12 @@
 event_inherited();
 
 // Set sprites for this weapon type.
-//start_sprite = spr_explosion_start;
+start_sprite = spr_explosion_start;
 loop_sprite = spr_fire;
-//end_sprite = spr_explosion_end;
+end_sprite = spr_explosion_end;
 
-// Set scale.
-scale = 1;
+// Set sprite scale.
+scale = 2;
 
+// Set ammout of animation loops
 lifespan = 5;

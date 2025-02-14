@@ -1,7 +1,9 @@
 // Set scale.
 scale = 1;
 
-image_xscale = 2 * scale;
-image_yscale = 2 * scale;
+// Set sprites for this weapon type.
+start_sprite = undefined;
+loop_sprite = undefined;
+end_sprite = undefined;
 
-lifespan = 1;
+lifespan = 0;

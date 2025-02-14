@@ -1,5 +1,5 @@
 // Apply projectile scale
-image_xscale = 2 * scale;
-image_yscale = 2 * scale;
+image_xscale = scale;
+image_yscale = scale;
 
 draw_self();

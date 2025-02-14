@@ -1,4 +1,5 @@
-if (sprite_index == start_sprite)
+// Set loop animation after start animation ends.
+if (start_sprite and loop_sprite and sprite_index == start_sprite)
 {
 	sprite_index = loop_sprite;
 }
@@ -8,8 +9,9 @@ if (lifespan > 0)
 {
 	lifespan -= 1;
 }
-else if (sprite_index == loop_sprite)
+else if (loop_sprite and end_sprite and sprite_index == loop_sprite)
 {
+	// Animation for destroying instance
 	sprite_index = end_sprite;	
 }
 else
