@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "name":"Fireball",
+    "path":"folders/Sprites/Weapons/Fire/Fireball.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

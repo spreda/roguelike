@@ -63,7 +63,7 @@ function player_movement()
 		}
 	}
 	
-	move_and_collide(hspeed, vspeed, obj_collider, 2);
+	move_and_collide(hspeed, vspeed, obj_static_prop, 2);
 	
 	speed = 0;
 }

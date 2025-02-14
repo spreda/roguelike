@@ -13,8 +13,8 @@
   "name":"obj_button_start",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Controls",
+    "path":"folders/Objects/Menu/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite55",
-    "path":"sprites/Sprite55/Sprite55.yy",
+    "name":"spr_button_start",
+    "path":"sprites/spr_button_start/spr_button_start.yy",
   },
   "spriteMaskId":null,
   "visible":true,

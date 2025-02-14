@@ -19,7 +19,7 @@ burn = 0;
 knockback = 0;
 knockback_direction = 0;
 
-while (!(place_empty(x, y, obj_collider))) 
+while (!(place_empty(x, y, obj_static_prop))) 
 {
 	x += random(100) - 50;
 	y += random(100) - 50;

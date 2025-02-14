@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "name":"Banners",
+    "path":"folders/Sprites/GUI/Splash/Banners.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

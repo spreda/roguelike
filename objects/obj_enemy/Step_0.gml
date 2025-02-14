@@ -12,7 +12,7 @@ if (instance_exists(obj_hero))
 }
 
 // Make enemies run off from the player
-if (instance_exists(obj_template_complete))
+if (instance_exists(obj_game_complete))
 {
 	direction += 160 + sin(direction/20) * 60;
 }
@@ -50,17 +50,17 @@ if(hspeed != 0)
 	image_yscale = global.hero_xscale;
 }
 
-if (!place_empty(x, y, obj_collider))
+if (!place_empty(x, y, obj_static_prop))
 {
 	// Get direction from this instance to the other.
-	var _collider = instance_nearest(x, y, obj_collider);
+	var _collider = instance_nearest(x, y, obj_static_prop);
 	var _direction = point_direction(x, y, _collider.x, _collider.y);
 
 	// Push away from the other instance.
 	x += lengthdir_x(-1, _direction);
 	y += lengthdir_y(-1, _direction);
 	
-	move_and_collide(hspeed, vspeed, obj_collider, 2);
+	move_and_collide(hspeed, vspeed, obj_static_prop, 2);
 	speed = 0;
 }
 

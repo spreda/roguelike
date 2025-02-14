@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"pause",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Game",
+    "path":"folders/Scripts/Game.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Pause",
-    "path":"folders/Objects/Game/Pause.yy",
+    "path":"folders/Objects/Game/UI/Screens/Pause.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button_green",
-    "path":"sprites/spr_button_green/spr_button_green.yy",
+    "name":"spr_button_continue",
+    "path":"sprites/spr_button_continue/spr_button_continue.yy",
   },
   "spriteMaskId":null,
   "visible":true,

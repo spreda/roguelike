@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"slider",
-    "path":"folders/Sprites/GUI/slider.yy",
+    "name":"Slider",
+    "path":"folders/Sprites/GUI/Controls/Slider.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

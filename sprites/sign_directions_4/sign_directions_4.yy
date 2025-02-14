@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"sign_directions",
-    "path":"folders/Sprites/Background/sign_directions.yy",
+    "path":"folders/Sprites/Background/Village/sign_directions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
