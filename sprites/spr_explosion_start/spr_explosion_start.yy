@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Burning Ground",
-    "path":"folders/Sprites/Weapons/Fire/Burning Ground.yy",
+    "name":"Fire Large",
+    "path":"folders/Sprites/Weapons/Fire/Burning Ground/Fire Large.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,0 +1,1 @@
+other.collision_with_mob(self);
