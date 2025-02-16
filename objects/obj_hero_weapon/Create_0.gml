@@ -40,13 +40,12 @@ apply_to_target = function(_mob)
 collision_with_mob = function(_mob)
 {
 	// Choose a random shooting sound effect.
-	show_debug_message(string(typeof(sounds)));
 	var _sound = array_shuffle(sounds)[0];
 			
 	// Play the chosen sound.
 	audio_play_sound(_sound, 0, 0, 1.0, undefined, 1.0);
 	
-	// Interaction with mob
+	// Interaction with mob.
 	apply_to_target(_mob);
 	
 	instance_destroy();

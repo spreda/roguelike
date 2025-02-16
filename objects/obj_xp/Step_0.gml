@@ -23,4 +23,4 @@ else
 	speed = 0;	
 }
 
-depth = -y;
+depth = -bbox_top;
