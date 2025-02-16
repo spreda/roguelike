@@ -11,7 +11,7 @@ function attack_burning_ground()
 		for (var i = 0; i < 5; i++)
 		{
 			var _dir = random(360);
-			var _distance = 200 + random(100);
+			var _distance = 100 + random(300);
 			
 			var _x =  lengthdir_x(_distance, _dir);
 			var _y =  lengthdir_y(_distance, _dir);

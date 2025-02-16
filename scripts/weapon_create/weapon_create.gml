@@ -1,13 +1,10 @@
-// Create a map assigned to global.burning_ground.
-global.burning_ground = ds_map_create();
-
-// Call the function to reset the burning_ground weapon.
-// First time, this essentially setps it up.
-weapon_reset();
-
 // Define the reset function for the burning_ground weapon.
+// First time, this essentially setps it up.
 function weapon_reset(_weapon) 
 {
+	// Create a map assigned to global.burning_ground.
+	global.burning_ground = ds_map_create();
+	
 	// Unlock weapon upgrade.
 	ds_map_replace(global.burning_ground, "damage", 0.75);
 	ds_map_replace(global.burning_ground, "attack_speed", 350);

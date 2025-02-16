@@ -1,3 +1,9 @@
+// Do not pickup hearts when HP bar is full
+if (hitpoints == hitpoints_max and !instance_exists(obj_game_complete))
+{
+	exit;
+}
+
 hitpoints = min(hitpoints + hitpoints_max/2, hitpoints_max);
 
 // Chooses sound effect.
