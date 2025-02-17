@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"shooting_attack",
   "parent":{
-    "name":"Fire",
-    "path":"folders/Scripts/Weapons/Fire.yy",
+    "name":"Fireball",
+    "path":"folders/Scripts/Weapons/Fire/Fireball.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

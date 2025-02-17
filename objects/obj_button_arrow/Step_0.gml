@@ -33,8 +33,6 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 }
 else
 {
-	// Reset target scale size.
-	target_scale = 1.0;	
 }
 
 // Stores how many gamepad count.

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"weapon_create",
   "parent":{
-    "name":"Fire",
-    "path":"folders/Scripts/Weapons/Fire.yy",
+    "name":"Weapons",
+    "path":"folders/Scripts/Weapons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

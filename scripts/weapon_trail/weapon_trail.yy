@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"weapon_trail",
   "parent":{
-    "name":"Fire",
-    "path":"folders/Scripts/Weapons/Fire.yy",
+    "name":"Deprecated",
+    "path":"folders/Scripts/Weapons/Deprecated.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

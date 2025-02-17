@@ -20,3 +20,5 @@ else
 	// Sets the speed to zero.
 	speed = 0;	
 }
+
+depth = -y;

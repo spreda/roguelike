@@ -16,7 +16,6 @@ function set_direction(arrow_direction)
 	{
 		case "right":
 		{
-			show_debug_message("0");
 			image_index = 0;
 			hotkey = ord("D");
 			hotkey_alt = vk_right;
@@ -24,7 +23,6 @@ function set_direction(arrow_direction)
 		}
 		case "down":
 		{
-			show_debug_message("1");
 			image_index = 1;
 			hotkey = ord("S");
 			hotkey_alt = vk_down;
@@ -32,7 +30,6 @@ function set_direction(arrow_direction)
 		}
 		case "left":
 		{
-			show_debug_message("2");
 			image_index = 2;
 			hotkey = ord("A");
 			hotkey_alt = vk_left;
@@ -40,7 +37,6 @@ function set_direction(arrow_direction)
 		}
 		case "up":
 		{
-			show_debug_message("3");
 			image_index = 3;
 			hotkey = ord("W");
 			hotkey_alt = vk_up;
