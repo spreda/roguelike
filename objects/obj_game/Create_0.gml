@@ -4,9 +4,6 @@ global.hero_xscale = 1.5;
 // Set RNG seed
 randomize();
 
-// Start the game music on a loop.
-global.music = audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
-
 // Debug mode toggle
 global.debug = true;
 global.debug_audio = false;
@@ -28,6 +25,8 @@ global.enemy_spawn_speed = 35;
 // This is a multiplier, and is increased each wave.
 // Result: enemy hp = enemy base hp * health bonus.
 global.enemy_health_bonus = 1;
+
+enemy_pool = global.enemy_pool;
 
 // Create the hero in the center of the room.
 instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_hero);
@@ -113,14 +112,14 @@ spawn_enemy = function()
 
 	// Declare a temp variable to hold an enemy type.
 	// By default this will be the pumpkill enemy.
-	var _enemy = obj_taiga_slime;
+	var _enemy = enemy_pool[0];
 
 	// If we are over level 2...
 	if (global.level > 2)
 	{
 		// Change the enemy type to either
 		// pigun or pumpkill.
-		_enemy = choose(obj_taiga_orc, obj_taiga_slime);
+		_enemy = choose(enemy_pool[0], enemy_pool[1]);
 	}
 
 	// If we are over level 4...
@@ -128,7 +127,7 @@ spawn_enemy = function()
 	{
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
-		_enemy = choose(obj_taiga_minotaur, obj_taiga_slime, obj_taiga_orc);
+		_enemy = choose(enemy_pool[0], enemy_pool[1], enemy_pool[2]);
 	}
 	
 	// Find free space to spawn
