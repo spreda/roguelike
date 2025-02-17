@@ -1,2 +1,2 @@
-pickup_distance = 150;
+pickup_distance = 100;
 max_speed = 50;
