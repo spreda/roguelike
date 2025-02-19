@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"data_meteor",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"data_meteor",
+  "parent":{
+    "name":"Meteor",
+    "path":"folders/Scripts/Weapons/Fire/Meteor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
