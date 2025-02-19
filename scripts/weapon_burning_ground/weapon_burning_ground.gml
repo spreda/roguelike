@@ -32,8 +32,8 @@ function weapon_burning_ground_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.burning_ground);
 		ds_map_replace(_map, "key", "unlocked");
 		ds_map_replace(_map, "amount", 1);
-		ds_map_replace(_map, "icon", spr_fire);
-		ds_map_replace(_map, "weapon_name", "burning_ground");
+		ds_map_replace(_map, "icon", BurningGround_Icon);
+		ds_map_replace(_map, "weapon_name", "BurningGround");
 	
 		// Add upgrade to the list.
 		ds_list_add(_upgrade_list, _map);
@@ -58,7 +58,7 @@ function weapon_burning_ground_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.burning_ground);
 		ds_map_replace(_map, "key", "attack_speed");
 		ds_map_replace(_map, "amount", -15);
-		ds_map_replace(_map, "icon", spr_fire);
+		ds_map_replace(_map, "icon", BurningGround_Icon);
 		ds_map_replace(_map, "weapon_name", "burning_ground");
 	
 		// Add upgrade to the list.
@@ -80,7 +80,7 @@ function weapon_burning_ground_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.burning_ground);
 		ds_map_replace(_map, "key", "damage");
 		ds_map_replace(_map, "amount", 0.75);
-		ds_map_replace(_map, "icon", spr_fire);
+		ds_map_replace(_map, "icon", BurningGround_Icon);
 		ds_map_replace(_map, "weapon_name", "Burning Ground");
 	
 		// Add upgrade to the list.
