@@ -29,6 +29,7 @@ dash_queued = false;
 dash_coyote_time = 10
 
 // Cooldowns for the weapon attacks (from frames to seconds).
+hero_outburst_cooldown = 5;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
@@ -56,6 +57,12 @@ hero_shoot = function()
 		// Set the cooldown to test again next frame.
 		hero_shoot_cooldown = 1 * (1 / 60);
 	}
+}
+
+hero_outburst = function()
+{
+	outburst_attack();
+	hero_outburst_cooldown = 3;
 }
 
 // Function for the swiping weapon
