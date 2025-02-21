@@ -1,19 +1,25 @@
-music = [
-	[CForest, TheSeedlingBoy],
-	[Game,Goblins_Dance__Battle_, Goblins_Den__Regular_],
-	[Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack, Phobos],
-];
-
-enemies = [
-	[obj_slime_trail, obj_skeleton, obj_axeman],
-	[obj_slime, obj_goblin, obj_orc],
-	[obj_taiga_slime, obj_taiga_orc, obj_taiga_minotaur],
-];
-
 levels = [
-	["Trail", rm_map_path, spr_map_path_preview, music[0], enemies[0]],
-	["Forest", rm_map_forest, spr_map_forest_preview, music[1], enemies[1]],
-	["Taiga", rm_map_taiga, spr_map_taiga_preview, music[2], enemies[2]],
+	{
+		name: "Trail",
+		map: rm_map_path,
+		map_preview: spr_map_path_preview,
+		music_pool: [CForest, TheSeedlingBoy],
+		enemy_pool: [obj_slime_trail, obj_skeleton, obj_axeman],
+	},
+	{
+		name: "Forest",
+		map: rm_map_forest,
+		map_preview: spr_map_forest_preview,
+		music_pool: [Game,Goblins_Dance__Battle_, Goblins_Den__Regular_],
+		enemy_pool: [obj_slime, obj_goblin, obj_orc],
+	},
+	{
+		name: "Taiga",
+		map: rm_map_taiga,
+		map_preview: spr_map_taiga_preview,
+		music_pool: [Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack, Phobos],
+		enemy_pool: [obj_taiga_slime, obj_taiga_orc, obj_taiga_minotaur],
+	},
 ];
 
 function update_selection(level_index, levels, button)
@@ -29,9 +35,9 @@ function update_selection(level_index, levels, button)
 	}
 	
 	// Set level config variables in level-starting element.
-	variable_instance_set(button, "level_room", levels[level_index][1]);
-	variable_instance_set(button, "level_music", levels[level_index][3]);
-	global.enemy_pool = levels[level_index][4];
+	variable_instance_set(button, "level_room", levels[level_index].map);
+	variable_instance_set(button, "level_music", levels[level_index].music_pool);
+	global.enemy_pool = levels[level_index].enemy_pool;
 	
 	// Return updatet selected level index.
 	return level_index;
