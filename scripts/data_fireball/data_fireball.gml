@@ -61,7 +61,7 @@ function data_fireball()
 	{
 		"name":	"Burning ground",
 		"element": "Fire",
-		"object": obj_hero_burning_ground,
+		"object": obj_hero_bullet,
 		"base_damage": 1,
 		"distance": 400,
 		"speed": 700,
@@ -69,10 +69,9 @@ function data_fireball()
 		"lifespan": 0,
 		"knockback": 0,
 		"projectile_count": 3,
-		"AOE_area_scale": 0.2,
-		"AOE_area_scale": 1,
+		"AOE_area_base": 0.2,
 		"AOE_damage_portion": 0.3,
-		"AOE_damage_scale": 1,
+		"AOE_damage_base": 0,
 		"upgrade_branches": [upgrade_branch_1, upgrade_branch_2, pgrade_branch_3],
 	}
 }

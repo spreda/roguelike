@@ -44,10 +44,18 @@ if (nearest_enemy and point_in_rectangle(nearest_enemy.x, nearest_enemy.y, 0, 0,
 }
 
 // Reduce cooldown timer for attacks.
+hero_outburst_cooldown -= delta_time * 0.000001;
 hero_shoot_cooldown -= delta_time * 0.000001;
 hero_swipe_cooldown -= delta_time * 0.000001;
 hero_trail_cooldown -= delta_time * 0.000001;
 hero_burning_ground_cooldown -= delta_time * 0.000001;
+
+// Check if function cooldown is finished.
+if (hero_outburst_cooldown <= 0)
+{
+	// Call function.
+	hero_outburst();	
+}
 
 // Check if function cooldown is finished.
 if (hero_shoot_cooldown <= 0)

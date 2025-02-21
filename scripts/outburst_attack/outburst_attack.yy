@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"outburst_attack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"outburst_attack",
+  "parent":{
+    "name":"Outburst",
+    "path":"folders/Scripts/Weapons/Fire/Outburst.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -3,7 +3,8 @@
 function weapon_reset(_weapon) 
 {
 	// Create a map assigned to global.burning_ground.
-	global.burning_ground = ds_map_create();
+	global.skills = ds_map_create();
+	ds_map_replace(global.skills, _weapon[? "name"], 0.75);
 	
 	// Unlock weapon upgrade.
 	ds_map_replace(global.burning_ground, "damage", 0.75);
