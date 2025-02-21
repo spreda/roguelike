@@ -5,7 +5,7 @@ music = [
 ];
 
 enemies = [
-	[obj_slime, obj_goblin, obj_orc],
+	[obj_slime_trail, obj_skeleton, obj_axeman],
 	[obj_slime, obj_goblin, obj_orc],
 	[obj_taiga_slime, obj_taiga_orc, obj_taiga_minotaur],
 ];
