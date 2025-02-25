@@ -1,3 +1,4 @@
+damage_taken_sound = [_21_orc_damage_3];
 // Call parent event to set up general enemy stuff.
 event_inherited();
 

@@ -161,6 +161,10 @@ function walk()
 
 function dash()
 {
+	if (obj_hero.dash_time_counter == 0)
+	{// Воспроизведение звука рывка
+    audio_play_sound(_15_human_dash_1, 1, false);
+	}
 	if (obj_hero.dash_time_counter >= obj_hero.dash_duration)
 	{
 		obj_hero.dash_time_counter = -obj_hero.dash_cooldown;

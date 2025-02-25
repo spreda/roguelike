@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"_07_human_atk_sword_1__2_",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.6666667,
+  "name":"_07_human_atk_sword_1__2_",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"_07_human_atk_sword_1__2_.wav",
+  "type":0,
+  "volume":0.88,
+}

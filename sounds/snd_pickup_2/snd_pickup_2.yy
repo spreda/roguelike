@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":0.326508,
+  "duration":0.32650793,
   "name":"snd_pickup_2",
   "parent":{
     "name":"Sounds",
