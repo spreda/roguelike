@@ -1,3 +1,5 @@
+
+damage_taken_sound = [_21_orc_damage_1,_21_orc_damage_3,Slime_attack1];
 // Create variable for max hitpoints.
 hitpoints_max = 7 * global.enemy_health_bonus;
 

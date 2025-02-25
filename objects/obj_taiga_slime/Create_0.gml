@@ -1,3 +1,4 @@
+damage_taken_sound = [Slime_attack1];
 // Call parent event to set up general eney stuff.
 event_inherited();
 
