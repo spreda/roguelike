@@ -49,6 +49,7 @@ hero_shoot_cooldown -= delta_time * 0.000001;
 hero_swipe_cooldown -= delta_time * 0.000001;
 hero_trail_cooldown -= delta_time * 0.000001;
 hero_burning_ground_cooldown -= delta_time * 0.000001;
+hero_wave_cooldown -= delta_time * 0.000001;
 
 // Check if function cooldown is finished.
 if (hero_outburst_cooldown <= 0)
@@ -83,4 +84,11 @@ if (hero_burning_ground_cooldown<= 0)
 {
 	// Call function.
 	hero_burning_ground();	
+}
+// Check if function cooldown is finished.
+if (hero_wave_cooldown <= 0)
+{
+	// Call function.
+	attack_wave();	
+	hero_wave_cooldown = 2;
 }
