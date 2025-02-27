@@ -26,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"snd_lightning_throw.mp3",
   "type":0,
-  "volume":0.7,
+  "volume":0.1,
 }
