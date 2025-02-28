@@ -36,16 +36,10 @@ scale = 6;
 // Set ammout of animation loops
 lifespan = 5;
 
-sounds = [snd_melee_hit_1, snd_melee_hit_2, snd_melee_hit_3];
+
 
 collision_with_mob = function(_mob)
 {
-	// Choose a random shooting sound effect.
-	var _sound = array_shuffle(sounds)[0];
-			
-	// Play the chosen sound.
-	audio_play_sound(_sound, 0, 0, 1.0, undefined, 1.0);
-	
 	// Interaction with mob
 	apply_to_target(_mob);
 }
