@@ -34,7 +34,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "unlocked");
 		ds_map_replace(_map, "amount", 1);
-		ds_map_replace(_map, "icon", spr_shooting_attack_big);
+		ds_map_replace(_map, "icon", spr_fireball_icon);
 		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
@@ -59,7 +59,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "attack_speed");
 		ds_map_replace(_map, "amount", - 5);
-		ds_map_replace(_map, "icon", spr_shooting_attack_big);
+		ds_map_replace(_map, "icon", spr_fireball_icon);
 		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
@@ -82,7 +82,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "number_of_shots");
 		ds_map_replace(_map, "amount", 2);
-		ds_map_replace(_map, "icon", spr_shooting_attack_big);
+		ds_map_replace(_map, "icon", spr_fireball_icon);
 		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.
@@ -104,7 +104,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 		ds_map_replace(_map, "object", global.shooting);
 		ds_map_replace(_map, "key", "damage");
 		ds_map_replace(_map, "amount", 0.6);
-		ds_map_replace(_map, "icon", spr_shooting_attack_big);
+		ds_map_replace(_map, "icon", spr_fireball_icon);
 		ds_map_replace(_map, "weapon_name", "Projectile");
 	
 		// Add upgrade to list.

@@ -39,7 +39,7 @@ function spawn_bullet(_angle)
 {
 	audio_play_sound(snd_lightning_throw, 0, 0, 1.0, undefined, 1.0);
 	// Create a bullet and assign it to temp variable _bullet.
-	var _bullet = instance_create_layer(obj_hero.x, obj_hero.y, "Instances", obj_hero_bullet);
+	var _bullet = instance_create_layer(obj_hero.x, obj_hero.y, "Instances", obj_hero_fireball);
 		
 	// Change values of the bullet...
 	with (_bullet) 

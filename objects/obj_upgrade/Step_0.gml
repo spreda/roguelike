@@ -137,7 +137,17 @@ if (mouse_over)
 			var _amount = ds_map_find_value(upgrade_data, "amount");
 	
 			// Upgrade components stats.
-			_object[? _key] += _amount;
+			_object[$ _key] += _amount;
+			
+			// Increase skill level
+			if (struct_exists(_object, "level"))
+			{
+				_object[$ "level"] += 1;
+			}
+			else
+			{
+				_object[$ "level"] = 0;
+			}
 	
 			// Destroys upgrades.
 			with(obj_upgrade) instance_destroy();

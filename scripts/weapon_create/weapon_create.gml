@@ -1,87 +1,98 @@
-// Define the reset function for the burning_ground weapon.
+function init_weapons()
+{
+	global.skill_configs = {};	
+	global.upgrades_available = {};	
+}
+
+// Define the reset function for the weapon.
 // First time, this essentially setps it up.
 function weapon_reset(_weapon) 
 {
+	var _name = _weapon[$ "name"]
+	
 	// Create a map assigned to global.burning_ground.
-	global.skills = ds_map_create();
-	ds_map_replace(global.skills, _weapon[? "name"], 0.75);
+	struct_set(global.skill_configs, _name, _weapon);
 	
 	// Unlock weapon upgrade.
-	ds_map_replace(global.burning_ground, "damage", 0.75);
-	ds_map_replace(global.burning_ground, "attack_speed", 350);
-	ds_map_replace(global.burning_ground, "unlocked", false);
+	struct_set(global.skill_configs[$ _name], "unlocked", false);
 }
 
-// Define function to retrieve upgrades for the burning_ground weapon.
+// Define function to retrieve upgrades for the weapon.
 function weapon_upgrades(_weapon, _upgrade_list) 
 {
 	// Get wether the burning_ground weapon is unlocked.
-	var _unlocked = ds_map_find_value(global.burning_ground, "unlocked");
+	var _unlocked = struct_get(_weapon, "unlocked");
 
 	// If it is NOT unlocked...
 	if (!_unlocked)
 	{
 		// Create map to store upgrade.
-		var _map = ds_map_create();
-	
-		// Upgrade to unlock the burning_ground weapon.
-		ds_map_replace(_map, "description", "Large but slow\narea of effect\nattack around\nthe player");
-		ds_map_replace(_map, "title", "Unlock");
-		ds_map_replace(_map, "object", global.burning_ground);
-		ds_map_replace(_map, "key", "unlocked");
-		ds_map_replace(_map, "amount", 1);
-		ds_map_replace(_map, "icon", spr_fire);
-		ds_map_replace(_map, "weapon_name", "burning_ground");
+		var _card = generate_upgrade_card(
+			_weapon,
+			_weapon[$ "name"],
+			_weapon[$ "name"],
+			_weapon[$ "description"],
+			_weapon[$ "icon"],
+			"unlocked",
+			1
+		);
 	
 		// Add upgrade to the list.
-		ds_list_add(_upgrade_list, _map);
+		ds_list_add(_upgrade_list, _card);
 		
 		// Exits the event.
 		exit;
 	}
 
-	// Get the current burning_ground weapon attack speed.
-	var _attack_speed = ds_map_find_value(global.burning_ground, "attack_speed");
+	// Get the current skill level.
+	var _level = struct_get(_weapon, "level");
 
-	// If attack speed is over 30...
-	// Note this is a cooldown, so higher is slower.
-	if (_attack_speed > 30)
+	// If level cap is not reached...
+	if (_level >= 3)
 	{
-		// Create map to store upgrade.
-		var _map = ds_map_create();
-	
-		// Upgrade to increase attack speed.
-		ds_map_replace(_map, "description", "Increase Attack Speed");
-		ds_map_replace(_map, "title", "Speed");
-		ds_map_replace(_map, "object", global.burning_ground);
-		ds_map_replace(_map, "key", "attack_speed");
-		ds_map_replace(_map, "amount", -15);
-		ds_map_replace(_map, "icon", spr_fire);
-		ds_map_replace(_map, "weapon_name", "burning_ground");
-	
-		// Add upgrade to the list.
-		ds_list_add(_upgrade_list, _map);
+		exit;
 	}
-
-	// Get current burning_ground weapon damage.
-	var _damage = ds_map_find_value(global.burning_ground, "damage");
-
-	// If damage is under 5...
-	if (_damage < 5)
+	
+	var _upgrade_branches = struct_get(_weapon, "upgrade_branches");
+	
+	for (var i=0; i < array_length(_upgrade_branches); i++)
 	{
-		// Create map to store upgrade.
-		var _map = ds_map_create();
+		var _branch = _upgrade_branches[i];
+		
+		for (var j=0; j < array_length(_branch); j++)
+		{
+			var _upgrade = _branch[j];
+			var _stat_name =  struct_get_names(_upgrade[$ "stats_add"])[0];
+			
+			// Create card to store upgrade.
+			var _card = generate_upgrade_card(
+				_weapon,
+				_weapon[$ "name"],
+				_upgrade[$ "name"],
+				_upgrade[$ "description"],
+				_weapon[$ "icon"],
+				_stat_name,
+				_upgrade[$ "stats_add"][$ _stat_name]
+			);
 	
-		// Upgrade from increasing burning_ground weapon damage.
-		ds_map_replace(_map, "description", "Increase damage");
-		ds_map_replace(_map, "title", "Damage");
-		ds_map_replace(_map, "object", global.burning_ground);
-		ds_map_replace(_map, "key", "damage");
-		ds_map_replace(_map, "amount", 0.75);
-		ds_map_replace(_map, "icon", spr_fire);
-		ds_map_replace(_map, "weapon_name", "Burning Ground");
-	
-		// Add upgrade to the list.
-		ds_list_add(_upgrade_list, _map);
+			// Add upgrade to the list.
+			ds_list_add(_upgrade_list, _card);
+		}
 	}
+}
+
+function generate_upgrade_card(_object, _skill_name, _upgrade_title, _description, _icon, _key, _ammount)
+{
+	// Create card to store upgrade.
+	var _card = {};
+	
+	struct_set(_card, "description", _description);
+	struct_set(_card, "title", _upgrade_title);
+	struct_set(_card, "object", _object);
+	struct_set(_card, "key", _key);
+	struct_set(_card, "amount", _ammount);
+	struct_set(_card, "icon", _icon);
+	struct_set(_card, "weapon_name", _skill_name);
+	
+	return _card;
 }

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"data_fireball",
+  "%Name":"fireball_config",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"data_fireball",
+  "name":"fireball_config",
   "parent":{
     "name":"Fireball",
     "path":"folders/Scripts/Weapons/Fire/Fireball.yy",

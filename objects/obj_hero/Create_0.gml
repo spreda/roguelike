@@ -36,6 +36,8 @@ hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
 hero_burning_ground_cooldown = 30 * (1 / 60);
 
+skills = {};
+
 // Function for the shooting weapon.
 hero_shoot = function()
 {
@@ -49,7 +51,7 @@ hero_shoot = function()
 		if (global.shooting[? "unlocked"])
 		{
 			// Execute the function to handle this weapon.
-			shooting_attack();
+			fireball_cast();
 		}
 	}
 	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
