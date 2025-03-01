@@ -43,52 +43,9 @@ if (nearest_enemy and point_in_rectangle(nearest_enemy.x, nearest_enemy.y, 0, 0,
 	nearest_distance = point_distance(x, y, nearest_enemy.x, nearest_enemy.y);
 }
 
-// Reduce cooldown timer for attacks.
-hero_outburst_cooldown -= delta_time * 0.000001;
-hero_shoot_cooldown -= delta_time * 0.000001;
-hero_swipe_cooldown -= delta_time * 0.000001;
-hero_trail_cooldown -= delta_time * 0.000001;
-hero_burning_ground_cooldown -= delta_time * 0.000001;
-hero_wave_cooldown -= delta_time * 0.000001;
+var _skill_names = struct_get_names(skills);
 
-// Check if function cooldown is finished.
-if (hero_outburst_cooldown <= 0)
+for (var _i=0; _i < array_length(_skill_names); _i++)
 {
-	// Call function.
-	hero_outburst();	
-}
-
-// Check if function cooldown is finished.
-if (hero_shoot_cooldown <= 0)
-{
-	// Call function.
-	hero_shoot();	
-}
-
-// Check if function cooldown is finished.
-if (hero_swipe_cooldown <= 0)
-{
-	// Call function.
-	hero_swipe();	
-}
-
-// Check if function cooldown is finished.
-if (hero_trail_cooldown <= 0)
-{
-	// Call function.
-	hero_trail();	
-}
-
-// Check if function cooldown is finished.
-if (hero_burning_ground_cooldown<= 0)
-{
-	// Call function.
-	hero_burning_ground();	
-}
-// Check if function cooldown is finished.
-if (hero_wave_cooldown <= 0)
-{
-	// Call function.
-	attack_wave();	
-	hero_wave_cooldown = 2;
+    cast(skills[$ _skill_names[_i]]);
 }

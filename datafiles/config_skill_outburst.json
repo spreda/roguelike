@@ -1,0 +1,67 @@
+{
+    "name":	"Outburst",
+    "element": "Fire",
+	"description": "Unlock Outburst Skill",
+    "icon": "spr_outburst_icon",
+	"cast_function": "cast_outburst",
+    "projectile_object": "obj_hero_outburst",
+    "projectile_sub_object": "obj_hero_fireball",
+    "base_damage": 1,
+    "range": 400,
+	"speed": 15,
+    "cooldown": 2,
+    "projectile_count": 12,
+    "upgrade_branches": [
+    	[
+            {
+                "title":		"Damage 1",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 2",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 3",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Barrage 1",
+                "description":	"Increase number of\nfires by 2.",
+                "stats_add":	{ "projectile_count": 2 }
+            },
+            {
+                "title":		"Barrage 2",
+                "description":	"Increase number of\nfires by 2.",
+                "stats_add":	{ "projectile_count": 2 }
+            },
+            {
+                "title":		"Barrage 3",
+                "description":	"Increase number of\nfires by 2.",
+                "stats_add":	{ "projectile_count": 2 }
+            }
+        ],
+        [
+            {
+                "title":		"Explode 1",
+                "description":	"Increase explosion\nradius by 20%",
+                "stats_add":	{ "aoe_area_scale": 0.2 }
+            },
+            {
+                "title":		"Explode 2",
+                "description":	"Increase explosion\nradius by 20%",
+                "stats_add":	{ "aoe_area_scale": 0.2 }
+            },
+            {
+                "title":		"Explode 3",
+                "description":	"Increase explosion\nradius by 20%",
+                "stats_add":	{ "aoe_area_scale": 0.2 }
+            }
+    	]
+    ]
+}

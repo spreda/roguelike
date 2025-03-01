@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"outburst_attack",
+  "%Name":"cast_outburst",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"outburst_attack",
+  "name":"cast_outburst",
   "parent":{
     "name":"Outburst",
     "path":"folders/Scripts/Weapons/Fire/Outburst.yy",

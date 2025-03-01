@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"data_outburst",
+  "%Name":"cast_fireball",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"data_outburst",
+  "name":"cast_fireball",
   "parent":{
-    "name":"Outburst",
-    "path":"folders/Scripts/Weapons/Fire/Outburst.yy",
+    "name":"Fireball",
+    "path":"folders/Scripts/Weapons/Fire/Fireball.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
