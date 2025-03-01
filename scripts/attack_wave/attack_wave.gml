@@ -6,7 +6,7 @@ function attack_wave() {
 		var _direction = point_direction(x, y, nearest_enemy.x, nearest_enemy.y);
 	
 		// Play the sound effect.
-		audio_play_sound(snd_attack_chimes_2, 0, 0, 1.0, undefined, 1.0);
+		//audio_play_sound(snd_attack_chimes_2, 0, 0, 1.0, undefined, 1.0);
 	
 		// Create a bullet and assign it5to temp variable _bullet.
 		var _spawn_x = x + lengthdir_x(120, _direction);
