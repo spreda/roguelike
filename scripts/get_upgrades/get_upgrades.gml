@@ -8,21 +8,18 @@ function get_upgrades()
 		// Destroy object.
 		instance_destroy();
 	}
+    var _skillset = obj_hero.skills;
 
 	// Create a new list to hold possible upgrades.
 	var _upgrade_list = ds_list_create();
-
-	// Get upgrades for the shooting weapon and place them in the list.
-	weapon_shooting_upgrades(_upgrade_list);
-
-	// Get upgrades for the swipe weapon and place them in the list.
-	weapon_swipe_upgrades(_upgrade_list);
-
-	// Get upgrades for the trail weapon and place them in the list.
-	weapon_trail_upgrades(_upgrade_list);
-	
-	// Get upgrades for the burning_ground weapon and place them in the list.
-	weapon_burning_ground_upgrades(_upgrade_list);
+    var _skill_names = struct_get_names(_skillset); 
+    
+    for (var _i=0; _i < array_length(_skill_names); _i++)
+	{
+        // Get upgrades for the skill and place them in the list.
+    	weapon_upgrades(_skillset[$ _skill_names[_i]] , _upgrade_list);
+        show_debug_message(string(_i) + " " + string(_skill_names[_i]))
+    }
 
 	// Shuffle the list containing all the retrieved upgrades.
 	list_shuffle(_upgrade_list);

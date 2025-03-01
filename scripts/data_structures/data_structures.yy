@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"weapon_shooting",
+  "%Name":"data_structures",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"weapon_shooting",
+  "name":"data_structures",
   "parent":{
-    "name":"Fireball",
-    "path":"folders/Scripts/Weapons/Fire/Fireball.yy",
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

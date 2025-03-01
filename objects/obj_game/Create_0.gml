@@ -31,12 +31,6 @@ enemy_pool = global.enemy_pool;
 // Create the hero in the center of the room.
 instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_hero);
 
-init_weapons()
-
-// Execute the shooting weapon reset function,
-// initializing values for that weapon.
-weapon_shooting_reset();
-
 // UI settings
 xp_margin_x = 20;
 xp_margin_y = 30;

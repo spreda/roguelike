@@ -1,0 +1,89 @@
+{
+	"name": "Fireball",
+	"element": "Fire",
+	"description": "Unlock Fireball Skill",
+	"icon": "spr_fireball_icon",
+	"cast_function": "cast_fireball",
+	"projectile_object": "obj_hero_fireball",
+	"base_damage": 1,
+	"damage_scale": 1,
+	"range": 1000,
+	"speed": 15,
+	"cooldown": 0.7,
+	"projectile_count": 1,
+	"projectile_spread_angle": 20,
+	"aoe_area_base": 0.2,
+	"aoe_area_scale": 1,
+	"aoe_damage_portion": 0.3,
+	"upgrade_branches": [
+	  [
+		{
+		  "title": "Damage 1",
+		  "description": "Increase damage by 30%.",
+		  "stats_add": {
+			"damage_scale": 0.3
+		  }
+		},
+		{
+		  "title": "Damage 2",
+		  "description": "Increase damage by 30%.",
+		  "stats_add": {
+			"damage_scale": 0.3
+		  }
+		},
+		{
+		  "title": "Damage 3",
+		  "description": "Increase damage by 30%.",
+		  "stats_add": {
+			"damage_scale": 0.3
+		  }
+		}
+	  ],
+	  [
+		{
+		  "title": "Barrage 1",
+		  "description": "Increase number of fireballs by 2.",
+		  "stats_add": {
+			"projectile_count": 2
+		  }
+		},
+		{
+		  "title": "Barrage 2",
+		  "description": "Increase number of fireballs by 2.",
+		  "stats_add": {
+			"projectile_count": 2
+		  }
+		},
+		{
+		  "title": "Barrage 3",
+		  "description": "Increase number of fireballs by 2.",
+		  "stats_add": {
+			"projectile_count": 2
+		  }
+		}
+	  ],
+	  [
+		{
+		  "title": "Explode on contact 1",
+		  "description": "Increase explosion radius by 20%",
+		  "stats_add": {
+			"aoe_area_scale": 0.2
+		  }
+		},
+		{
+		  "title": "Explode on contact 2",
+		  "description": "Increase explosion radius by 20%",
+		  "stats_add": {
+			"aoe_area_scale": 0.2
+		  }
+		},
+		{
+		  "title": "Explode on contact 3",
+		  "description": "Increase explosion radius by 20%",
+		  "stats_add": {
+			"aoe_area_scale": 0.2
+		  }
+		}
+	  ]
+	]
+  }

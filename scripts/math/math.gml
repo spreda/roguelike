@@ -1,10 +1,3 @@
-// Function from the Visual version...
-function list_shuffle(_list) 
-{
-	// Shuffle list.
-	ds_list_shuffle(_list);
-}
-
 // Inverse Linar Interpolation, get the fraction between a and b on which v resides
 function inv_lerp(a, b, val)
 {
