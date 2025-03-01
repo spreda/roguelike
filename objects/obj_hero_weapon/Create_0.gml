@@ -12,6 +12,11 @@ skill_config = undefined;
 
 sounds = [snd_lightning_impact_1, snd_lightning_impact_2];
 
+function calculate_damage()
+{
+    return skill_config.base_damage * skill_config.damage_scale;
+}
+
 apply_to_target = function(_mob) { }
 
 collision_with_mob = function(_mob)

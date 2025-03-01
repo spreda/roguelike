@@ -7,7 +7,7 @@ image_alpha = 1;
 
 apply_to_target = function(_mob)
 { 
-    var _damage = skill_config.base_damage;
+    var _damage = calculate_damage();
     
     with (_mob)
 	{ 

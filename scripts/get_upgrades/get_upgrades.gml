@@ -18,7 +18,12 @@ function get_upgrades()
 	{
         // Get upgrades for the skill and place them in the list.
     	weapon_upgrades(_skillset[$ _skill_names[_i]] , _upgrade_list);
-        show_debug_message(string(_i) + " " + string(_skill_names[_i]))
+        show_debug_message(string(_i) + " Skill: " + string(_skill_names[_i]) + " Size: " + string(ds_list_size(_upgrade_list)));
+    }
+    
+    for (var _index = 0; _index < ds_list_size(_upgrade_list); _index += 1)
+    {
+        show_debug_message("Upgrade available: " + _upgrade_list[| _index].title)
     }
 
 	// Shuffle the list containing all the retrieved upgrades.
@@ -27,6 +32,12 @@ function get_upgrades()
 	// Get the size of the list, this
 	// is how many upgrades are in it.
 	var _size = ds_list_size(_upgrade_list);
+    
+    // Destroy upgrade screen if no upgrades available.
+    if (_size <= 0)
+    { 
+		instance_destroy();
+    }
 
 	// Define the x position where the first upgrade card
 	// will be created.

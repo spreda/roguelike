@@ -3,6 +3,7 @@ function init_skill_system()
 {
     var _cast_functions = {
         cast_fireball: cast_fireball,
+        cast_outburst: cast_outburst,
     };
     
 	var _skill_configs = {};
@@ -17,13 +18,19 @@ function init_skill_system()
         
         _config.source_file = _config_files[_i];
         
-        _config.icon = asset_get_index("spr_fireball_icon");
+        _config.icon = asset_get_index(_config.icon);
 	    _config.cast_function = _cast_functions[$ _config.cast_function];
-	    _config.projectile_object = asset_get_index("obj_hero_fireball");
         _config.cooldown_timer = _config.cooldown;
+	    _config.projectile_object = asset_get_index(_config.projectile_object);
+        if (struct_exists(_config, "projectile_sub_object"))
+        {
+            _config.projectile_sub_object = asset_get_index(_config.projectile_sub_object);
+        }
         
         _config.unlocked = false;
         _config.level = 0;
+        _config.damage_scale = 1;
+        _config.aoe_area_scale = 1;
         
         _skill_configs[$ _config.name] = _config;
     }
@@ -57,24 +64,20 @@ function weapon_upgrades(_skill, _upgrade_list)
 		// Exits the event.
 		exit;
 	}
+    
+    // If level cap is reached - exit
+    if (_skill.level > 3)
+    {
+        exit;
+    }
 
-	// Get the current skill level.
-	var _level = struct_get(_skill, "level");
-    show_debug_message("Level: " + string(_level))
-
-	// If level cap is not reached...
-	if (_level >= 4)
-	{
-		exit;
-	}
-	
-	var _upgrade_branches = struct_get(_skill, "upgrade_branches");
-
-	for (var i=0; i < array_length(_upgrade_branches); i++)
-	{
-		var _branch = _upgrade_branches[i];
+    // Run for each skill upgrade branch.
+	for (var i=0; i < array_length(_skill.upgrade_branches); i++)
+	{ 
+        var _branch = _skill.upgrade_branches[i];
 		
-		for (var j=0; j < array_length(_branch) and j < _level; j++)
+	    // Get upgrades for the the current skill level.
+		for (var j=0; j < array_length(_branch) and j < _skill.level; j++)
 		{
 			var _upgrade = _branch[j];
 			var _stat_name =  struct_get_names(_upgrade[$ "stats_add"])[0];
@@ -82,17 +85,15 @@ function weapon_upgrades(_skill, _upgrade_list)
 			// Create card to store upgrade.
 			var _card = generate_upgrade_card(
 				_skill,
-				_skill[$ "name"],
-				_upgrade[$ "title"],
-				_upgrade[$ "description"],
-				_skill[$ "icon"],
+				_skill.name,
+				_upgrade.title,
+				_upgrade.description,
+				_skill.icon,
 				_stat_name,
 				_upgrade[$ "stats_add"][$ _stat_name]
 			);
 	
-			// Add upgrade to the list.
-            
-            show_debug_message(string(_card))
+			// Add upgrade to the list.        
 			ds_list_add(_upgrade_list, _card);
 		}
 	}
