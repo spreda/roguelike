@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"attack_wave",
+  "%Name":"cast_wave",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"attack_wave",
+  "name":"cast_wave",
   "parent":{
     "name":"Wave",
     "path":"folders/Scripts/Weapons/Water/Wave.yy",
