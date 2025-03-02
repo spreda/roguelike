@@ -30,6 +30,7 @@ dash_coyote_time = 10
 
 // Cooldowns for the weapon attacks (from frames to seconds).
 hero_outburst_cooldown = 5;
+hero_wave_cooldown = 1.5;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
