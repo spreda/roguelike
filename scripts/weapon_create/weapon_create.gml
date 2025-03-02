@@ -1,15 +1,16 @@
 // Returns a structure that contains a config for every skill by it's name.
 function init_skill_system()
 {
-    var _cast_functions = {
+    cast_functions = {
         cast_fireball: cast_fireball,
         cast_outburst: cast_outburst,
+        cast_wave: cast_wave,
     };
     
 	var _skill_configs = {};
     
     // Look for JSON files with skill configs.
-    var _config_files = find_files("config_skill_*.json");
+    var _config_files = find_files("conf_skill_*.json");
     
     // Parse skill configs.
     for (var _i=0; _i < array_length(_config_files); _i++)
@@ -19,7 +20,7 @@ function init_skill_system()
         _config.source_file = _config_files[_i];
         
         _config.icon = asset_get_index(_config.icon);
-	    _config.cast_function = _cast_functions[$ _config.cast_function];
+	    _config.cast_function = cast_functions[$ _config.cast_function];
         _config.cooldown_timer = _config.cooldown;
 	    _config.projectile_object = asset_get_index(_config.projectile_object);
         if (struct_exists(_config, "projectile_sub_object"))
@@ -31,6 +32,8 @@ function init_skill_system()
         _config.level = 0;
         _config.damage_scale = 1;
         _config.aoe_area_scale = 1;
+        _config.projectile_scale = 1;
+        _config.attack_rate_scale = 1;
         
         _skill_configs[$ _config.name] = _config;
     }

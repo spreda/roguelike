@@ -1,9 +1,19 @@
 // Define a function to spawn a single projectile.
-function spawn_bullet(angle, skill)
+function spawn_bullet(angle, skill, projectile_object = undefined)
 {
+    // Get projectile object.
+    var _projectile = skill.projectile_object;
+    
+    if (projectile_object != undefined)
+    {
+        _projectile = projectile_object;
+    }
+    
+    // Play the sound effect.
     audio_play_sound(snd_lightning_throw, 0, 0, 1.0, undefined, 1.0);
+    
     // Create a bullet and assign it to temp variable _bullet.
-    var _bullet = instance_create_layer(obj_hero.x, obj_hero.y, "Instances", skill.projectile_sub_object);
+    var _bullet = instance_create_layer(obj_hero.x, obj_hero.y, "Instances", _projectile);
         
     // Change values of the bullet...
     with (_bullet) 
@@ -51,7 +61,10 @@ function cast_outburst(hero, skill)
     	// Repeat the following code for each bullet we need to spawn.
     	repeat (_number_of_shots)
     	{
-    		var _callback = method({ _a:_angle, _s:skill }, function() { spawn_bullet(_a, _s); });
+    		var _callback = method(
+                { _a:_angle, _s: skill, _o:skill.projectile_sub_object },
+                function() { spawn_bullet(_a, _s, _o); }
+            );
     		call_later(3*_i + _cast_delay, time_source_units_frames, _callback);
     		
     		// Increment the angle for the next bullet.

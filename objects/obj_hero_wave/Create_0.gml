@@ -10,6 +10,8 @@ image_alpha = 1;
 
 apply_to_target = function(_mob)
 {
+    var _damage = calculate_damage();
+    
 	with (_mob)
 	{
 		// If hitpoints are over zero...
@@ -20,13 +22,13 @@ apply_to_target = function(_mob)
 			show_healthbar = 60;
 
 			// Reduce hitpoints by the damage caused by the shooting weapon.
-			hitpoints -= global.shooting[? "damage"];
+			hitpoints -= _damage;
 	
 			// Create text popup to indicate damage.
 			var _text = instance_create_layer(x + 0, y + 0, "UpgradeScreen", obj_text_popup);
 
 			// Set text to damage amount.
-			_text.text = -global.shooting[? "damage"];
+			_text.text = _damage;
 
 			// Set our sprite to the hit sprite.
 			sprite_index = hit_sprite;

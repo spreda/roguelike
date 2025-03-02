@@ -1,15 +1,15 @@
 // Returns all files matching given wildcard pattern.
-function find_files(_filename_format, _directory = "")
+function find_files(filename_wildcard, directory = "")
 { 
-    if (_directory == "")
+    if (directory == "")
     {
-        _directory = working_directory;
+        directory = working_directory;
     }
     
     var _found_files = [];    
     
-    show_debug_message("[SEARCH] " + working_directory + _filename_format);
-    var _filename = file_find_first(working_directory + _filename_format, 0);
+    show_debug_message("[SEARCH] " + working_directory + filename_wildcard);
+    var _filename = file_find_first(working_directory + filename_wildcard, 0);
 
     while (_filename != "")
     {
@@ -25,14 +25,14 @@ function find_files(_filename_format, _directory = "")
 }
 
 // Import JSON file as a collection structs or arrays.
-function load_json(_filename, _directory = "")
+function load_json(filename, directory = "")
 {
-    if (_directory == "")
+    if (directory == "")
     {
-        _directory = working_directory;
+        directory = working_directory;
     }
     
-    var _file_buffer = buffer_load(_directory + _filename);
+    var _file_buffer = buffer_load(directory + filename);
     var _file_text = buffer_read(_file_buffer, buffer_string);
     buffer_delete(_file_buffer);
     

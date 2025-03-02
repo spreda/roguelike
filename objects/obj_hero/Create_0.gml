@@ -45,10 +45,10 @@ cast = function(skill)
     }  
     
     // Reduce cooldown timer for attack.
-    skill.cooldown_timer -= 1;
+    skill.cooldown_timer -= 1 * skill.attack_rate_scale;
     
 	// If the nearest enemy is within 1000 pixels...
-    if (nearest_distance < skill.range)
+    if (nearest_distance < skill.range and instance_exists(nearest_enemy))
 	{
         // Check if function cooldown is finished.
         if (skill.cooldown_timer <= 0)
