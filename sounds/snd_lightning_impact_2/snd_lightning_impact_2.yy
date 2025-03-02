@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":0.802812,
+  "duration":0.8028118,
   "name":"snd_lightning_impact_2",
   "parent":{
     "name":"Shooting",
