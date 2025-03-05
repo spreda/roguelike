@@ -15,7 +15,7 @@ hitpoints = hitpoints_max;
 
 // Variables for tracking enemies.
 nearest_enemy = undefined;
-nearest_distance = 1000;
+nearest_distance = 10000;
 
 // Set movement variables
 walk_speed = 7;
@@ -28,110 +28,36 @@ dash_time_counter = 0;
 dash_queued = false;
 dash_coyote_time = 10
 
-// Cooldowns for the weapon attacks (from frames to seconds).
-hero_shoot_cooldown = 30 * (1 / 60);
-hero_swipe_cooldown = 30 * (1 / 60);
-hero_trail_cooldown = 30 * (1 / 60);
-hero_burning_ground_cooldown = 30 * (1 / 60);
+// Init skills fron config
+skills = init_skill_system();
 
-// Function for the shooting weapon.
-hero_shoot = function()
+// Unlocks Fireball skill by default.
+skills[$ "Fireball"].unlocked = true;
+skills[$ "Fireball"].level = 1;
+
+// Function for the spell casting.
+cast = function(skill)
 {
+    // If skill is NOT unlocked - exit
+	if (!skill.unlocked)
+    {
+        exit;
+    }  
+    
+    // Reduce cooldown timer for attack.
+    skill.cooldown_timer -= 1 * skill.attack_rate_scale;
+    
 	// If the nearest enemy is within 1000 pixels...
-	if (nearest_distance < 1000)
+    if (nearest_distance < skill.range and instance_exists(nearest_enemy))
 	{
-		// Reset the cooldown for this weapon.
-		hero_shoot_cooldown = max(global.shooting[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if (global.shooting[? "unlocked"])
-		{
-			// Execute the function to handle this weapon.
-			shooting_attack();
-		}
-	}
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// Set the cooldown to test again next frame.
-		hero_shoot_cooldown = 1 * (1 / 60);
+        // Check if function cooldown is finished.
+        if (skill.cooldown_timer <= 0)
+        {
+      		// Reset the cooldown for this skill.
+      		skill.cooldown_timer = skill.cooldown * 60;
+      
+      		// Execute the function to handle this skill.
+            skill.cast_function(self, skill);
+        }
 	}
 }
-
-// Function for the swiping weapon
-hero_swipe = function()
-{
-	// If the nearest enemy is within 250 pixels...
-	if (nearest_distance < 250)
-	{
-		// Reset the cooldown for this weapon.
-		hero_swipe_cooldown = max(global.swipe[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if (global.swipe[? "unlocked"])
-		{
-			// Execute the function that handles this weapon.
-			swipe_attack();
-		}
-	}
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// Set the cooldown to test again next frame.
-		hero_swipe_cooldown = 1 * (1 / 60);
-	}
-}
-
-// Function for the trail weapon
-hero_trail = function()
-{
-	// If the nearest enemy is within 300 pixels...
-	if(nearest_distance < 1000)
-	{
-		// Reset the cooldown for this weapon.
-		hero_trail_cooldown = max(global.trail[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if(global.trail[? "unlocked"])
-		{
-			// Execute the function that handles the weapon.
-			attack_trail();
-		}
-	}
-
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// So set the cooldown to test again next frame.
-		hero_trail_cooldown = 1 * (1 / 60);
-	}
-}
-
-// Function for the trail weapon
-hero_burning_ground = function()
-{
-	// If the nearest enemy is within 300 pixels...
-	if(nearest_distance < 1000)
-	{
-		// Reset the cooldown for this weapon.
-		hero_burning_ground_cooldown = max(global.burning_ground[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if(global.burning_ground[? "unlocked"])
-		{
-			// Execute the function that handles the weapon.
-			attack_burning_ground();
-		}
-	}
-
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// So set the cooldown to test again next frame.
-		hero_burning_ground_cooldown = 1 * (1 / 60);
-	}
-}
-
-
-
-

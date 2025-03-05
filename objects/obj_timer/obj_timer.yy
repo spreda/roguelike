@@ -8,8 +8,8 @@
   "name":"obj_timer",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/Game/UI.yy",
+    "name":"Screens",
+    "path":"folders/Objects/Game/UI/Screens.yy",
   },
   "parentObjectId":null,
   "persistent":false,

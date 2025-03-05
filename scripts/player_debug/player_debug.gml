@@ -37,4 +37,10 @@ function player_debug()
 		global.debug_audio = !global.debug_audio;
 		audio_debug(global.debug_audio);
 	}
+    
+	// Reload skills
+	if (keyboard_check(ord("I")))
+	{
+        obj_hero.skills = init_skill_system();
+	}
 }

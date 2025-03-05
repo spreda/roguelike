@@ -12,7 +12,7 @@ if (!global.paused and instance_exists(obj_hero))
 		direction = point_direction(x, y, obj_hero.x, obj_hero.y);
 
 		// Set speed increasingly to reach the hero.
-		speed += 0.6;
+		speed += 0.8;
 	}
 }
 else

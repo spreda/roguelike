@@ -8,21 +8,23 @@ function get_upgrades()
 		// Destroy object.
 		instance_destroy();
 	}
+    var _skillset = obj_hero.skills;
 
 	// Create a new list to hold possible upgrades.
 	var _upgrade_list = ds_list_create();
-
-	// Get upgrades for the shooting weapon and place them in the list.
-	weapon_shooting_upgrades(_upgrade_list);
-
-	// Get upgrades for the swipe weapon and place them in the list.
-	weapon_swipe_upgrades(_upgrade_list);
-
-	// Get upgrades for the trail weapon and place them in the list.
-	weapon_trail_upgrades(_upgrade_list);
-	
-	// Get upgrades for the burning_ground weapon and place them in the list.
-	weapon_burning_ground_upgrades(_upgrade_list);
+    var _skill_names = struct_get_names(_skillset); 
+    
+    for (var _i=0; _i < array_length(_skill_names); _i++)
+	{
+        // Get upgrades for the skill and place them in the list.
+    	weapon_upgrades(_skillset[$ _skill_names[_i]] , _upgrade_list);
+        show_debug_message(string(_i) + " Skill: " + string(_skill_names[_i]) + " Size: " + string(ds_list_size(_upgrade_list)));
+    }
+    
+    for (var _index = 0; _index < ds_list_size(_upgrade_list); _index += 1)
+    {
+        show_debug_message("Upgrade available: " + _upgrade_list[| _index].title)
+    }
 
 	// Shuffle the list containing all the retrieved upgrades.
 	list_shuffle(_upgrade_list);
@@ -30,6 +32,12 @@ function get_upgrades()
 	// Get the size of the list, this
 	// is how many upgrades are in it.
 	var _size = ds_list_size(_upgrade_list);
+    
+    // Destroy upgrade screen if no upgrades available.
+    if (_size <= 0)
+    { 
+		instance_destroy();
+    }
 
 	// Define the x position where the first upgrade card
 	// will be created.

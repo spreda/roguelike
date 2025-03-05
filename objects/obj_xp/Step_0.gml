@@ -6,14 +6,20 @@ if (!global.paused and instance_exists(obj_hero))
 
 	// If we are within pickup distance,
 	// OR we are already moving...
-	if (_distance <= pickup_distance || speed > 0)
+	if (_distance <= pickup_distance && speed == 0)
+	{
+		var _direction = point_direction(obj_hero.x, obj_hero.y, x, y);
+		direction = _direction + sign(random_range(-1, 1)) * 90 * random_range(1, 1+0.5);
+		speed = 4;
+	}
+	else if (_distance <= pickup_distance || speed > 0)
 	{
 		// Set speed increasingly to reach the hero.
-		hspeed += 0.03 * ((obj_hero.x-x));
-		vspeed += 0.03 * ((obj_hero.y-y));
+		hspeed += 0.04 * ((obj_hero.x-x));
+		vspeed += 0.04 * ((obj_hero.y-y));
 		
 		// Prevents items to infinetely orbit the hero
-		speed *= 0.985;
+		speed *= 0.98;
 		speed = min(speed, max_speed);
 	}
 }

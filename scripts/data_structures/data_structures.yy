@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"data_structures",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"data_structures",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

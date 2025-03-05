@@ -1,3 +1,4 @@
+
 // Create variable for max hitpoints.
 hitpoints_max = 7 * global.enemy_health_bonus;
 

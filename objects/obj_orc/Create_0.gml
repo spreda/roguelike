@@ -1,3 +1,4 @@
+
 // Call parent event to set up general enemy stuff.
 event_inherited();
 
