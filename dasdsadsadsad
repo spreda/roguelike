@@ -1,0 +1,1087 @@
+[33mcommit 4ba3abd5632dae322541be974ee31d6aaf35dc48[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mSprites_update_0503[m[33m, [m[1;31morigin/Sprites_update_0503[m[33m)[m
+Merge: 555c7bc f117f50
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Wed Mar 5 18:17:55 2025 +0500
+
+    Новые спрайты_
+
+[33mcommit 555c7bcd1a83283b5ec4d41e7a2774f53abe5957[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Wed Mar 5 18:05:27 2025 +0500
+
+    Новые спрайты
+
+[33mcommit f117f501c332bde1b1b6d4a31d1749c813cd5075[m
+Merge: 154b15a 615f26d
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sun Mar 2 17:26:32 2025 +0500
+
+    Merge pull request #41 from spreda/upgrade-system
+    
+    Upgrade system
+
+[33mcommit 154b15a063217c843c6c3dc86e7f5b7f6c574156[m
+Merge: 480d521 52ca577
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Mar 2 17:23:40 2025 +0500
+
+    Merge
+
+[33mcommit 52ca5778690076416365cfd97645e9387123346a[m
+Merge: 307ea0c cb19e50
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Mar 2 17:04:55 2025 +0500
+
+    Merge branch 'levinskiy-features' into mob_sound
+
+[33mcommit 615f26d86c033c4f23e4b07f59862263b36177ee[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Mar 2 16:45:23 2025 +0500
+
+    Обновлена способность Волна
+
+[33mcommit d143bf21da4785787bacafdf697b8158a2d523a9[m
+Merge: 3a9c05b 480d521
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sun Mar 2 03:17:54 2025 +0500
+
+    Merge pull request #38 from spreda/levinskiy-features
+    
+    Levinskiy features
+
+[33mcommit 480d52157b05a66f53355a7f266e76437c8ac76f[m
+Merge: cb19e50 3a9c05b
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sun Mar 2 03:17:44 2025 +0500
+
+    Merge branch 'upgrade-system' into levinskiy-features
+
+[33mcommit 3a9c05b8522179cae7880af5f9618a345b4f3fe0[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Mar 2 03:16:09 2025 +0500
+
+    обновлена способность круговая атака
+
+[33mcommit ba8031b9769d15681175fe2163adad32d6368eb5[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Mar 1 05:50:46 2025 +0500
+
+    Добавлена система улучшений с начальной способностью
+
+[33mcommit 99b0b5cac0624550516fe458504a0fde9c2659d3[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 28 22:52:56 2025 +0500
+
+    Генерация карточек улучшений
+
+[33mcommit cb19e50c01f8a0a0a93216bf3f39b216c89e9de2[m
+Merge: 7e86889 7725396
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Feb 28 19:04:28 2025 +0500
+
+    Merge pull request #37 from spreda/mobsound
+    
+    исправлены звуки способностей
+
+[33mcommit 7725396e81c4894977539c19c1490a9df19ac903[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Fri Feb 28 19:02:59 2025 +0500
+
+    исправлены звуки способностей
+
+[33mcommit 7e86889be98aaf387b25450b346d44d9c90c44d2[m
+Merge: 388aa83 48f29f0
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Thu Feb 27 16:03:22 2025 +0500
+
+    Merge pull request #36 from spreda/wave
+    
+    Исправлен хитбокс способности Волна
+
+[33mcommit 48f29f0200bf680abc9c23fe88125202a4872b29[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Feb 27 16:02:40 2025 +0500
+
+    Исправлен хитбокс способности Волна
+
+[33mcommit 388aa83e58305dc3af185b62ae489025df029fcc[m
+Merge: a60e344 e6148a6
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Thu Feb 27 14:54:48 2025 +0500
+
+    Merge pull request #35 from spreda/skill-system
+    
+    Добавлен спрайт способности Волна
+
+[33mcommit e6148a67648ddbefea4bb8c52c5de8c1412bb99c[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Feb 27 14:53:58 2025 +0500
+
+    Добавлен спрайт способности Волна
+
+[33mcommit 307ea0c3b5815bfaaef834d2ad19ea5ae8584b74[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Thu Feb 27 14:52:48 2025 +0500
+
+    Добавлены звуки для мобов
+
+[33mcommit a60e3447307fb8ffdaf584c2470747f187eb14b6[m
+Merge: 182ae23 6cbd4d4
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Thu Feb 27 14:10:12 2025 +0500
+
+    Merge pull request #34 from spreda/skill-system
+    
+    Skill system
+
+[33mcommit 6cbd4d488cdac5296537216c6b0c9d8d33511d6d[m
+Merge: 27d0741 182ae23
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Thu Feb 27 14:10:01 2025 +0500
+
+    Merge branch 'levinskiy-features' into skill-system
+
+[33mcommit 27d0741e2aba3c7e03721d7a786b0fd2104629fc[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Feb 27 14:07:55 2025 +0500
+
+    Добавлен прототип способности Волна
+
+[33mcommit 182ae23588e2e844ba168596b9ecef7654452fdf[m
+Merge: d1a6256 ab73b11
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Thu Feb 27 14:06:59 2025 +0500
+
+    Merge pull request #33 from spreda/water_sprites
+    
+    Спрайты водяных скиллов
+
+[33mcommit ab73b11cf3e5c2f39c982e61a94e8169e3cc3ecf[m[33m ([m[1;31morigin/water_sprites[m[33m, [m[1;32mwater_sprites[m[33m)[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 27 14:06:05 2025 +0500
+
+    Спрайты водяных скиллов
+
+[33mcommit d1a6256d97c3450f2360a2eae8a23dd5bc9c1af6[m
+Merge: 17293ba 1ae4c25
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Feb 25 20:52:22 2025 +0500
+
+    Merge pull request #32 from spreda/sound
+    
+    добавлены новые звуки для мобов и героя
+
+[33mcommit 1ae4c2507bf9af85a22a3efa85bff1d043ad408e[m[33m ([m[1;31morigin/sound[m[33m)[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Tue Feb 25 20:50:42 2025 +0500
+
+    добавлены новые звуки для мобов и героя
+
+[33mcommit 30ac5ae5911f5e82de4f522bc32396a1d25d8d3e[m[33m ([m[1;31morigin/skill-system[m[33m)[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Tue Feb 25 19:37:10 2025 +0500
+
+    Исправлена неточная стрельба способности Фаербол
+
+[33mcommit 17293ba1ff720e58b76ae7038465dd694fc9a8e7[m
+Merge: 1a79938 fc3d832
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Feb 21 23:11:08 2025 +0500
+
+    Merge pull request #31 from spreda/skill-system
+    
+    Упорядочена конфигурация уровней
+
+[33mcommit fc3d832c1f2f95b9f6481bff9daf101271d29c82[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 21 23:10:13 2025 +0500
+
+    Упорядочена конфигурация уровней
+
+[33mcommit 1a79938b1fb0642a6b6c4bb696ed38f5a6669bea[m
+Merge: 182ab81 6799fb8
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Feb 21 22:41:06 2025 +0500
+
+    Добавлена способность Круговая Атака
+    
+    Skill system
+
+[33mcommit 6799fb8df0f391aa6899b306b0714d62361049d3[m
+Merge: cd0503e 182ab81
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 21 22:38:48 2025 +0500
+
+    Merge skill-system into levinsliy-feautures branch
+
+[33mcommit cd0503eae6baed9287ed2c1698263a7d7d171585[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 21 22:30:05 2025 +0500
+
+    Добавлена круговая атака
+
+[33mcommit 182ab81b0449e3de2420551b9f00d7c7a03fdd57[m
+Merge: c41e41e 1ded07c
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Thu Feb 20 15:12:48 2025 +0500
+
+    Merge pull request #29 from spreda/TrailMobs
+    
+    Новые мобы на Trail
+
+[33mcommit 1ded07c76fcc1d52bcdb3bd0a0712f579fe98a9c[m[33m ([m[1;31morigin/TrailMobs[m[33m, [m[1;32mTrailMobs[m[33m)[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 20 15:10:59 2025 +0500
+
+    Новые мобы на Trail
+
+[33mcommit f43952dd1b02d811c9835a2e3965a58f4c6507b2[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Wed Feb 19 22:58:51 2025 +0500
+
+    Исправлено несоответствие саундреков выбранной карте
+
+[33mcommit 261d3354aa9d4d09db2618b60eb9dade38d65231[m
+Merge: ee7af26 c41e41e
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Wed Feb 19 13:38:04 2025 +0500
+
+    Merge pull request #28 from spreda/levinskiy-features
+    
+    Levinskiy features
+
+[33mcommit ee7af26d6bfb8f886f0d8ec59e302cf4fc1d1aaf[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Wed Feb 19 13:32:35 2025 +0500
+
+    Добавлены шаблоны для способностей Метеор и Круговая атака
+
+[33mcommit c41e41e7b2a620ef36dbc39affa31fc5206c892c[m
+Merge: 656763d 65a1bdf
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Wed Feb 19 13:27:40 2025 +0500
+
+    Merge pull request #27 from spreda/New_sprites
+    
+    Новые спрайты под скиллы | обновление анимаций гоблина
+
+[33mcommit 65a1bdfe2547100d0251d5a481990c22f594fd69[m[33m ([m[1;31morigin/New_sprites[m[33m, [m[1;32mNew_sprites[m[33m)[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Wed Feb 19 13:16:23 2025 +0500
+
+    Новые спрайты под скиллы | обновление анимаций гоблина
+
+[33mcommit 35d194364a9521e9a3ed5a19d83ff3690101a753[m
+Merge: 2abcb3a 35496e0
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Mon Feb 17 22:07:40 2025 +0500
+
+    Merge branch 'skill-system' of https://github.com/spreda/roguelike into skill-system
+
+[33mcommit 2abcb3a1b57cba7882b2a05239c1f9175ce8c660[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Mon Feb 17 22:07:17 2025 +0500
+
+    Уменьшена дистанция подбора предметов
+
+[33mcommit 35496e03cb9547a88a54ab27da4c6eaeaabac014[m
+Merge: e0b7b9d 656763d
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Mon Feb 17 21:33:34 2025 +0500
+
+    Merge pull request #24 from spreda/levinskiy-features
+    
+    Levinskiy features
+
+[33mcommit 656763d20c79d21ea8bb9640de0f6d5cc20be4e9[m[33m ([m[1;32mlevinskiy-features[m[33m)[m
+Merge: 2da65a2 0d298f8
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Mon Feb 17 21:32:49 2025 +0500
+
+    Merge pull request #23 from spreda/map-enemies
+    
+    Исправлено несоответствие мобов выбранной карте
+
+[33mcommit 0d298f8750689483fdcb9686312bb5711060f58e[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Mon Feb 17 21:31:30 2025 +0500
+
+    Исправлено несоответствие мобов выбранной карте
+
+[33mcommit 2da65a2025da3041fb2cfdef491058e20e654299[m
+Merge: 735cdc4 4af15fe
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Mon Feb 17 20:27:19 2025 +0500
+
+    Merge pull request #22 from spreda/music
+    
+    Наборы музыки для каждого уровня
+
+[33mcommit 4af15feb11c9eeecb034c20d13bb95f53b20b13d[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Mon Feb 17 20:25:49 2025 +0500
+
+    Наборы музыки для каждого уровня
+
+[33mcommit 735cdc42cc2a9b58b9f58a9bfac8dc9966081712[m
+Merge: fdc04e1 e0b7b9d
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Mon Feb 17 19:02:37 2025 +0500
+
+    Merge pull request #21 from spreda/skill-system
+    
+    Skill system
+
+[33mcommit e0b7b9dbdc21fc6e189c8575d12aeb5f46bfb7d5[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Mon Feb 17 18:59:15 2025 +0500
+
+    Добавлен скрипт с данными для скила Фаербол
+
+[33mcommit 35882d09590dee173cd80250e8fa38d222fc3830[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Mon Feb 17 18:39:47 2025 +0500
+
+    Дабавлен скрипт с данными о скиле Горящая Земля
+
+[33mcommit 184e8dfb4421141ab3d166e75878568828109416[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Feb 16 18:06:43 2025 +0500
+
+    Эффект атаки Горящая Земля перенесен из объекта моба в объект скила
+
+[33mcommit a05258a6b8c514554e38f6826702039890cc8878[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Feb 16 17:48:53 2025 +0500
+
+    Отключен подбор сердец при полном ХП персонажа
+
+[33mcommit 3bb1070eaf244741daaaf85478f39998cf4e2e95[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sun Feb 16 00:17:59 2025 +0500
+
+    Добавлены спрайты огня меньшего разрешения
+
+[33mcommit b14ae750ba2e2329092b32bf4c1161fb25a4df93[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 15 13:38:17 2025 +0500
+
+    Исправлено отображение подбираемых предметов поверх снарядов
+
+[33mcommit fdc04e19c5db21f2f6cdb36acb0bcf37e4b2acfa[m
+Merge: 15f58ff ff3b18e
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sat Feb 15 02:19:06 2025 +0500
+
+    Merge pull request #20 from spreda/skill-system
+    
+    Подготовка к созданию системы добавления скилов
+
+[33mcommit ff3b18ef191d2fcd8ae93879f7e639102db1a6a8[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 15 02:17:16 2025 +0500
+
+    Упорядочены файлы мобов и скилов
+
+[33mcommit 686d4ef7cbf361dd92c2ae9538a52e89d845f466[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 15 02:05:12 2025 +0500
+
+    Исправлено неправильное отображение снарядов поверх мобов и декораций
+
+[33mcommit 9f0a6e9cdd581e3f40b65d97ae476cfa5e0898f2[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 15 00:59:01 2025 +0500
+
+    Добавлен режим дебага шрифтов
+
+[33mcommit c0a7df4c30a585e485662fbd5b5fb58aac2864e3[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 15 00:43:04 2025 +0500
+
+    Объект-шаблон оружия теперь работает для Фаербола
+
+[33mcommit cc6c1f7efc55811360e70e9d1b06b473b1e58d7c[m
+Merge: b75670b 93df046
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Feb 14 23:04:28 2025 +0500
+
+    Separate folder for deprecated skills
+    
+    Ассеты скилов, которые не планируется использовать в будущем перемещtны в папку Deprecated
+
+[33mcommit 93df046566fd39020e39c750ce2657565f5aedee[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 14 23:01:27 2025 +0500
+
+    Ассеты скилов, которые не планируется использовать в будущем перемещены в папку Depreceted
+
+[33mcommit b75670b27d3c6b109cc38eecb4f19fbbca15f9eb[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 14 22:12:58 2025 +0500
+
+    Добавлен объект-шаблон для скилов
+
+[33mcommit 15f58ff41f31dbd172d75bffa700d5dcc4df45a2[m
+Merge: 0728397 9e9d1f8
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Fri Feb 14 21:59:41 2025 +0500
+
+    Merge pull request #18 from spreda/new_mobs
+    
+    Новые мобы | Новые спрайты для скиллов
+
+[33mcommit 9e9d1f8778bb2d2eabb56d01e2609623ac577baf[m[33m ([m[1;31morigin/new_mobs[m[33m)[m
+Merge: 6ec029d 0728397
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Fri Feb 14 21:59:31 2025 +0500
+
+    Merge branch 'levinskiy-features' into new_mobs
+
+[33mcommit 6ec029d5a6a11a9189e919246ee63d389114f1b4[m[33m ([m[1;32mnew_mobs[m[33m)[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Fri Feb 14 21:56:35 2025 +0500
+
+    Новые мобы | Новые спрайты для скиллов
+
+[33mcommit 07283972bf76e7190e020ad389d4be2903f94705[m
+Merge: 623229e 487591d
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Feb 14 21:15:03 2025 +0500
+
+    Merge pull request #16 from spreda/skill-burning-ground
+    
+    Add skill burning ground
+
+[33mcommit 487591d1465b1289505a9c8a8bd531a2b81cd5bc[m[33m ([m[1;31morigin/skill-burning-ground[m[33m)[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 14 21:13:12 2025 +0500
+
+    Добавлен скил Огненная Земля
+
+[33mcommit 623229ee18d8fdfac1573a3c3d3588bed111fb98[m
+Merge: 2960ba3 97517f9
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Fri Feb 14 19:45:12 2025 +0500
+
+    Merge pull request #15 from spreda/new_skills_1
+    
+    Обновление спрайтов
+
+[33mcommit 97517f9d60b12575f9bfba7ca6b64a35f9340289[m
+Merge: 47c1238 2960ba3
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Fri Feb 14 19:45:00 2025 +0500
+
+    Merge branch 'levinskiy-features' into new_skills_1
+
+[33mcommit 47c1238c24d859130f9600b0ffa3fd2b7f7fa6c2[m[33m ([m[1;31morigin/new_skills_1[m[33m, [m[1;32mnew_skills_1[m[33m)[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Fri Feb 14 19:32:26 2025 +0500
+
+    Тест
+
+[33mcommit 2960ba34b0783be10cc616f45ae1898d7906fca5[m
+Merge: 8782982 ef53988
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Feb 14 19:18:17 2025 +0500
+
+    Merge pull request #13 from spreda/fire-skills
+    
+    Fire skills
+
+[33mcommit ef53988a7163b1242bf9f86cc064623c352ed991[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 14 19:16:46 2025 +0500
+
+    Добавлены спрайты для скила Горящая Земля
+
+[33mcommit 898cba5ae9d89006c2d70d1b3ac91e4c16714d04[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 14 13:54:50 2025 +0500
+
+    Упорядочена структура проекта
+
+[33mcommit 8782982a913452fee391008d2192636d71b6eb49[m
+Merge: 5ab6e62 97a1715
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Thu Feb 13 21:55:53 2025 +0500
+
+    Merge pull request #12 from spreda/add-level-3-selection
+    
+    Добавлена возможность выбрать уровень Тайга
+
+[33mcommit 97a17151fdb1afa8b307a72d7ed3e11b1a94b0dd[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Feb 13 21:54:23 2025 +0500
+
+    Добавлена возможность выбрать уровень Тайга
+
+[33mcommit 5ab6e628ac2fccf39660fc0ebe3285ecaa2db748[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Feb 13 19:54:47 2025 +0500
+
+    Исправлена ошибка загрузки проекта
+
+[33mcommit 2b449d93883dfa2f36c17d5d597d228221fcc858[m
+Merge: 6ee161d 50ecf82
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Thu Feb 13 19:47:45 2025 +0500
+
+    Merge pull request #11 from spreda/map_taiga
+    
+    Map taiga
+
+[33mcommit 50ecf82f4afcd455abbe9ea8978b12780ffe722c[m
+Merge: 9a9434b 6ee161d
+Author: AlexBroNFK <alexbronfk16161@gmail.com>
+Date:   Thu Feb 13 19:47:12 2025 +0500
+
+    Merge branch 'levinskiy-features' into map_taiga
+
+[33mcommit 9a9434b444769a2d00440597e9d18aedaf5f2f5f[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 13 19:39:52 2025 +0500
+
+    Новая карта - Тайга | Обновление анимаций ходьбы орка
+
+[33mcommit 6ee161dd338d4a83755a95472a79a67d63d1060f[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Feb 13 19:19:24 2025 +0500
+
+    Добавлена обводка для шрифта таймера
+
+[33mcommit 9b12754f114df44bff810ea2da2bcce124af7479[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Mon Feb 10 00:50:43 2025 +0500
+
+    добавлен контрастный шрифт для таймера
+
+[33mcommit 47b2d8f223477f5280702d5d79eea59a0cb11c1e[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 8 03:10:37 2025 +0500
+
+    Добавлены превью во время выбора уровней
+
+[33mcommit ccd21045cff91a93b325a41e32536369e027d00c[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 8 01:10:49 2025 +0500
+
+    Исправлено отображение опыта на второй карте
+
+[33mcommit 45876e7f08e52b08c4c4da71ba61a099205f0665[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 8 00:54:13 2025 +0500
+
+    Добавлено меню выбора уровня
+
+[33mcommit 6335fd5ce0d70772419c2102e8500634359c03d8[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Fri Feb 7 22:58:19 2025 +0500
+
+    Третья карта | Новые спрайты
+
+[33mcommit 056933bc19e413748674df2f8f1579dfb214ed51[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 7 21:03:49 2025 +0500
+
+    Добавлены новые файлы музыки
+
+[33mcommit e151424cc7f270dfff475e650493dbefb0013f8f[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Fri Feb 7 20:30:40 2025 +0500
+
+    Карта - Лес | Зимние спрайты
+
+[33mcommit 6ac90dbd4650c0c92abc57649be83648a350bef2[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 7 19:28:33 2025 +0500
+
+    Настройка хитбоксов для всех декораций
+
+[33mcommit 540243d213524f78b9f52eb473fdbbda360dbeac[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 7 15:38:09 2025 +0500
+
+    Исправлен баг с отображением декораций поывслаймов
+
+[33mcommit 9ec462ca4b91f2f9192721cb8004192b28ac5e9f[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 7 15:26:55 2025 +0500
+
+    Исправлен баг: мобы могут проходить сквозь пропятствия сверху вниз
+
+[33mcommit cba7a88714c8af4250fe872fc9bcd51a53e00bc8[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 7 14:15:31 2025 +0500
+
+    Исправлен баг с отрисовкой декораций поверх мобов
+
+[33mcommit 6ccfd43150000b7196f0962d20811859c7a04039[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Feb 7 02:49:45 2025 +0500
+
+    ДОбавлены коллизии с картой
+
+[33mcommit 15cdcbe109a216a80a48b75dac52f7f4e6bcf13b[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 6 20:24:51 2025 +0500
+
+    Удалены лишние спрайты
+
+[33mcommit cf01a5bc546087d7252d88cb531e9644727cce9a[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 6 20:06:35 2025 +0500
+
+    Увеличены масштабы спрайты, героя и мобов
+
+[33mcommit 0f91d0919e9ebdf2a011a16afb59850d5a3e540a[m
+Merge: 302bfa1 7b92687
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 6 19:43:22 2025 +0500
+
+    Merge branch 'levinskiy-features' of https://github.com/spreda/roguelike into levinskiy-features
+
+[33mcommit 302bfa15d175240c4f18a17f38d9a8ecd5303ed7[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Thu Feb 6 19:42:10 2025 +0500
+
+    Расширение начальной карты
+
+[33mcommit 7b92687ac29ff44915312808dbc3f0e76767b454[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Feb 1 15:04:27 2025 +0500
+
+    Откоректированы спрайты и расположение полоски ХП
+
+[33mcommit 1960c256f8384c6c9bb1365035fc219957557d1f[m
+Merge: 4c72e94 3d7c54a
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sat Feb 1 00:34:24 2025 +0500
+
+    Merge pull request #10 from spreda/levinskiy-features
+    
+    Levinskiy features
+
+[33mcommit 3d7c54a4dd5cc8efbe6f7c87bd036ffbe4a1745f[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Jan 31 21:38:20 2025 +0500
+
+    Исправлен вылет после подбора магнита когда на карте нет опыта
+
+[33mcommit 7243e43e3ccece1d44a653f39487d616114dd2b2[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Jan 31 21:09:49 2025 +0500
+
+    Исправлена возможность переката во время паузы
+
+[33mcommit ca961a7ba892061023d5cc9b4e643ac522b2a215[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Jan 31 21:07:24 2025 +0500
+
+    Исправлен баг с продолжением отсчета таймера во время паузы
+
+[33mcommit 6d985a5d9bb6c7c4c72cc87883cd7913e931fefd[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Fri Jan 31 20:00:19 2025 +0500
+
+    Реворк начальной карты
+
+[33mcommit fc795f194b6650fd8641e9e0d108433a0b75fb5e[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Jan 31 19:26:41 2025 +0500
+
+    изменено положение полоски ХП
+
+[33mcommit 5dd89052598377386beb722c010c1484540ae5b0[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Jan 30 22:03:54 2025 +0500
+
+    Изменена отрисовка полоски здоровья
+
+[33mcommit 01558cc5639cedc225ab0e24232135ca936bb17e[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Jan 30 20:20:18 2025 +0500
+
+    Отрисовка полоски опыта на весь экран
+
+[33mcommit 3478756a4980acbaa21d5029590eed2da79c1e15[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Jan 25 14:45:55 2025 +0500
+
+    При победе персонаж подбирает все предметы на карте
+
+[33mcommit 4c72e94c02c63082e1a71506332a25d60dfdd99e[m[33m ([m[1;32mmain[m[33m)[m
+Merge: afa87db 32be223
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sat Jan 25 11:57:06 2025 +0500
+
+    Merge pull request #9 from spreda/levinskiy-features
+    
+    Levinskiy features
+
+[33mcommit 32be2236b24efeb537e5c52bb214f0053099f467[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Jan 25 01:07:39 2025 +0500
+
+    Добавлена регулировка громкости из меню паузы
+
+[33mcommit adad7bf798c05e9fd741e079687cf4de3d5f5dee[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Jan 24 22:40:46 2025 +0500
+
+    Исправлено расположение слайдера к указателю мыши по центру спрайта
+
+[33mcommit 97f527e0aba6d5895edfca3ae50df24d4a75e736[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Jan 24 22:35:44 2025 +0500
+
+    Добавлены слайдеры для регулировки громкости
+
+[33mcommit 7cdffc6b0b7ea649ef18cb477b1a9d12d7e54e94[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Jan 23 00:44:54 2025 +0500
+
+    Добавлены отдельные переключетели громкости для звуков и музыки
+
+[33mcommit 9ff016c66bdd5da1d24b1b6084c8570a1f2d4d97[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Wed Jan 22 21:41:55 2025 +0500
+
+    Убрано проигрывание звука левелапа после закрытия соответствующего ему экрана
+
+[33mcommit 4a07b58173aed3e924a6ed966348ff21b5c06120[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Wed Jan 22 21:37:09 2025 +0500
+
+    Исправлена ошибка с проигрыванием музыки после левелапа
+
+[33mcommit afa87dbb0a08a1e72b497b67436146d90983fb21[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Wed Jan 22 19:34:00 2025 +0500
+
+    Update README.md
+
+[33mcommit 3ce2b7334bacc1f80057ec183f045c27aab7cccc[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Wed Jan 22 19:33:34 2025 +0500
+
+    Update README.md
+
+[33mcommit 4528568608964c5e111499d801b782ac23c7be19[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Wed Jan 22 19:32:58 2025 +0500
+
+    Update README.md
+
+[33mcommit 597392cf05404a15fffa3b2ca247cf3ba7e66c5f[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Wed Jan 22 19:31:53 2025 +0500
+
+    Update README.md
+
+[33mcommit 939ad70074d91e24316a11550efdef04e111bed7[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Wed Jan 22 19:29:32 2025 +0500
+
+    Update README.md
+
+[33mcommit 6b86ee0eab94d057daf4cebd47b5cf443eb76846[m
+Merge: f7ad9de 2c99434
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sun Nov 24 00:03:43 2024 +0500
+
+    Merge pull request #7 from spreda/levinskiy-features
+    
+    Levinskiy features
+
+[33mcommit 2c9943464bdae328b48ac28a26655b1e1f924820[m
+Merge: a4675de f7ad9de
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sun Nov 24 00:03:18 2024 +0500
+
+    Merge pull request #8 from spreda/main
+    
+    Update README.md
+
+[33mcommit a4675de4203c3a8024299189e59ad30a3c18cdb8[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Nov 23 23:58:53 2024 +0500
+
+    Добавлена версия для Android
+
+[33mcommit 47c11c682149eb60ac0f24124e89e1131f13890c[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Nov 23 14:50:05 2024 +0500
+
+    изменения баланса
+
+[33mcommit f7ad9de7495b27acb397ea42a833704a63f86fc4[m
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Nov 22 20:12:00 2024 +0500
+
+    Update README.md
+
+[33mcommit 6010bdf768096a4f744a798b349fa82e68511a0b[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Fri Nov 22 19:50:30 2024 +0500
+
+    добавлен баннер на главное меню
+
+[33mcommit 08509cb2670a3f70d6270407f63c433ee8e5ae44[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 22 19:24:39 2024 +0500
+
+    Дабавлен магнит для опыта
+
+[33mcommit 39cf87ca5b2ed14fa38724bcd9ccb92554eda5c9[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 22 18:25:39 2024 +0500
+
+    Исправлена стрельба по врагам за границами карты
+
+[33mcommit 8645c0ae699570b6815ddb06d06fa24aa5af5490[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 22 18:16:20 2024 +0500
+
+    Добавлены эффекты оттдачи и воспламенения
+
+[33mcommit 407e52f6d5d0061038316111ac950b44d8162b5d[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 22 02:08:33 2024 +0500
+
+    Реализована механика таймера
+
+[33mcommit b9fb1be475c0a3191ec5e2596581db0097f08570[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 22 00:27:27 2024 +0500
+
+    Теперь мобы и предметы не исчезают при повышении уровня
+
+[33mcommit a175c85665ec7ab43c882d3b49b142de4200d0c7[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 22 00:12:20 2024 +0500
+
+    Изменены анимация, выпадение и подбор здоровья и опыта
+
+[33mcommit 65f7c41d7c0e816db25db342d8cb8ccafa798033[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Nov 21 23:18:14 2024 +0500
+
+    Переработана способность Trail
+
+[33mcommit 7c57afc715e1cc116ce30dc077fe6c370d0939c3[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Nov 21 21:34:15 2024 +0500
+
+    Добавлены скругленные края для спрайтов способностей
+
+[33mcommit 0c877588122f9b0d0b9431c007c27cfa9661b985[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Thu Nov 21 20:33:48 2024 +0500
+
+    обновлены иконки способностей
+
+[33mcommit 3096cfefc7122f80f06b015f40a8ef783eeb8446[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Nov 21 19:35:15 2024 +0500
+
+    Увеличено количество мобов
+
+[33mcommit 8b635a00e0e7e52198769e2edc1418adce0dbc79[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Wed Nov 20 22:00:47 2024 +0500
+
+    Исправлено отображение полоски опыта
+
+[33mcommit ee5818bfd47ae7a43d683770461f223a29e51fff[m
+Author: n0mparadox <levinskiy57@gmail.com>
+Date:   Sat Nov 16 21:09:54 2024 +0500
+
+    добавлены новые спрайты для атаки и подбираемые предметы
+
+[33mcommit ad7d84797498498b4db828045d23a7d12008ebeb[m
+Author: daniil <levinskiy57@gmail.com>
+Date:   Thu Nov 7 20:08:56 2024 +0500
+
+    изменения на 07.11.2024(новые мобы)
+
+[33mcommit e237c5a96640c5f39d21e86056be37d4802f69f1[m
+Author: daniil <levinskiy57@gmail.com>
+Date:   Thu Nov 7 18:40:56 2024 +0500
+
+    увелечение размеров шрифтов в меню паузы и 'Game Over'
+
+[33mcommit 2014f23927b675c74c51174d1882218982be8dc9[m
+Merge: dd2a074 44c0fda
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Nov 5 21:18:59 2024 +0500
+
+    Merge pull request #5 from spreda/main
+    
+    Pull changes from main
+
+[33mcommit 44c0fda834455c6cc6e17ddc8bfbd059df0c4f7f[m[33m ([m[1;31morigin/camenev_feauture[m[33m)[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Tue Nov 5 21:17:06 2024 +0500
+
+    Добавлена надпись 'Pause'
+
+[33mcommit 0cdd0de810b187feb69367c7c4b593995a4442ca[m
+Merge: 628191f b02656d
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Tue Nov 5 21:12:57 2024 +0500
+
+    Merge branch 'main' of https://github.com/spreda/roguelike
+
+[33mcommit 628191f60cd54e1769ddb616d3d95f1ff2a3f176[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Tue Nov 5 21:12:26 2024 +0500
+
+    Исправлены ошибки при слиянии веток
+
+[33mcommit b02656da1e3bce8867353566cecf7a62d9786ea7[m
+Merge: 2eab53e 629a47f
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Nov 5 21:04:11 2024 +0500
+
+    Merge pull request #4 from spreda/dev
+    
+    Dev
+
+[33mcommit 629a47f8f5583f39a6ac17c95dea456573485423[m[33m ([m[1;31morigin/dev[m[33m)[m
+Merge: ee63945 2eab53e
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Nov 5 21:04:03 2024 +0500
+
+    Merge branch 'main' into dev
+
+[33mcommit 2eab53ed2eecd00027a07818d203482ae400d4aa[m
+Merge: 67fa717 dd2a074
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Nov 5 20:29:41 2024 +0500
+
+    Merge pull request #3 from spreda/levinskiy-features
+    
+    изменение спрайтов
+
+[33mcommit dd2a0743921778b5667fdcdc0fc39c9d3125f6c7[m
+Merge: 8c1769f 67fa717
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Nov 5 20:29:30 2024 +0500
+
+    Merge branch 'main' into levinskiy-features
+
+[33mcommit 8c1769fbcf53e082e3a2d078eb4fade0e00adb52[m
+Author: daniil <levinskiy57@gmail.com>
+Date:   Tue Nov 5 20:14:28 2024 +0500
+
+    изменение спрайтов
+
+[33mcommit 67fa717a3286f4902720065d124aa2f2add2b39f[m
+Merge: 161f3b7 34b67e3
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Tue Nov 5 20:06:44 2024 +0500
+
+    Merge pull request #2 from spreda/skvortsov_feature
+    
+    new map
+
+[33mcommit 34b67e3f27bba29905320775be1d8d007cede3fd[m
+Author: AlexBroNFK <alex2006him86@mail.ru>
+Date:   Tue Nov 5 20:03:30 2024 +0500
+
+    new map
+
+[33mcommit ee63945cc48acceb24fe9367cdd1d77922352855[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Nov 2 22:36:34 2024 +0500
+
+    Добавление рывка в очередь действий, если его перезарядка почти закончилась
+
+[33mcommit 7a5229542a47fecc05387902a690b46d9b3801bf[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Nov 2 22:04:25 2024 +0500
+
+    Исправлен лишний рывок при старте игры нажатием пробела
+
+[33mcommit ccb4755c3901c62c7a2ea6ee7059db22742ded73[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Sat Nov 2 21:47:24 2024 +0500
+
+    Добавлена неуязвимость во время рывка
+
+[33mcommit 1d63776c5fa07b649aeeaba3910350cc9c6ae5c0[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Nov 1 23:00:23 2024 +0500
+
+    добавлен рывок
+
+[33mcommit 2fca015de4ce5625b06bee4a12656d20a9a01f10[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Oct 31 16:45:03 2024 +0500
+
+    Добавлен шорткат 'вкл/выкл звук': M
+
+[33mcommit e20d8f842de5a36e194f481073793428a7142c71[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Oct 31 16:36:53 2024 +0500
+
+    Добавлен шорткат для выхода из игры в главном меню: Esc
+
+[33mcommit a47b1b965f82aed933e0b48de3ffae8ee36d6e0d[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Oct 31 16:30:40 2024 +0500
+
+    Добавлены горячие клавиши для старта игры: пробел и enter
+
+[33mcommit 71b5c0be285cf0da6ec0cf5880fe9433fe3b5311[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Oct 31 16:18:15 2024 +0500
+
+    Ускорена анимация появления карточек улучшений
+
+[33mcommit 605f7872bb93d649c31debb06c1bd4f6d698a83b[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Oct 31 14:51:07 2024 +0500
+
+    Добавлено повышение уровня игрока на 'alt+L' для тестирования
+
+[33mcommit 1f733cedf6b72509050b961b2ec545e07a1f78b1[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Thu Oct 31 14:25:13 2024 +0500
+
+    Добавлены пиксельные шрифты
+
+[33mcommit 5423aeb1136e6b87c4f9896722b347f64da9e937[m
+Merge: 3bf04c0 161f3b7
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sat Oct 26 13:20:17 2024 +0500
+
+    Merge pull request #1 from spreda/main
+    
+    дизайн главного меню
+
+[33mcommit 161f3b79e74a48dac86d2ffb07fec42f2e5394a8[m
+Author: daniil <levinskiy57@gmail.com>
+Date:   Sat Oct 26 12:11:55 2024 +0500
+
+    дизайн главного меню
+
+[33mcommit 3bf04c099dd7d290c61c9d75d9de1533dcdd11fd[m
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Sat Oct 26 10:12:43 2024 +0500
+
+    Create README.md
+
+[33mcommit 630dd6a954ca93f78ce0786efc977661de180c46[m
+Author: Kirill Kamenev <ctktea@gmail.com>
+Date:   Fri Oct 25 18:54:11 2024 +0500
+
+    Initial Commit
+
+[33mcommit 08e8ecfc0bcfc173574e2170dd60211011301dcf[m
+Author: spreda <47899495+spreda@users.noreply.github.com>
+Date:   Fri Oct 25 18:47:30 2024 +0500
+
+    Initial commit
