@@ -83,11 +83,7 @@
     },
     "name":"spr_wave",
     "playback":1,
-<<<<<<< HEAD:sprites/spr_splash/spr_splash.yy
-    "playbackSpeed":5.0,
-=======
     "playbackSpeed":10.0,
->>>>>>> f117f501c332bde1b1b6d4a31d1749c813cd5075:sprites/spr_wave/spr_wave.yy
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

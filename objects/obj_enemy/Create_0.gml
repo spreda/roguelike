@@ -20,6 +20,8 @@ burn = 0;
 knockback = 0;
 knockback_direction = 0;
 
+damage_taken_sound = [slime_sound];
+
 while (!(place_empty(x, y, obj_static_prop))) 
 {
 	x += random(100) - 50;

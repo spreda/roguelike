@@ -1,4 +1,4 @@
-33333333333333333363// Call parent event to set up general eney stuff.
+// Call parent event to set up general eney stuff.
 event_inherited();
 
 // Set speed for this enemy type.
