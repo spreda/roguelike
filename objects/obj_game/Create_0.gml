@@ -4,13 +4,13 @@ global.hero_xscale = 1.5;
 // Set RNG seed
 randomize();
 
-// Debug mode toggle
+// Debug mode toggles
 global.debug = true;
 global.debug_audio = false;
 global.debug_fonts = false;
 
 // Set the experience goal to reach the next level.
-global.xp_goal = 15;
+global.xp_goal = 10;
 
 // Set current experience.
 global.xp = 0;

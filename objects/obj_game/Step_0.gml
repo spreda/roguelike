@@ -14,7 +14,7 @@ if (!instance_exists(obj_game_over))
 
 // If the game is not over...
 // We do this by checking is an end game screen is not present.
-if (!instance_exists(obj_upgrade) && !instance_exists(obj_game_complete))
+if (!instance_exists(obj_upgrade) and !instance_exists(obj_game_complete) and !instance_exists(obj_game_over))
 {
 	// If time runs out
 	if (time_seconds >= game_duration)
