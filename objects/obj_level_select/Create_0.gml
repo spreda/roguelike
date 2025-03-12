@@ -53,7 +53,6 @@ selected_level = update_selection(0, levels, btn_start);
 var _btn_left_arrow = instance_create_layer(50 + sprite_get_width(spr_button_arrow) / 2, room_height / 2, "Instances", obj_button_arrow);
 _btn_left_arrow.set_direction("left");
 
-
 var _btn_right_arrow = instance_create_layer(room_width - 50 - sprite_get_width(spr_button_arrow) / 2, room_height / 2, "Instances", obj_button_arrow);
 _btn_right_arrow.set_direction("right");
 

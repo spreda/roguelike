@@ -327,6 +327,7 @@
     {"id":{"name":"spr_explosion_end_16x16","path":"sprites/spr_explosion_end_16x16/spr_explosion_end_16x16.yy",},},
     {"id":{"name":"spr_explosion_end_32x32","path":"sprites/spr_explosion_end_32x32/spr_explosion_end_32x32.yy",},},
     {"id":{"name":"spr_explosion_end","path":"sprites/spr_explosion_end/spr_explosion_end.yy",},},
+    {"id":{"name":"spr_explosion_short_16x16","path":"sprites/spr_explosion_short_16x16/spr_explosion_short_16x16.yy",},},
     {"id":{"name":"spr_explosion_start_16x16","path":"sprites/spr_explosion_start_16x16/spr_explosion_start_16x16.yy",},},
     {"id":{"name":"spr_explosion_start_32x32","path":"sprites/spr_explosion_start_32x32/spr_explosion_start_32x32.yy",},},
     {"id":{"name":"spr_explosion_start","path":"sprites/spr_explosion_start/spr_explosion_start.yy",},},

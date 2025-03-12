@@ -10,7 +10,7 @@
     "range": 400,
 	"speed": 15,
     "cooldown": 2,
-    "projectile_count": 12,
+    "projectile_count": 6,
     "upgrade_branches": [
     	[
             {

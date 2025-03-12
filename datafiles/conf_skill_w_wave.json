@@ -8,7 +8,7 @@
     "base_damage": 1,
     "range": 400,
 	"speed": 15,
-    "cooldown": 1.5,
+    "cooldown": 3,
     "upgrade_branches": [
     	[
             {

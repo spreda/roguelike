@@ -27,6 +27,10 @@ function init_skill_system()
         {
             _config.projectile_sub_object = asset_get_index(_config.projectile_sub_object);
         }
+        if (!struct_exists(_config, "aoe_damage_portion"))
+        {
+            _config.aoe_damage_portion = 0;
+        }
         
         _config.unlocked = false;
         _config.level = 0;
