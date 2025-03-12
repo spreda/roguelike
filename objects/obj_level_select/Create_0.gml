@@ -5,6 +5,7 @@ levels = [
 		map_preview: spr_map_path_preview,
 		music_pool: [CForest, TheSeedlingBoy],
 		enemy_pool: [obj_slime_trail, obj_skeleton, obj_axeman],
+        xp_multiplier: 1,
 	},
 	{
 		name: "Forest",
@@ -12,6 +13,7 @@ levels = [
 		map_preview: spr_map_forest_preview,
 		music_pool: [Game,Goblins_Dance__Battle_, Goblins_Den__Regular_],
 		enemy_pool: [obj_slime, obj_goblin, obj_orc],
+        xp_multiplier: 1.3,
 	},
 	{
 		name: "Taiga",
@@ -19,6 +21,7 @@ levels = [
 		map_preview: spr_map_taiga_preview,
 		music_pool: [Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack, Phobos],
 		enemy_pool: [obj_taiga_slime, obj_taiga_orc, obj_taiga_minotaur],
+        xp_multiplier: 1.6,
 	},
 ];
 
@@ -38,6 +41,7 @@ function update_selection(level_index, levels, button)
 	variable_instance_set(button, "level_room", levels[level_index].map);
 	variable_instance_set(button, "level_music", levels[level_index].music_pool);
 	global.enemy_pool = levels[level_index].enemy_pool;
+    global.xp_multiplier = levels[level_index].xp_multiplier;
 	
 	// Return updatet selected level index.
 	return level_index;

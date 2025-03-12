@@ -9,7 +9,7 @@ walk_speed = 2;
 image_speed = 1;
 
 // Set max hitpoints for this enemy type.
-hitpoints_max = 3 * global.enemy_health_bonus;
+hitpoints_max = 4 * global.enemy_health_bonus;
 
 // Set hitpoints.
 hitpoints = hitpoints_max;
