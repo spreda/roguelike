@@ -48,15 +48,15 @@ function cast_outburst(hero, skill)
     	audio_play_sound(snd_lightning_throw, 0, 0, 1.0, undefined, 1.0);
     	
     	// Start the cast animation.
-    	instance_create_layer(x, y, "Instances", obj_animation_effect,
+    	var _animation = instance_create_layer(x, y, "Instances", obj_animation_effect,
     						 {
     							 "sprite_index": spr_outburst_start,
     							 "scale": 4,
     							 "draw_on_top_layer": true,
     							 "follow_instance_id": obj_hero,
     						 });
-    											  
-    	var _cast_delay = 6 / sprite_get_info(spr_outburst_start).frame_speed;
+        
+    	var _cast_delay = 60 / sprite_get_info(spr_outburst_start).frame_speed;
     	
     	// Repeat the following code for each bullet we need to spawn.
     	repeat (_number_of_shots)
@@ -65,7 +65,8 @@ function cast_outburst(hero, skill)
                 { _a:_angle, _s: skill, _o:skill.projectile_sub_object },
                 function() { spawn_bullet(_a, _s, _o); }
             );
-    		call_later(3*_i + _cast_delay, time_source_units_frames, _callback);
+            
+            _animation.callbacks[$ (3 * _i + _cast_delay)] =_callback;
     		
     		// Increment the angle for the next bullet.
     		_angle += _angle_difference;
