@@ -6,7 +6,7 @@ event_inherited();
 walk_speed = 2.5;
 
 // Set max hitpoints specifically for this enemy type.
-hitpoints_max = 12 * global.enemy_health_bonus;
+hitpoints_max = 9 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
 // Set animation speed.
 image_speed = 1;

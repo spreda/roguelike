@@ -5,6 +5,7 @@ function init_skill_system()
         cast_fireball: cast_fireball,
         cast_outburst: cast_outburst,
         cast_wave: cast_wave,
+        cast_burning_ground: cast_burning_ground,
     };
     
 	var _skill_configs = {};

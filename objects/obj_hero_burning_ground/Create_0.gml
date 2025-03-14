@@ -2,7 +2,7 @@
 // Call parent event to set up general weapon stuff.
 event_inherited();
 
-size = choose(1, 2, 3, 4) + choose(1, 2, 3, 4);
+size = 7;
 
 // Set sprites for this weapon type.
 switch (size)
@@ -35,7 +35,7 @@ switch (size)
 scale = 6;
 
 // Set ammout of animation loops
-lifespan = 5;
+lifespan = 1;
 
 collision_with_mob = function(_mob)
 {
@@ -45,6 +45,8 @@ collision_with_mob = function(_mob)
 
 apply_to_target = function(_mob)
 {
+    var _damage = calculate_damage();
+    
 	with (_mob)
 	{
 		// If our hitpoints is over 0,
@@ -56,13 +58,13 @@ apply_to_target = function(_mob)
 			show_healthbar = 60;
 
 			// Reduce hitpoints by the damage caused by the trail weapon.
-			hitpoints -= global.burning_ground[? "damage"];
+			hitpoints -= _damage;
 
 			// Create text popup to indicate damage.
 			var _text = instance_create_layer(x + 0, y + 0, "UpgradeScreen", obj_text_popup);
 
 			// Set text to the damage amount.
-			_text.text = -global.burning_ground[? "damage"];
+			_text.text = _damage;
 
 			// Set sprite to the hit sprite.
 			sprite_index = hit_sprite;

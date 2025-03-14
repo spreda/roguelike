@@ -6,6 +6,7 @@ levels = [
 		music_pool: [CForest, TheSeedlingBoy],
 		enemy_pool: [obj_slime_trail, obj_skeleton, obj_axeman],
         xp_multiplier: 1,
+        enemy_hp_multiplier: 1,
 	},
 	{
 		name: "Forest",
@@ -14,6 +15,7 @@ levels = [
 		music_pool: [Game,Goblins_Dance__Battle_, Goblins_Den__Regular_],
 		enemy_pool: [obj_slime, obj_goblin, obj_orc],
         xp_multiplier: 1.3,
+        enemy_hp_multiplier: 1.5,
 	},
 	{
 		name: "Taiga",
@@ -22,6 +24,7 @@ levels = [
 		music_pool: [Christmas_Train_Operation_Snowball_Pixel_Gun_3D_Soundtrack, Phobos],
 		enemy_pool: [obj_taiga_slime, obj_taiga_orc, obj_taiga_minotaur],
         xp_multiplier: 1.6,
+        enemy_hp_multiplier: 2,
 	},
 ];
 
@@ -42,6 +45,7 @@ function update_selection(level_index, levels, button)
 	variable_instance_set(button, "level_music", levels[level_index].music_pool);
 	global.enemy_pool = levels[level_index].enemy_pool;
     global.xp_multiplier = levels[level_index].xp_multiplier;
+    global.enemy_hp_multiplier = levels[level_index].enemy_hp_multiplier;
 	
 	// Return updatet selected level index.
 	return level_index;
