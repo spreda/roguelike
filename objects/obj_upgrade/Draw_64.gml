@@ -1,5 +1,5 @@
 // Checks if glow highlight should show.
-if (mouse_over)
+if (mouse_over or selected)
 {
 	// Draws the glow highlight.
 	draw_sprite(spr_card_glow, 0, x, y);

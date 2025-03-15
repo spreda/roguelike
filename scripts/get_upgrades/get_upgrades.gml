@@ -58,6 +58,8 @@ function get_upgrades()
 	
 		// Set the upgrade data to the upgrade card object.
 		_upgrade.upgrade_data = _upgrade_data;
+        
+        _upgrade.hotkey = ord(string(_index + 1));
 	
 		// Increment the x position for the next card.
 		_x += 400;
