@@ -1,17 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_title",
+  "%Name":"obj_hero_beam",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_title",
+  "name":"obj_hero_beam",
   "overriddenProperties":[],
   "parent":{
-    "name":"Screens",
-    "path":"folders/Objects/Menu/Screens.yy",
+    "name":"Water",
+    "path":"folders/Objects/Game/Weapons/Water.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_hero_weapon",
+    "path":"objects/obj_hero_weapon/obj_hero_weapon.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_title",
-    "path":"sprites/spr_title/spr_title.yy",
+    "name":"spr_beam_start_cast",
+    "path":"sprites/spr_beam_start_cast/spr_beam_start_cast.yy",
   },
   "spriteMaskId":null,
   "visible":true,

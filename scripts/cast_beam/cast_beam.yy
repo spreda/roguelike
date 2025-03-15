@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"data_meteor",
+  "%Name":"cast_beam",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"data_meteor",
+  "name":"cast_beam",
   "parent":{
-    "name":"Meteor",
-    "path":"folders/Scripts/Weapons/Fire/Meteor.yy",
+    "name":"Water",
+    "path":"folders/Scripts/Weapons/Water.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

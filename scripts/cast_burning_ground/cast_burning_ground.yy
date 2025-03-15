@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cast_burning_ground",
   "parent":{
-    "name":"Burning Ground",
-    "path":"folders/Scripts/Weapons/Fire/Burning Ground.yy",
+    "name":"Fire",
+    "path":"folders/Scripts/Weapons/Fire.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

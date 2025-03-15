@@ -1,8 +1,8 @@
 // Call parent event to set up general enemy stuff.
 event_inherited();
 
-// Set animation speed.
-image_speed = 1;
+// Set speed for this enemy type.
+walk_speed = 1.2;;
 
 // Set max hitpoints specifically for this enemy type.
 hitpoints_max = 9 * global.enemy_health_bonus * global.enemy_hp_multiplier;

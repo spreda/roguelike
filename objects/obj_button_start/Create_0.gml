@@ -16,6 +16,9 @@ level_music = [snd_music_game,];
 // Leave the menu and start the game
 function start_game()
 {
+    // Stops all audio.
+    audio_stop_all();
+    
 	// Play click sound effect.
 	audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 	

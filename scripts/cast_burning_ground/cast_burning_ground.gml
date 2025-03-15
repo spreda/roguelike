@@ -12,7 +12,7 @@ function cast_burning_ground(hero, skill)
       	
       		// Create burning_ground attack object.
       		// Create burning_ground attack object.
-      		for (var i = 0; i < 5; i++)
+      		for (var i = 0; i < _number_of_shots; i++)
       		{
       			var _dir = random(360);
       			var _distance = skill.min_range + random(skill.range - skill.min_range);

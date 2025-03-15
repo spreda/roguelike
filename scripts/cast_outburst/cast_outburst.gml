@@ -28,7 +28,9 @@ function spawn_bullet(angle, skill, projectile_object = undefined)
         image_angle = direction;
         
         skill_config = skill;
-    }		
+    }	
+    
+    return _bullet;	
 }
 
 // Define a function to execute the shooting attack.
