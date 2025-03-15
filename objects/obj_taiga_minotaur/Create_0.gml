@@ -15,3 +15,5 @@ image_speed = 1;
 walk_sprite = spr_taigaminotaur_walk;
 attack_sprite = spr_taigaminotaur_attack;
 hit_sprite = spr_taigaminotaur_hit;
+
+damage_taken_sound = [_21_orc_damage_1];

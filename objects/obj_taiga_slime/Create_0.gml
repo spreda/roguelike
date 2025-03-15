@@ -18,3 +18,5 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_taigaslime_walk;
 attack_sprite = spr_taigaslime_attack;
 hit_sprite = spr_taigaslime_hit;
+
+damage_taken_sound = [slime_sound];

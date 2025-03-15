@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":0.8028118,
+  "duration":0.802812,
   "name":"snd_lightning_impact_2",
   "parent":{
     "name":"Shooting",
@@ -26,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"snd_lightning_impact_2.wav",
   "type":0,
-  "volume":0.4,
+  "volume":0.1,
 }

@@ -15,3 +15,5 @@ image_speed = 1;
 walk_sprite = spr_orc_walk;
 attack_sprite = spr_orc_attack;
 hit_sprite = spr_orc_hit;
+
+damage_taken_sound = [_21_orc_damage_1];

@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"_21_orc_damage_3.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.22,
 }

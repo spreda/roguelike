@@ -14,3 +14,5 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_axeman_walk;
 attack_sprite = spr_axeman_attack;
 hit_sprite = spr_axeman_hit;
+
+damage_taken_sound = [metal_sound];

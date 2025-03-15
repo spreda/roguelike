@@ -17,3 +17,5 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_trailslime_walk;
 attack_sprite = spr_trailslime_attack;
 hit_sprite = spr_trailslime_hit;
+
+damage_taken_sound = [slime_sound];

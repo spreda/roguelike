@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.6666667,
+  "duration":0.666667,
   "name":"_07_human_atk_sword_1__2_",
   "parent":{
     "name":"Sounds",

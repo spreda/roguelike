@@ -1,4 +1,3 @@
-
 // Call parent event to set up general enemy stuff.
 event_inherited();
 
@@ -15,3 +14,5 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_goblin_walk;
 attack_sprite = spr_goblin_attack;
 hit_sprite = spr_goblin_hit;
+
+damage_taken_sound = [_21_orc_damage_1];

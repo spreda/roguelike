@@ -14,3 +14,5 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_skeleton_walk;
 attack_sprite = spr_skeleton_attack;
 hit_sprite = spr_skeleton_hit;
+
+damage_taken_sound = [bone_sound];

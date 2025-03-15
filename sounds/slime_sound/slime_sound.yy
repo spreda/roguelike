@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.43750566,
+  "duration":0.437506,
   "name":"slime_sound",
   "parent":{
     "name":"Sounds",
