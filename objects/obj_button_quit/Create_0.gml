@@ -5,5 +5,5 @@ is_clicked = false;
 target_scale = 1.0;
 
 // Exit game shortcut
-exit_key= vk_escape;
-exit_key_alt= vk_escape;
+hotkey = vk_escape;
+hotkey_alt = vk_escape;

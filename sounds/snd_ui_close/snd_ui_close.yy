@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":0.116437,
+  "duration":0.11644,
   "name":"snd_ui_close",
   "parent":{
     "name":"UI",

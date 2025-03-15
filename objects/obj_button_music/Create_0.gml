@@ -10,8 +10,8 @@ slider_id = undefined;
 target_scale = 1.0;
 
 // Toggle sound shortcut
-sound_key= ord("M"); // Mute
-sound_key_alt= ord("M");
+hotkey= ord("M"); // Mute
+hotkey_alt= ord("M");
 
 function toggle_sound()
 {

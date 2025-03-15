@@ -5,8 +5,8 @@ is_clicked = false;
 target_scale = 1.0;
 
 // Start game shortcut
-start_key= vk_space;
-start_key_alt= vk_enter;
+hotkey = vk_space;
+hotkey_alt = vk_enter;
 
 // Set room thet will be launched
 level_room = rm_level_select;

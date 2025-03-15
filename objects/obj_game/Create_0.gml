@@ -38,6 +38,11 @@ xp_margin_y = 30;
 // Create the pause button.
 instance_create_layer(1820, 120, "UpgradeScreen", obj_pause_button);
 
+help_upgrade = instance_create_layer(0, 0, "UpgradeScreen", obj_hotkeys_help);
+help_buttons = instance_create_layer(0, 0, "Buttons", obj_hotkeys_help);
+
+obj_hotkeys_help.invisible = true;
+
 // Create timer
 instance_create_layer(1920/2, 100,  "Instances", obj_timer);
 

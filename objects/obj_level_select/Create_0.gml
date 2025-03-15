@@ -75,3 +75,5 @@ _btn_right_arrow.action = function()
 var _btn_exit = instance_create_layer(50 + sprite_get_width(spr_button_back) / 2, 100, "Instances", obj_button_exit);
 variable_instance_set(_btn_exit, "sprite_index", spr_button_back);
 variable_instance_set(_btn_exit, "hotkey", vk_escape);
+
+instance_create_layer(0, 0, "Instances", obj_hotkeys_help);
