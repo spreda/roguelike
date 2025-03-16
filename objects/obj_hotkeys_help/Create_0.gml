@@ -74,8 +74,8 @@ function keycode_to_name(_keycode) {
 }
 
 action = function() {
-    // Play select sound.
-    audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
+   // Play select sound.
+   audio_play_sound(snd_ui_close, 0, 0, 1.0, undefined, 1.0);
     
     active = true;
     hotkey_list = [];
