@@ -1,6 +1,11 @@
 // Define a function to spawn a single projectile.
 function spawn_bullet(angle, skill, projectile_object = undefined)
 {
+    if (!instance_exists(obj_hero))
+    {
+        exit;
+    }
+    
     // Get projectile object.
     var _projectile = skill.projectile_object;
     

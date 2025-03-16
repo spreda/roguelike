@@ -6,6 +6,9 @@ function pause()
 {
 	// Pause the game.
 	global.paused = true;
+    
+   global.toolbar = instance_create_layer(display_get_width(), 75, "Buttons", obj_skill_toolbar);
+   global.toolbar.update(obj_hero.skills);
 
 	// Apply the following code to all instances...
 	with (all) 

@@ -186,6 +186,8 @@
     {"id":{"name":"obj_pause_button","path":"objects/obj_pause_button/obj_pause_button.yy",},},
     {"id":{"name":"obj_pause_screen","path":"objects/obj_pause_screen/obj_pause_screen.yy",},},
     {"id":{"name":"obj_skeleton","path":"objects/obj_skeleton/obj_skeleton.yy",},},
+    {"id":{"name":"obj_skill_icon","path":"objects/obj_skill_icon/obj_skill_icon.yy",},},
+    {"id":{"name":"obj_skill_toolbar","path":"objects/obj_skill_toolbar/obj_skill_toolbar.yy",},},
     {"id":{"name":"obj_slider","path":"objects/obj_slider/obj_slider.yy",},},
     {"id":{"name":"obj_slime_trail","path":"objects/obj_slime_trail/obj_slime_trail.yy",},},
     {"id":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},},
