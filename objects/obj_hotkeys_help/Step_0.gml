@@ -11,7 +11,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
         action();
     }
 }
-else if (!keyboard_check(hotkey))
+else if (active and !keyboard_check(hotkey))
 {
-    active = false;
+    clear();
 }

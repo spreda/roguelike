@@ -73,9 +73,14 @@ function keycode_to_name(_keycode) {
     return "Unknown";
 }
 
-action = function() {
-   // Play select sound.
-   audio_play_sound(snd_ui_close, 0, 0, 1.0, undefined, 1.0);
+action = function() { 
+    if (active)
+    {
+        exit;
+    }
+    
+    // Play select sound.   
+    audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
     
     active = true;
     hotkey_list = [];
@@ -92,8 +97,25 @@ action = function() {
         }
         
         if (variable_instance_exists(_inst, "hotkey") and _inst.hotkey)
-        {
-            array_push(hotkey_list, _inst);
+        { 
+            var _key = keycode_to_name(_inst.hotkey);
+            
+            var _tooltip = instance_create_layer(0, 0, layer, obj_tooltip, {
+                parent_obj: _inst, 
+                text: _key, 
+                always_visible: true,
+                offset_x: -string_width(_key) / 2 - 15,
+                offset_y: -string_height(_key) / 2,
+                halign: fa_right,
+            });
+            
+            array_push(hotkey_list, _tooltip);
         }
     } 
+}
+
+clear = function() {
+    array_map_ext(hotkey_list, instance_destroy);
+    hotkey_list = [];
+    active = false;
 }
