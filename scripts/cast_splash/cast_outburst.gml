@@ -1,7 +1,7 @@
 // Define a function to spawn a single projectile.
-function spawn_bullet(angle, skill, projectile_object = undefined, caster_object = obj_hero)
+function spawn_bullet(angle, skill, projectile_object = undefined)
 {
-    if (!instance_exists(caster_object))
+    if (!instance_exists(obj_hero))
     {
         exit;
     }
@@ -18,7 +18,7 @@ function spawn_bullet(angle, skill, projectile_object = undefined, caster_object
     audio_play_sound(snd_lightning_throw, 0, 0, 1.0, undefined, 1.0);
     
     // Create a bullet and assign it to temp variable _bullet.
-    var _bullet = instance_create_layer(caster_object.x, caster_object.y, "Instances", _projectile);
+    var _bullet = instance_create_layer(obj_hero.x, obj_hero.y, "Instances", _projectile);
         
     // Change values of the bullet...
     with (_bullet) 
@@ -69,8 +69,8 @@ function cast_outburst(hero, skill)
     	repeat (_number_of_shots)
     	{
     		var _callback = method(
-                { _a:_angle, _s: skill, _o:skill.projectile_sub_object, _c:obj_hero },
-                function() { spawn_bullet(_a, _s, _o, _c); }
+                { _a:_angle, _s: skill, _o:skill.projectile_sub_object },
+                function() { spawn_bullet(_a, _s, _o); }
             );
             
             _animation.callbacks[$ (3 * _i + _cast_delay)] =_callback;

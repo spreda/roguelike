@@ -7,6 +7,7 @@ function init_skill_system()
         cast_wave: cast_wave,
         cast_beam: cast_beam,
         cast_burning_ground: cast_burning_ground,
+        cast_splash: cast_splash,
     };
     
 	var _skill_configs = {};
