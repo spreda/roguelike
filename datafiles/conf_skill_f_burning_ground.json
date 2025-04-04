@@ -1,7 +1,7 @@
 {
-    "name":	"Burning Ground",
+    "name":	"Scorch",
     "element": "Fire",
-	"description": "Unlock Burning Ground Skill",
+	"description": "Unlock Scorch Skill",
     "icon": "spr_burning_ground_Icon",
 	"cast_function": "cast_burning_ground",
     "projectile_object": "obj_hero_burning_ground",
