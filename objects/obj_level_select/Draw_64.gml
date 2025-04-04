@@ -14,7 +14,6 @@ var _sprites = [
     paper_4, paper_5, paper_6,
     paper_7, paper_8, paper_9,
 ];
-
 var _spr_size =  sprite_get_height(_sprites[0]);
 
 var _width = 12;

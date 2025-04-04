@@ -11,7 +11,7 @@ update = function(skill_config)
     with(skill)
     {
         _title_text = name;
-        _text = string("Damage:{0}\nCooldown:{1}s", base_damage*damage_scale*100, cooldown/attack_rate_scale);
+        _text = string("Level:{0}\nDamage:{1}\nCooldown:{2}s", level, base_damage*damage_scale*100, cooldown/attack_rate_scale);
     }
     
     instance_create_layer(x, y, layer, obj_tooltip,{
