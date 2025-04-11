@@ -18,7 +18,7 @@ function spawn_bullet(angle, skill, projectile_object = undefined, caster_object
     audio_play_sound(snd_lightning_throw, 0, 0, 1.0, undefined, 1.0);
     
     // Create a bullet and assign it to temp variable _bullet.
-    var _bullet = instance_create_layer(caster_object.x, caster_object.y, "Instances", _projectile);
+    var _bullet = instance_create_layer(caster_object.x, caster_object.y, "Instances", _projectile, { skill_config: skill });
         
     // Change values of the bullet...
     with (_bullet) 

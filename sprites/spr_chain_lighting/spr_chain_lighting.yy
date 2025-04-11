@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_chainlighting",
+  "%Name":"spr_chain_lighting",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":23,
@@ -34,7 +34,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"d588580e-ca12-4d9f-9ece-ce8613c8b4b7","blendMode":0,"displayName":"default","isLocked":false,"name":"d588580e-ca12-4d9f-9ece-ce8613c8b4b7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_chainlighting",
+  "name":"spr_chain_lighting",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -55,7 +55,7 @@
     ],
     "top":0,
   },
-  "origin":4,
+  "origin":3,
   "parent":{
     "name":"Chain_lighting",
     "path":"folders/Sprites/Weapons/Electro/Chain_lighting.yy",
@@ -65,7 +65,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_chainlighting",
+    "%Name":"spr_chain_lighting",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -89,7 +89,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_chainlighting",
+    "name":"spr_chain_lighting",
     "playback":1,
     "playbackSpeed":20.0,
     "playbackSpeedType":0,
@@ -101,52 +101,52 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a9a5dcd-56e4-4d38-b49f-1a3c25576a98","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a9a5dcd-56e4-4d38-b49f-1a3c25576a98","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"28df4a27-3439-497a-9625-40d69731e262","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"647d6f08-7f29-4803-8a76-64147ef4c9b9","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"647d6f08-7f29-4803-8a76-64147ef4c9b9","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ca2f2cf5-4953-45e7-8acc-d972d7f57f50","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bb63c4ba-78bc-4004-be33-922826bd2361","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bb63c4ba-78bc-4004-be33-922826bd2361","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2ba5be1a-0ef9-4c02-b781-610587e894ec","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"31e90b5c-621f-4913-ae1f-8555622a1533","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"31e90b5c-621f-4913-ae1f-8555622a1533","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c0103f92-ff51-4ef2-bb77-ffc13f4921e0","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aa6d4498-40a8-4b4b-8a74-b6ce17be9e54","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aa6d4498-40a8-4b4b-8a74-b6ce17be9e54","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"880d5140-ee99-464f-8fa3-7f3e325554ac","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2eaab3e2-5865-4a02-ba43-58fe01a5bd7e","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2eaab3e2-5865-4a02-ba43-58fe01a5bd7e","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2c330b65-4432-4657-9e56-82da7d4cc878","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69064a6b-f3ac-4e71-9509-7e982ab48b09","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69064a6b-f3ac-4e71-9509-7e982ab48b09","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e3da24cf-59ba-467c-9cf3-9206ec5e2202","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5511cdb8-53e0-46b0-82ee-f3ca5951bac0","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5511cdb8-53e0-46b0-82ee-f3ca5951bac0","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e9b2d477-5fcd-493e-bb7f-bb91deaca278","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1fd653af-7bc1-4722-96f5-cac6ef7cf6f5","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1fd653af-7bc1-4722-96f5-cac6ef7cf6f5","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0d5b2cea-1bff-4041-87da-5516765e8f9f","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc847873-9569-49b7-b6ca-c0df664ba47e","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc847873-9569-49b7-b6ca-c0df664ba47e","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"36d34031-eeec-4149-8873-fa5411e4c8a3","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25abcac8-9db4-4ca0-b82d-cabf2ffc563a","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25abcac8-9db4-4ca0-b82d-cabf2ffc563a","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"60b54e43-e0a0-46e7-ba88-53b4b8c3e738","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6abfc2e-7959-4a7e-85c6-2471a8b8675b","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6abfc2e-7959-4a7e-85c6-2471a8b8675b","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5f612d10-8026-4ad5-9e72-84a99a1fb66d","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"864667fb-c833-45b2-96fa-10c9edab9e7d","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"864667fb-c833-45b2-96fa-10c9edab9e7d","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"64b51c97-99e3-4811-ab4f-af8ea41988ab","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"357be4ee-0eed-48ae-80e1-a0853a39f4f8","path":"sprites/spr_chainlighting/spr_chainlighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"357be4ee-0eed-48ae-80e1-a0853a39f4f8","path":"sprites/spr_chain_lighting/spr_chain_lighting.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a7bcdbfe-5478-4f9a-b36d-18f93c0742dd","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":32,
+    "xorigin":0,
     "yorigin":32,
   },
   "swatchColours":null,

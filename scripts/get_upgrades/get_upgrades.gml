@@ -18,12 +18,6 @@ function get_upgrades()
 	{
         // Get upgrades for the skill and place them in the list.
     	weapon_upgrades(_skillset[$ _skill_names[_i]] , _upgrade_list);
-        show_debug_message(string(_i) + " Skill: " + string(_skill_names[_i]) + " Size: " + string(ds_list_size(_upgrade_list)));
-    }
-    
-    for (var _index = 0; _index < ds_list_size(_upgrade_list); _index += 1)
-    {
-        show_debug_message("Upgrade available: " + _upgrade_list[| _index].title)
     }
 
 	// Shuffle the list containing all the retrieved upgrades.

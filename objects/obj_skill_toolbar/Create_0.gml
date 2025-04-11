@@ -21,6 +21,11 @@ update = function(skillset) {
     _skill_names = struct_get_names(skills);
     _skill_num = array_length(_skill_names);
     
+    if (_skill_num == 0)
+    {
+        exit;
+    }    
+    
     var _icon_width = sprite_get_width(skills[$ _skill_names[0]].icon);
     var _width = (_icon_width + margin) * _skill_num - margin;
         

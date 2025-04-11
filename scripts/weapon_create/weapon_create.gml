@@ -8,6 +8,7 @@ function init_skill_system()
         cast_beam: cast_beam,
         cast_burning_ground: cast_burning_ground,
         cast_splash: cast_splash,
+        cast_chain_lightning: cast_chain_lightning,
     };
     
 	var _skill_configs = {};
@@ -33,6 +34,10 @@ function init_skill_system()
         if (!struct_exists(_config, "aoe_damage_portion"))
         {
             _config.aoe_damage_portion = 0;
+        }
+        if (!struct_exists(_config, "piercing"))
+        {
+            _config.piercing = 0;
         }
         
         _config.unlocked = false;

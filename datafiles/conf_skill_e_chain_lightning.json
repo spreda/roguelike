@@ -1,0 +1,66 @@
+{
+    "name":	"Chain Lightning",
+    "element": "Electro",
+	"description": "Unlock Chain Lightning Skill",
+    "icon": "spr_chain_lighting_icon",
+	"cast_function": "cast_chain_lightning",
+    "projectile_object": "obj_hero_chain_lightning",
+    "base_damage": 1,
+    "range": 250,
+	"speed": 0,
+    "cooldown": 1,
+    "piercing": 3,
+    "upgrade_branches": [
+    	[
+            {
+                "title":		"Damage 1",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 2",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 3",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Speed 1",
+                "description":	"Increase attack rate by 30%.",
+                "stats_add":	{ "attack_rate_scale": 0.30 }
+            },
+            {
+                "title":		"Speed 2",
+                "description":	"Increase attack rate by 30%.",
+                "stats_add":	{ "attack_rate_scale": 0.30 }
+            },
+            {
+                "title":		"Speed 3",
+                "description":	"Increase attack rate by 30%.",
+                "stats_add":	{ "attack_rate_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Chain 1",
+                "description":	"Increase chain\nlenght by 1",
+                "stats_add":	{ "piercing": 1 }
+            },
+            {
+                "title":		"Chain 2",
+                "description":	"Increase chain\nlenght by 1",
+                "stats_add":	{ "piercing": 1 }
+            },
+            {
+                "title":		"Chain  3",
+                "description":	"Increase chain\nlenght by 1",
+                "stats_add":	{ "piercing": 1 }
+            }
+    	]
+    ]
+}
