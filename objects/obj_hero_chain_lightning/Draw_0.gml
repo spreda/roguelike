@@ -3,7 +3,7 @@ image_xscale = scale * skill_config.projectile_scale;
 image_yscale = scale * skill_config.projectile_scale;
 
 // Set up shader
-// shader_set(shd_partial_draw);
+shader_set(shd_partial_draw);
 
 // Get sprite texture information
 var tex = sprite_get_texture(sprite_index, image_index);
@@ -22,8 +22,8 @@ var sprite_rect = [
 ];
 
 // Set shader uniforms
-var percent = distance / (sprite_get_width(image_index) * scale);
-var angle = image_angle; // Direction angle in degrees
+var percent = distance / sprite_width;
+var angle = 0; // Direction angle in degrees
 var dir_x = dcos(angle);
 var dir_y = dsin(angle);
 
@@ -39,4 +39,4 @@ shader_set_uniform_f(shader_get_uniform(shd_partial_draw, "u_sprite_size"),
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 
 // Reset shader
-// shader_reset();
+shader_reset();
