@@ -9,6 +9,7 @@ function init_skill_system()
         cast_burning_ground: cast_burning_ground,
         cast_splash: cast_splash,
         cast_chain_lightning: cast_chain_lightning,
+        cast_thunderbolt: cast_thunderbolt,
     };
     
 	var _skill_configs = {};

@@ -1,15 +1,14 @@
 {
-    "name":	"Chain Lightning",
+    "name":	"Thunderbolt",
     "element": "Electro",
-	"description": "Unlock Chain Lightning Skill",
-    "icon": "spr_chain_lighting_icon",
-	"cast_function": "cast_chain_lightning",
-    "projectile_object": "obj_hero_chain_lightning",
-    "base_damage": 1,
-    "range": 250,
+	"description": "Unlock Thunderbolt Skill",
+    "icon": "spr_thunderbolt_icon",
+	"cast_function": "cast_thunderbolt",
+    "projectile_object": "obj_hero_thunderbolt",
+    "base_damage": 3,
+    "range": 800,
 	"speed": 0,
-    "cooldown": 1.2,
-    "piercing": 3,
+    "cooldown": 1.7,
     "upgrade_branches": [
     	[
             {
@@ -47,18 +46,18 @@
         ],
         [
             {
-                "title":		"Chain 1",
-                "description":	"Increase chain\nlenght by 1",
+                "title":		"Barrage 1",
+                "description":	"Increase chain\nprojectiles by 1",
                 "stats_add":	{ "piercing": 1 }
             },
             {
-                "title":		"Chain 2",
-                "description":	"Increase chain\nlenght by 1",
+                "title":		"Barrage 2",
+                "description":	"Increase chain\nprojectiles by 1",
                 "stats_add":	{ "piercing": 1 }
             },
             {
-                "title":		"Chain  3",
-                "description":	"Increase chain\nlenght by 1",
+                "title":		"Barrage 3",
+                "description":	"Increase number of\nprojectiles by 1",
                 "stats_add":	{ "piercing": 1 }
             }
     	]
