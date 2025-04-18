@@ -165,7 +165,7 @@ function dash()
 	if (dash_time_counter >= dash_duration)
 	{
 		dash_time_counter = -dash_cooldown;
-		//rotation = 0;
+		rotation = 0;
 		exit;
 	}
 	speed = dash_speed;
