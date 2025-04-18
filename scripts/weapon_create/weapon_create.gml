@@ -10,6 +10,7 @@ function init_skill_system()
         cast_splash: cast_splash,
         cast_chain_lightning: cast_chain_lightning,
         cast_thunderbolt: cast_thunderbolt,
+        cast_electro_shield: cast_electro_shield,
     };
     
 	var _skill_configs = {};

@@ -45,3 +45,5 @@ for (var _i=0; _i < array_length(_skill_names); _i++)
 {
     cast(skills[$ _skill_names[_i]]);
 }
+
+print(is_invincible);

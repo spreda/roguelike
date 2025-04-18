@@ -6,6 +6,7 @@ rotation = 0;
 
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
+is_invincible = false;
 
 // Set current level
 level = 1;
@@ -61,3 +62,6 @@ cast = function(skill)
         }
 	}
 }
+
+// Sygnal system.
+signal_attacked = signal_create();

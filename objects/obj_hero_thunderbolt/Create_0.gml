@@ -45,7 +45,7 @@ apply_to_target = function(_mob)
             
             // Start the damage animation.
             var _animation = instance_create_layer(x, y, "Instances", obj_animation_effect, {
-                "sprite_index": spr_shield,
+                "sprite_index": spr_electric_charge,
                 "scale": 3,
                 "draw_on_top_layer": true,
                 "follow_instance_id": id,

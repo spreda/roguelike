@@ -33,6 +33,8 @@ function spawn_bullet(angle, skill, projectile_object = undefined, caster_object
         image_angle = direction;
         
         skill_config = skill;
+        
+        caster = caster_object;
     }	
     
     return _bullet;	
