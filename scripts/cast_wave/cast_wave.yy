@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cast_wave",
   "parent":{
-    "name":"Wave",
-    "path":"folders/Scripts/Weapons/Water/Wave.yy",
+    "name":"Water",
+    "path":"folders/Scripts/Weapons/Water.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

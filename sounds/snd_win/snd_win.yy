@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":4.875,
+  "duration":4.875011,
   "name":"snd_win",
   "parent":{
     "name":"Jingles",
@@ -26,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"snd_win.ogg",
   "type":0,
-  "volume":1.0,
+  "volume":0.5,
 }

@@ -1,0 +1,65 @@
+{
+    "name":	"Beam",
+    "element": "Water",
+	"description": "Unlock Beam Skill",
+    "icon": "spr_beam_icon",
+	"cast_function": "cast_beam",
+    "projectile_object": "obj_hero_beam",
+    "base_damage": 1,
+    "range": 1500,
+	"speed": 0,
+    "cooldown": 3,
+    "upgrade_branches": [
+    	[
+            {
+                "title":		"Damage 1",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 2",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 3",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Speed 1",
+                "description":	"Increase attack rate by 30%.",
+                "stats_add":	{ "attack_rate_scale": 0.30 }
+            },
+            {
+                "title":		"Speed 2",
+                "description":	"Increase attack rate by 30%.",
+                "stats_add":	{ "attack_rate_scale": 0.30 }
+            },
+            {
+                "title":		"Speed 3",
+                "description":	"Increase attack rate by 30%.",
+                "stats_add":	{ "attack_rate_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Size 1",
+                "description":	"Increase projectile\nsize by 20%",
+                "stats_add":	{ "projectile_scale": 0.20 }
+            },
+            {
+                "title":		"Size 2",
+                "description":	"Increase projectile\nsize by 20%",
+                "stats_add":	{ "projectile_scale": 0.20 }
+            },
+            {
+                "title":		"Size  3",
+                "description":	"Increase projectile\nsize by 20%",
+                "stats_add":	{ "projectile_scale": 0.20 }
+            }
+    	]
+    ]
+}

@@ -5,6 +5,12 @@ function init_skill_system()
         cast_fireball: cast_fireball,
         cast_outburst: cast_outburst,
         cast_wave: cast_wave,
+        cast_beam: cast_beam,
+        cast_burning_ground: cast_burning_ground,
+        cast_splash: cast_splash,
+        cast_chain_lightning: cast_chain_lightning,
+        cast_thunderbolt: cast_thunderbolt,
+        cast_electro_shield: cast_electro_shield,
     };
     
 	var _skill_configs = {};
@@ -21,15 +27,24 @@ function init_skill_system()
         
         _config.icon = asset_get_index(_config.icon);
 	    _config.cast_function = cast_functions[$ _config.cast_function];
-        _config.cooldown_timer = _config.cooldown;
+        _config.cooldown_timer = 20;
 	    _config.projectile_object = asset_get_index(_config.projectile_object);
         if (struct_exists(_config, "projectile_sub_object"))
         {
             _config.projectile_sub_object = asset_get_index(_config.projectile_sub_object);
         }
+        if (!struct_exists(_config, "aoe_damage_portion"))
+        {
+            _config.aoe_damage_portion = 0;
+        }
+        if (!struct_exists(_config, "piercing"))
+        {
+            _config.piercing = 0;
+        }
         
         _config.unlocked = false;
         _config.level = 0;
+        _config.cast_times = 0;
         _config.damage_scale = 1;
         _config.aoe_area_scale = 1;
         _config.projectile_scale = 1;

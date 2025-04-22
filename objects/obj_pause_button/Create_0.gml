@@ -6,3 +6,5 @@ has_released = false;
 
 // Variable used for button scaling.
 target_scale = 1.0;
+
+hotkey = vk_escape;

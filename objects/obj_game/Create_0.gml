@@ -4,13 +4,13 @@ global.hero_xscale = 1.5;
 // Set RNG seed
 randomize();
 
-// Debug mode toggle
+// Debug mode toggles
 global.debug = true;
 global.debug_audio = false;
 global.debug_fonts = false;
 
 // Set the experience goal to reach the next level.
-global.xp_goal = 15;
+global.xp_goal = 10;
 
 // Set current experience.
 global.xp = 0;
@@ -37,6 +37,11 @@ xp_margin_y = 30;
 
 // Create the pause button.
 instance_create_layer(1820, 120, "UpgradeScreen", obj_pause_button);
+
+help_upgrade = instance_create_layer(0, 0, "UpgradeScreen", obj_hotkeys_help);
+help_buttons = instance_create_layer(0, 0, "Buttons", obj_hotkeys_help);
+
+obj_hotkeys_help.invisible = true;
 
 // Create timer
 instance_create_layer(1920/2, 100,  "Instances", obj_timer);

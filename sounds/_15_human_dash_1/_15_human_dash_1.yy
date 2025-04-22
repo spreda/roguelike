@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.6666667,
+  "duration":0.666667,
   "name":"_15_human_dash_1",
   "parent":{
     "name":"Sounds",

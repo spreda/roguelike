@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.3333334,
+  "duration":1.333333,
   "name":"_13_human_jump_land_2",
   "parent":{
     "name":"Sounds",

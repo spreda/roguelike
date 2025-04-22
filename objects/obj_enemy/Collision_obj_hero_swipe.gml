@@ -24,9 +24,6 @@ if (hitpoints > 0 && sprite_index != hit_sprite)
 	sprite_index = hit_sprite;
 	image_index = 0;
 	
-	// Knockback
-	knockback = 10;
-	knockback_direction = direction + 180;
 
 	// If hitpoints has reached zero...
 	if (hitpoints <= 0)

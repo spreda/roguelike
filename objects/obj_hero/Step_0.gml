@@ -1,7 +1,3 @@
-image_xscale = global.hero_xscale;
-
-image_yscale = global.hero_xscale;
-
 // If the game is paused...
 if (global.paused)
 {
@@ -49,3 +45,5 @@ for (var _i=0; _i < array_length(_skill_names); _i++)
 {
     cast(skills[$ _skill_names[_i]]);
 }
+
+print(is_invincible);

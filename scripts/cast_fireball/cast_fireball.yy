@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cast_fireball",
   "parent":{
-    "name":"Fireball",
-    "path":"folders/Scripts/Weapons/Fire/Fireball.yy",
+    "name":"Fire",
+    "path":"folders/Scripts/Weapons/Fire.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

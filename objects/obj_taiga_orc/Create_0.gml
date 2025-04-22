@@ -6,7 +6,7 @@ event_inherited();
 walk_speed = 2.5;
 
 // Set max hitpoints specifically for this enemy type.
-hitpoints_max = 5 * global.enemy_health_bonus;
+hitpoints_max = 7 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
 // Set animation speed.
 image_speed = 1;
@@ -15,3 +15,5 @@ image_speed = 1;
 walk_sprite = spr_taigaorc_walk;
 attack_sprite = spr_taigaorc_attack;
 hit_sprite = spr_taigaorc_hit;
+
+damage_taken_sound = [_21_orc_damage_3];

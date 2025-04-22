@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_thunderbolt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_thunderbolt",
+  "parent":{
+    "name":"Electro",
+    "path":"folders/Scripts/Weapons/Electro.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

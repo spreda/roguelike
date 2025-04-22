@@ -6,6 +6,8 @@ draw_set_alpha(image_alpha);
 
 // Sets the texts font.
 draw_set_font(fnt_small);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 
 // Draw the text.
 draw_text(x, y, string(abs(floor(text * 100))));

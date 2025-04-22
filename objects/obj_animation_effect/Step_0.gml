@@ -1,5 +1,10 @@
+if (global.paused)
+{
+    exit;
+}
+
 // Follow set instance
-//if (instance_exists(follow_instance_id))
+if (instance_exists(follow_instance_id))
 {
 	x = variable_instance_get(follow_instance_id, "x");
 	y = variable_instance_get(follow_instance_id, "y");
@@ -18,3 +23,7 @@ if (draw_on_top_layer)
 	// top to bottom.
 	depth = -y;
 }
+
+update();
+
+i += 1;

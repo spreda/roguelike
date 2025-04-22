@@ -5,8 +5,8 @@ is_clicked = false;
 target_scale = 1.0;
 
 // Start game shortcut
-start_key= vk_space;
-start_key_alt= vk_enter;
+hotkey = vk_space;
+hotkey_alt = vk_enter;
 
 // Set room thet will be launched
 level_room = rm_level_select;
@@ -16,6 +16,9 @@ level_music = [snd_music_game,];
 // Leave the menu and start the game
 function start_game()
 {
+    // Stops all audio.
+    audio_stop_all();
+    
 	// Play click sound effect.
 	audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 	

@@ -12,10 +12,12 @@ if (!instance_exists(obj_game_over))
 	}
 }
 
+obj_hotkeys_help.invisible = false;
+
 // If the game is not over...
 // We do this by checking is an end game screen is not present.
-if (!instance_exists(obj_upgrade) && !instance_exists(obj_game_complete))
-{
+if (!instance_exists(obj_upgrade) and !instance_exists(obj_game_complete) and !instance_exists(obj_game_over))
+{ 
 	// If time runs out
 	if (time_seconds >= game_duration)
 	{
@@ -31,6 +33,8 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_game_complete))
 		// Game clock
 		game_time += 1;
 		time_seconds = int64(game_time/60);
+        
+        obj_hotkeys_help.invisible = true;
 	}
 	
 	// If we have reached the time goal...

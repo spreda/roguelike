@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_beam",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_beam",
+  "parent":{
+    "name":"Water",
+    "path":"folders/Scripts/Weapons/Water.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

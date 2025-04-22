@@ -128,39 +128,7 @@ if (mouse_over)
 		// Checks for mouse release or gamepad bypass.
 		if (mouse_check_button_released(mb_left) || gamepad_bypass)
 		{
-			// Play select sound.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-	
-			// Set variables for upgrade stats.
-			var _object = upgrade_data.object;
-			var _key = upgrade_data.key;
-			var _amount = upgrade_data.amount;
-	
-			// Upgrade components stats.
-            print("Obj: ", _object, "\nKey: ", _key, "\nAmount: ", _amount)
-			_object[$ _key] += _amount;
-			
-			// Increase skill level
-			if (struct_exists(_object, "level"))
-			{
-				_object[$ "level"] += 1;
-			}
-			else
-			{
-				_object[$ "level"] = 0;
-			}
-	
-			// Destroys upgrades.
-			with(obj_upgrade) instance_destroy();
-	
-			// Destroys upgrade screen.
-			with(obj_upgrade_screen) instance_destroy();
-	
-			// Destroys reroll button.
-			with(obj_button_reroll) instance_destroy();
-	
-			// Plays music sound effect.
-			audio_resume_all();
+			action();
 		}
 	}
 }

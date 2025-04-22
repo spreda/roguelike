@@ -8,7 +8,7 @@ walk_speed = 2;
 image_speed = 1;
 
 // Set max hitpoints for this enemy type.
-hitpoints_max = 1.5 * global.enemy_health_bonus;
+hitpoints_max = 3 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
 // Set hitpoints.
 hitpoints = hitpoints_max;
@@ -17,3 +17,5 @@ hitpoints = hitpoints_max;
 walk_sprite = spr_trailslime_walk;
 attack_sprite = spr_trailslime_attack;
 hit_sprite = spr_trailslime_hit;
+
+damage_taken_sound = [slime_sound];

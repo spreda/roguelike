@@ -1,5 +1,5 @@
 // Keyboard shortcut
-if (keyboard_check(sound_key) or keyboard_check(sound_key_alt))
+if (keyboard_check(hotkey) or keyboard_check(hotkey_alt))
 {
 	toggle_sound();
 }

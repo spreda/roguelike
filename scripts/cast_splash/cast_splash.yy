@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_splash",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_splash",
+  "parent":{
+    "name":"Water",
+    "path":"folders/Scripts/Weapons/Water.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

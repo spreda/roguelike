@@ -9,37 +9,28 @@ global.mouse_anchor_y = 0;
 
 // Declare player movement script.
 function player_movement() 
-{
+{  
 	// Set speed to 0.
 	// We increase it again below.
 	speed = 0;
 	
-	if (obj_hero.dash_time_counter < 0)
+	if (dash_time_counter < 0)
 	{
-		obj_hero.dash_time_counter += 1;
-		
+		dash_time_counter += 1; 
 	}
 	
-	if (obj_hero.dash_time_counter == 0 and obj_hero.dash_queued)
+	if (dash_time_counter == 0 and dash_queued)
 	{
 		dash();
 	}
 	
-	if (obj_hero.dash_time_counter > 0)
+	if (dash_time_counter > 0)
 	{
 		dash();
 	}
 	else
 	{
 		walk();
-	}
-	
-	// If hspeed does not equal 0...
-	if (hspeed != 0)
-	{
-		// Flip sprite horizontally based on hspeed.
-		image_xscale = global.hero_xscale * -sign(hspeed);
-		image_yscale = global.hero_xscale;
 	}
 
 	// If sprite is not the hit sprite,
@@ -51,7 +42,6 @@ function player_movement()
 		{
 			// Set sprite to the running sprite.
 			sprite_index = spr_hero_run;
-			image_index += 0;
 		}
 	
 		// Else speed is 0...
@@ -59,11 +49,17 @@ function player_movement()
 		{
 			// Set sprite to the idle sprite.
 			sprite_index = spr_hero_idle;
-			image_index += 0;
 		}
 	}
 	
-	move_and_collide(hspeed, vspeed, obj_static_prop, 2);
+	// If hspeed does not equal 0...
+	if (hspeed != 0)
+	{
+		// Flip sprite horizontally based on hspeed.
+		image_xscale = global.hero_xscale * -sign(hspeed);
+	}
+	
+	move_and_collide(hspeed, vspeed, obj_static_prop);
 	
 	speed = 0;
 }
@@ -161,18 +157,19 @@ function walk()
 
 function dash()
 {
-	if (obj_hero.dash_time_counter == 0)
-	{// Воспроизведение звука рывка
-    audio_play_sound(_15_human_dash_1, 1, false);
-	}
-	if (obj_hero.dash_time_counter >= obj_hero.dash_duration)
+	if (dash_time_counter == 0)
 	{
-		obj_hero.dash_time_counter = -obj_hero.dash_cooldown;
-		obj_hero.rotation = 0;
+        // Воспроизведение звука рывка
+        audio_play_sound(_15_human_dash_1, 1, false);
+	}
+	if (dash_time_counter >= dash_duration)
+	{
+		dash_time_counter = -dash_cooldown;
+		rotation = 0;
 		exit;
 	}
-	speed = obj_hero.dash_speed;
-	obj_hero.dash_time_counter += 1;
-	obj_hero.dash_queued = false;
-	obj_hero.rotation += 360 / obj_hero.dash_duration * sign(image_xscale);
+	speed = dash_speed;
+	dash_time_counter += 1;
+	dash_queued = false;
+	rotation += 360 / dash_duration * sign(image_xscale);
 }

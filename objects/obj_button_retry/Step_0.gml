@@ -7,38 +7,26 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	// If left mouse button is pressed...
 	if (mouse_check_button_pressed(mb_left))
 	{
-		// Play click sound effect.
-		audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
-		
-		// Sets click state to true.
-		is_clicked = true;
-		
-		// Reduce target scale size further.
-		target_scale = 0.9;
+        select();
 	}
 	
 	// Checks if mouse has been clicked on this button.
-	if (is_clicked)
+    // And the left mouse button is clicked...
+	if (is_clicked and mouse_check_button_released(mb_left))
 	{
-		// Reduce target scale size further.
-		target_scale = 0.9;
-		
-		// And the left mouse button is clicked...
-		if (mouse_check_button_released(mb_left))
-		{
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-	
-			// Restart this room.
-			// Restarting the game.
-			room_restart();
-		}
+        action();
 	}
 }
 else
 {
 	// Reset target scale size.
 	target_scale = 1.0;	
+}
+
+if (is_clicked)
+{ 
+    // Reduce target scale size further.
+    target_scale = 0.9;
 }
 
 // Stores how many gamepad count.
@@ -53,12 +41,7 @@ if (_max_pads > 0)
 		// Checks if gamepad button has been pressed.
 		if (gamepad_button_check_pressed(0, gp_start))
 		{
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-	
-			// Restart this room.
-			// Restarting the game.
-			room_restart();
+			action();
 		}
 	}
 }

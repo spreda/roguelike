@@ -1,6 +1,8 @@
 // Checks no menus are showing.
 if (!instance_exists(obj_pause_screen) && !instance_exists(obj_upgrade_screen) && !instance_exists(obj_game_over) && !instance_exists(obj_game_complete))
 {
+    hotkey = vk_escape;
+    
 	// Stores how many gamepad count.
 	var _max_pads = gamepad_get_device_count();
 
@@ -113,4 +115,8 @@ if (!instance_exists(obj_pause_screen) && !instance_exists(obj_upgrade_screen) &
 	// Lerp scale values to target scale.
 	image_xscale = lerp(image_xscale, target_scale, 0.1);
 	image_yscale = lerp(image_yscale, target_scale, 0.1);
+}
+else
+{
+    hotkey = undefined;
 }

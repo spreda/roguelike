@@ -1,0 +1,1 @@
+array_map_ext(icons, instance_destroy);

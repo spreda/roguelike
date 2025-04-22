@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_chain_lightning",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_chain_lightning",
+  "parent":{
+    "name":"Electro",
+    "path":"folders/Scripts/Weapons/Electro.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

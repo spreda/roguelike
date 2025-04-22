@@ -3,6 +3,8 @@ function unpause()
 {
 	// Unpause.
 	global.paused = false;
+    
+    instance_destroy(global.toolbar);
 
 	// Apply to all instances.
 	with (all) 

@@ -6,6 +6,7 @@ rotation = 0;
 
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
+is_invincible = false;
 
 // Set current level
 level = 1;
@@ -21,12 +22,12 @@ nearest_distance = 10000;
 walk_speed = 7;
 
 // Variables for tracking actions and movement states.
-dash_speed = 15;
+dash_speed = 17;
 dash_duration = 20;
-dash_cooldown = 20;
+dash_cooldown = 25;
 dash_time_counter = 0;
 dash_queued = false;
-dash_coyote_time = 10
+dash_coyote_time = 5;
 
 // Init skills fron config
 skills = init_skill_system();
@@ -61,3 +62,6 @@ cast = function(skill)
         }
 	}
 }
+
+// Sygnal system.
+signal_attacked = signal_create();

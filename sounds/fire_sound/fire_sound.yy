@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.8296372,
+  "duration":1.829637,
   "name":"fire_sound",
   "parent":{
     "name":"Sounds",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_electro_shield",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_electro_shield",
+  "parent":{
+    "name":"Electro",
+    "path":"folders/Scripts/Weapons/Electro.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -3,10 +3,10 @@
 event_inherited();
 
 // Set speed for this enemy type.
-walk_speed = 2.5;
+walk_speed = 1.5;
 
 // Set max hitpoints specifically for this enemy type.
-hitpoints_max = 9 * global.enemy_health_bonus;
+hitpoints_max = 9 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
 // Set animation speed.
 image_speed = 1;
@@ -15,3 +15,5 @@ image_speed = 1;
 walk_sprite = spr_taigaminotaur_walk;
 attack_sprite = spr_taigaminotaur_attack;
 hit_sprite = spr_taigaminotaur_hit;
+
+damage_taken_sound = [_21_orc_damage_1];
