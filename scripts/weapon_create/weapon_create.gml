@@ -11,6 +11,7 @@ function init_skill_system()
         cast_chain_lightning: cast_chain_lightning,
         cast_thunderbolt: cast_thunderbolt,
         cast_electro_shield: cast_electro_shield,
+        cast_spikes: cast_spikes,
     };
     
 	var _skill_configs = {};

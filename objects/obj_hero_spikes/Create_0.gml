@@ -1,0 +1,83 @@
+
+// Call parent event to set up general weapon stuff.
+event_inherited();
+
+size = 7;
+
+// Set sprites for this weapon type.
+switch (size)
+{
+	case 1:
+	case 2:
+	case 3:
+	case 4:
+	case 5:
+		start_sprite = spr_explosion_start_16x16;
+		loop_sprite = spr_fire_16x16;
+		end_sprite = spr_explosion_end_16x16;
+		break;
+		
+	case 6:
+	case 7:
+		start_sprite = spr_explosion_start_32x32;
+		loop_sprite = spr_fire_32x32;
+		end_sprite = spr_explosion_end_32x32;
+		break;
+		
+	case 8:
+		start_sprite = spr_explosion_start;
+		loop_sprite = spr_fire;
+		end_sprite = spr_explosion_end;
+		break;
+}
+
+// Set sprite scale.
+scale = 6;
+
+// Set ammout of animation loops
+lifespan = 1;
+
+collision_with_mob = function(_mob)
+{
+	// Interaction with mob
+	apply_to_target(_mob);
+}
+
+apply_to_target = function(_mob)
+{
+    var _damage = calculate_damage();
+    
+	with (_mob)
+	{
+		// If our hitpoints is over 0,
+		// AND we are not currently being hit.
+		if (hitpoints > 0 && sprite_index != hit_sprite)
+		{
+			// Set the healthbar timer to 60.
+			// This will cause the healthbar to be visible for that many game steps.
+			show_healthbar = 60;
+
+			// Reduce hitpoints by the damage caused by the trail weapon.
+			hitpoints -= _damage;
+
+			// Create text popup to indicate damage.
+			var _text = instance_create_layer(x + 0, y + 0, "UpgradeScreen", obj_text_popup);
+
+			// Set text to the damage amount.
+			_text.text = _damage;
+
+			// Set sprite to the hit sprite.
+			sprite_index = hit_sprite;
+			image_index = 0;
+
+			// If hitpoints has reached zero...
+			if (hitpoints <= 0)
+			{
+				// Destroy this instance.
+				instance_destroy();
+			}
+		}
+	}
+}
+
+sprite_index = start_sprite

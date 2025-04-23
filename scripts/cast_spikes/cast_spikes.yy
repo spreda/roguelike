@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_spikes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_spikes",
+  "parent":{
+    "name":"Earth",
+    "path":"folders/Scripts/Weapons/Earth.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
