@@ -63,7 +63,7 @@
     ],
     "top":0,
   },
-  "origin":3,
+  "origin":4,
   "parent":{
     "name":"Retraction",
     "path":"folders/Sprites/Weapons/Earth/Retraction.yy",
@@ -178,7 +178,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":32,
     "yorigin":32,
   },
   "swatchColours":null,

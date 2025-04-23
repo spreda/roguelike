@@ -49,7 +49,7 @@
     ],
     "top":0,
   },
-  "origin":3,
+  "origin":4,
   "parent":{
     "name":"Remnant",
     "path":"folders/Sprites/Weapons/Earth/Remnant.yy",
@@ -122,7 +122,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":32,
     "yorigin":32,
   },
   "swatchColours":null,

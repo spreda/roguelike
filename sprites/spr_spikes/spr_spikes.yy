@@ -46,7 +46,7 @@
     ],
     "top":0,
   },
-  "origin":3,
+  "origin":4,
   "parent":{
     "name":"Spikes",
     "path":"folders/Sprites/Weapons/Earth/Spikes.yy",
@@ -110,7 +110,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":32,
     "yorigin":32,
   },
   "swatchColours":null,
