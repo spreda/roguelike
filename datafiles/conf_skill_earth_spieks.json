@@ -3,15 +3,15 @@
     "element": "Earth",
 	"description": "Unlock Spikes Skill",
     "icon": "spr_spikes_icon",
-	"cast_function": "cast_burning_ground",
-    "projectile_object": "obj_hero_burning_ground",
+	"cast_function": "cast_spikes",
+    "projectile_object": "obj_hero_spikes",
     "base_damage": 0.1,
-    "min_range": 300,
-    "range": 400,
+    "min_range": 100,
+    "range": 1000,
 	"speed": 0,
-    "cooldown": 5,
+    "cooldown": 2,
     "animation_repeats": 3,
-    "projectile_count": 3,
+    "projectile_count": 15,
     "upgrade_branches": [
     	[
             {

@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hero_spikes",
+  "%Name":"obj_hero_spikes_particle",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hero_spikes",
+  "name":"obj_hero_spikes_particle",
   "overriddenProperties":[],
   "parent":{
     "name":"Earth",
     "path":"folders/Objects/Game/Weapons/Earth.yy",
   },
-  "parentObjectId":{
-    "name":"obj_hero_weapon",
-    "path":"objects/obj_hero_weapon/obj_hero_weapon.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_spikes",
-    "path":"sprites/spr_spikes/spr_spikes.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
