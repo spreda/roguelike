@@ -9,7 +9,7 @@
     "min_range": 100,
     "range": 1000,
 	"speed": 0,
-    "cooldown": 2,
+    "cooldown": 2.5,
     "animation_repeats": 3,
     "projectile_count": 15,
     "upgrade_branches": [
@@ -33,34 +33,34 @@
         [
             {
                 "title":		"Barrage 1",
-                "description":	"Increase number of\nfires by 2.",
+                "description":	"Increase number of\nspikes by 5.",
                 "stats_add":	{ "projectile_count": 2 }
             },
             {
                 "title":		"Barrage 2",
-                "description":	"Increase number of\nfires by 2.",
+                "description":	"Increase number of\nspikes by 5.",
                 "stats_add":	{ "projectile_count": 2 }
             },
             {
                 "title":		"Barrage 3",
-                "description":	"Increase number of\nfires by 2.",
+                "description":	"Increase number of\nspikes by 5.",
                 "stats_add":	{ "projectile_count": 2 }
             }
         ],
         [
             {
                 "title":		"Duration 1",
-                "description":	"Increase duration\nby 1 second.",
+                "description":	"Increase duration.",
                 "stats_add":	{ "animation_repeats": 2 }
             },
             {
                 "title":		"Duration 2",
-                "description":	"Increase duration\nby 1 second.",
+                "description":	"Increase duration.",
                 "stats_add":	{ "animation_repeats": 2 }
             },
             {
                 "title":		"Duration 3",
-                "description":	"Increase duration\nby 1 second.",
+                "description":	"Increase duration.",
                 "stats_add":	{ "animation_repeats": 2 }
             }
     	]
