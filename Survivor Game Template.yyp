@@ -142,7 +142,7 @@
     {"$GMIncludedFile":"","%Name":"conf_skill_e_chain_lightning.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_e_chain_lightning.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"conf_skill_e_electro_shield.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_e_electro_shield.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"conf_skill_e_thunderbolt.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_e_thunderbolt.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"conf_skill_earth_spieks.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_earth_spieks.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"conf_skill_earth_spikes.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_earth_spikes.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"conf_skill_f_burning_ground.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_f_burning_ground.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"conf_skill_f_fireball.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_f_fireball.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"conf_skill_f_outburst.json","CopyToMask":-1,"filePath":"datafiles","name":"conf_skill_f_outburst.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -425,6 +425,7 @@
     {"id":{"name":"spr_slime_hit","path":"sprites/spr_slime_hit/spr_slime_hit.yy",},},
     {"id":{"name":"spr_slime_walk","path":"sprites/spr_slime_walk/spr_slime_walk.yy",},},
     {"id":{"name":"spr_spikes_icon","path":"sprites/spr_spikes_icon/spr_spikes_icon.yy",},},
+    {"id":{"name":"spr_spikes_loop","path":"sprites/spr_spikes_loop/spr_spikes_loop.yy",},},
     {"id":{"name":"spr_spikes","path":"sprites/spr_spikes/spr_spikes.yy",},},
     {"id":{"name":"spr_splash_cast","path":"sprites/spr_splash_cast/spr_splash_cast.yy",},},
     {"id":{"name":"spr_splash_icon","path":"sprites/spr_splash_icon/spr_splash_icon.yy",},},
@@ -523,5 +524,6 @@
   "templateType":"game",
   "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"png","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMTextureGroup":"","%Name":"texgroup1","autocrop":false,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"texgroup1","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }

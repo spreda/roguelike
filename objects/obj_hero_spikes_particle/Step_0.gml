@@ -1,3 +1,8 @@
+if (global.paused)
+{
+	exit;
+}
+
 lifetime -= 1;
 
 if (lifetime <= 0)
@@ -11,5 +16,5 @@ if (lifetime <= 0)
 }
 else if (radius < target_radius)
 {
-    radius += 10;
+    radius += (target_radius - radius) / 10 + 5;
 }

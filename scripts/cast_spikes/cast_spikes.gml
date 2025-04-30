@@ -5,17 +5,19 @@ function cast_spikes(hero, skill)
         // If there is an enemy found...
       	if (nearest_enemy)
       	{ 
-            var _particle = instance_create_layer(x, y + 15, "Instances", obj_hero_spikes_particle);
+            var _particle = instance_create_layer(x, y, "Instances", obj_hero_spikes_particle);
             _particle.target_radius = skill.min_range + 20;
             _particle.lifetime = 200;
             _particle.eccentricity = 1.7;
             
             var _number_of_shots = skill.projectile_count;
             
+            var initial_angle = random(3600);
+            
       		// Create attack object.
       		for (var i = 0; i < _number_of_shots; i++)
       		{
-      			var _dir = i / _number_of_shots * 360 * 3.414;
+      			var _dir = i / _number_of_shots * 360 * 5234 + random(100) / (i + 1) + initial_angle;
       			var _distance = sqrt(i / _number_of_shots) * skill.min_range + random(10) - 5;
                 
       			var _x =  lengthdir_x(_distance, _dir);

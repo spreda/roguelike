@@ -6,12 +6,12 @@
 	"cast_function": "cast_spikes",
     "projectile_object": "obj_hero_spikes",
     "base_damage": 0.1,
-    "min_range": 100,
+    "min_range": 200,
     "range": 1000,
 	"speed": 0,
     "cooldown": 2.5,
-    "animation_repeats": 3,
-    "projectile_count": 15,
+    "animation_repeats": 9,
+    "projectile_count": 35,
     "upgrade_branches": [
     	[
             {
@@ -34,17 +34,17 @@
             {
                 "title":		"Barrage 1",
                 "description":	"Increase number of\nspikes by 5.",
-                "stats_add":	{ "projectile_count": 2 }
+                "stats_add":	{ "projectile_count": 5 }
             },
             {
                 "title":		"Barrage 2",
                 "description":	"Increase number of\nspikes by 5.",
-                "stats_add":	{ "projectile_count": 2 }
+                "stats_add":	{ "projectile_count": 5 }
             },
             {
                 "title":		"Barrage 3",
                 "description":	"Increase number of\nspikes by 5.",
-                "stats_add":	{ "projectile_count": 2 }
+                "stats_add":	{ "projectile_count": 5 }
             }
         ],
         [
