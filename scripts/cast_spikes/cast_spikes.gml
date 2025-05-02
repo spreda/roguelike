@@ -12,7 +12,7 @@ function cast_spikes(hero, skill)
             
             var _number_of_shots = skill.projectile_count;
             
-            var initial_angle = random(3600);
+            var initial_angle = random(360);
             
       		// Create attack object.
       		for (var i = 0; i < _number_of_shots; i++)

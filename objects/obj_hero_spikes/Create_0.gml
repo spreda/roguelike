@@ -9,7 +9,7 @@ scale = 1.5;
 
 // Set ammout of animation loops
 lifespan = 1;
-animation_length = 25;
+animation_length = 20;
 sprite_portion = 0.75;
 show_portion = 0;
 y_start = y;
