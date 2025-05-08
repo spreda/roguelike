@@ -23,11 +23,16 @@ if (burn > 0)
 	hitpoints -= burn / 60;
 	burn = max(burn - 1/60, 0);
 }
+if (slowdown_duration > 0)
+{
+	speed *= (1 - slowdown);
+	slowdown_duration--;
+}
 if (knockback > 0)
 {
 	direction = knockback_direction;
 	speed = knockback;
-	knockback -= 1;
+	knockback -= knockback_decay;
 	if (knockback <= 0)
 	{
 		speed = walk_speed;

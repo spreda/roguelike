@@ -19,6 +19,9 @@ show_healthbar = 0;
 burn = 0;
 knockback = 0;
 knockback_direction = 0;
+knockback_decay = 1;
+slowdown = 0;
+slowdown_duration = 0;
 
 damage_taken_sound = [slime_sound];
 

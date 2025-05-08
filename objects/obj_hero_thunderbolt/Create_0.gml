@@ -74,13 +74,9 @@ function init()
             max_hp = mob.hitpoints;
             target_id = mob;
         }
-        
-        show_debug_message(string(mob.hitpoints));
     }
     
-    show_debug_message("\n" + string(max_hp) + "\n");
-    
-    ds_list_clear(potential_targets);
+    ds_list_destroy(potential_targets);
     
     x = target_id.x;
     y = target_id.y;

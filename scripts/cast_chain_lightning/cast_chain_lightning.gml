@@ -5,7 +5,6 @@ function cast_chain_lightning(hero, skill, target=undefined) {
         
         if (target == undefined)
         {
-            show_debug_message("");
             _target = nearest_enemy; 
         }
         // Get the direction from the hero to the enemy.

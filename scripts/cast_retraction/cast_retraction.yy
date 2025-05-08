@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cast_retraction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cast_retraction",
+  "parent":{
+    "name":"Earth",
+    "path":"folders/Scripts/Weapons/Earth.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

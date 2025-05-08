@@ -12,6 +12,7 @@ function init_skill_system()
         cast_thunderbolt: cast_thunderbolt,
         cast_electro_shield: cast_electro_shield,
         cast_spikes: cast_spikes,
+        cast_retraction: cast_retraction,
     };
     
 	var _skill_configs = {};
@@ -26,10 +27,13 @@ function init_skill_system()
         
         _config.source_file = _config_files[_i];
         
+        // Get assets from names.
         _config.icon = asset_get_index(_config.icon);
 	    _config.cast_function = cast_functions[$ _config.cast_function];
         _config.cooldown_timer = 20;
 	    _config.projectile_object = asset_get_index(_config.projectile_object);
+        
+        // Use defaul values for absent fields.
         if (struct_exists(_config, "projectile_sub_object"))
         {
             _config.projectile_sub_object = asset_get_index(_config.projectile_sub_object);
@@ -42,7 +46,12 @@ function init_skill_system()
         {
             _config.piercing = 0;
         }
+        if (!struct_exists(_config, "animation_repeats"))
+        {
+            _config.animation_repeats = 0;
+        }
         
+        // Set upgradable stats.
         _config.unlocked = false;
         _config.level = 0;
         _config.cast_times = 0;

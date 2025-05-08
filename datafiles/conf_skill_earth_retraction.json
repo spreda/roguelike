@@ -1,0 +1,67 @@
+{
+    "name":	"Retraction",
+    "element": "Earth",
+	"description": "Unlock Retraction Skill",
+    "icon": "spr_retraction_icon",
+	"cast_function": "cast_retraction",
+    "projectile_object": "obj_hero_retraction",
+    "base_damage": 0.1,
+    "min_range": 0,
+    "range": 500,
+	"speed": 0,
+    "cooldown": 2,
+    "projectile_count": 1,
+    "upgrade_branches": [
+    	[
+            {
+                "title":		"Damage 1",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 2",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 3",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Barrage 1",
+                "description":	"Increase number of\nspikes by 5.",
+                "stats_add":	{ "projectile_count": 5 }
+            },
+            {
+                "title":		"Barrage 2",
+                "description":	"Increase number of\nspikes by 5.",
+                "stats_add":	{ "projectile_count": 5 }
+            },
+            {
+                "title":		"Barrage 3",
+                "description":	"Increase number of\nspikes by 5.",
+                "stats_add":	{ "projectile_count": 5 }
+            }
+        ],
+        [
+            {
+                "title":		"Duration 1",
+                "description":	"Increase duration.",
+                "stats_add":	{ "animation_repeats": 2 }
+            },
+            {
+                "title":		"Duration 2",
+                "description":	"Increase duration.",
+                "stats_add":	{ "animation_repeats": 2 }
+            },
+            {
+                "title":		"Duration 3",
+                "description":	"Increase duration.",
+                "stats_add":	{ "animation_repeats": 2 }
+            }
+    	]
+    ]
+}
