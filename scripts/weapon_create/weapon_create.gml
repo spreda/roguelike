@@ -25,6 +25,25 @@ function init_skill_system()
     {
         var _config = load_json(_config_files[_i]); 
         
+        var _defaults = {
+            "projectile_sub_object": undefined,
+            "aoe_damage_portion": 0,
+            "piercing": 0,
+            "animation_repeats": 0,
+            "projectile_spread_angle": 0,
+        }
+        
+        // Use defaul values for absent fields.
+        var _keys = struct_get_names(_defaults);
+        for (var _j = 0; _j < array_length(_keys); _j++)
+        { 
+            var _key = _keys[_j];
+            if (!struct_exists(_config, _key))
+            {
+                _config[$ _key] = _defaults[$ _key];
+            }
+        }
+         
         _config.source_file = _config_files[_i];
         
         // Get assets from names.
@@ -32,25 +51,8 @@ function init_skill_system()
 	    _config.cast_function = cast_functions[$ _config.cast_function];
         _config.cooldown_timer = 20;
 	    _config.projectile_object = asset_get_index(_config.projectile_object);
-        
-        // Use defaul values for absent fields.
-        if (struct_exists(_config, "projectile_sub_object"))
-        {
-            _config.projectile_sub_object = asset_get_index(_config.projectile_sub_object);
-        }
-        if (!struct_exists(_config, "aoe_damage_portion"))
-        {
-            _config.aoe_damage_portion = 0;
-        }
-        if (!struct_exists(_config, "piercing"))
-        {
-            _config.piercing = 0;
-        }
-        if (!struct_exists(_config, "animation_repeats"))
-        {
-            _config.animation_repeats = 0;
-        }
-        
+        _config.projectile_sub_object = asset_get_index(_config.projectile_sub_object);
+         
         // Set upgradable stats.
         _config.unlocked = false;
         _config.level = 0;

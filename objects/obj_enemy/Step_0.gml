@@ -3,12 +3,14 @@ if (global.paused)
 	exit;
 }
 
+update_target();
+
 speed = walk_speed;
 
 // Set direction towards the hero.
-if (instance_exists(obj_hero))
+if (instance_exists(target))
 {
-	direction = point_direction(x, y, obj_hero.x, obj_hero.y);
+	direction = point_direction(x, y, target.x, target.y);
 }
 
 // Make enemies run off from the player

@@ -30,3 +30,26 @@ while (!(place_empty(x, y, obj_static_prop)))
 	x += random(100) - 50;
 	y += random(100) - 50;
 } 
+
+target_queue = [];
+target = obj_hero;
+
+function set_target(new_target)
+{
+    array_push(target_queue, target);
+    target = new_target;
+}
+
+function update_target()
+{
+    while (!instance_exists(target))
+    {
+        if (array_length(target_queue) > 0)
+        {
+            target = array_pop(target_queue);
+        } else
+        {
+            target = obj_hero;
+        }
+    }
+}

@@ -17,6 +17,13 @@ function calculate_damage()
     return skill_config.base_damage * skill_config.damage_scale;
 }
 
+function calculate_aoe_damage()
+{
+    return skill_config.aoe_damage_portion * calculate_damage();
+}
+
+init = function()  { }
+
 apply_to_target = function(_mob) { }
 
 collision_with_mob = function(_mob)

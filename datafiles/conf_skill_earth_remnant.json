@@ -1,0 +1,68 @@
+{
+    "name":	"Remnant",
+    "element": "Earth",
+	"description": "Unlock Remnant Skill",
+    "icon": "spr_remnant_icon",
+	"cast_function": "cast_thunderbolt",
+    "projectile_object": "obj_hero_remnant",
+    "base_damage": 1,
+    "aoe_damage_portion": 2,
+    "hitpoints": 3,
+    "range": 1000,
+	"speed": 0,
+    "cooldown": 7,
+    "animation_repeats": 3,
+    "upgrade_branches": [
+    	[
+            {
+                "title":		"Damage 1",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 2",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            },
+            {
+                "title":		"Damage 3",
+                "description":	"Increase damage by 30%.",
+                "stats_add":	{ "damage_scale": 0.30 }
+            }
+        ],
+        [
+            {
+                "title":		"Barrage 1",
+                "description":	"Increase Remnant\nexplosion size by 25%.",
+                "stats_add":	{ "aoe_area_scale": 0.25 }
+            },
+            {
+                "title":		"Barrage 2",
+                "description":	"Increase Remnant\nexplosion size by 25%.",
+                "stats_add":	{ "aoe_area_scale": 0.25 }
+            },
+            {
+                "title":		"Barrage 3",
+                "description":	"Increase Remnant\nexplosion size by 25%.",
+                "stats_add":	{ "aoe_area_scale": 0.25 }
+            }
+        ],
+        [
+            {
+                "title":		"Duration 1",
+                "description":	"Increase Remnant\ndurability by 3 HP.",
+                "stats_add":	{ "hitpoints": 3 }
+            },
+            {
+                "title":		"Duration 2",
+                "description":	"Increase Remnant\ndurability by 3 HP.",
+                "stats_add":	{ "hitpoints": 3 }
+            },
+            {
+                "title":		"Duration 3",
+                "description":	"Increase Remnant\ndurability by 3 HP.",
+                "stats_add":	{ "hitpoints": 3 }
+            }
+    	]
+    ]
+}

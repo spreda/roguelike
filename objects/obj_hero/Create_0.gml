@@ -33,8 +33,11 @@ dash_coyote_time = 5;
 skills = init_skill_system();
 
 // Unlocks Fireball skill by default.
-skills[$ "Fireball"].unlocked = true;
-skills[$ "Fireball"].level = 1;
+// skills[$ "Fireball"].unlocked = true;
+// skills[$ "Fireball"].level = 1;
+
+skills[$ "Remnant"].unlocked = true;
+skills[$ "Remnant"].level = 1;
 
 // Function for the spell casting.
 cast = function(skill)

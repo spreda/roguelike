@@ -1,0 +1,1 @@
+spawn_bullet(0, skill_config, obj_hero_explosion, id);
