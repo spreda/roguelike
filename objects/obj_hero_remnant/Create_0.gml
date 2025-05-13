@@ -31,7 +31,6 @@ collision_with_mob = function(_mob)
 	// Interaction with mob
 	apply_to_target(_mob);
     
-    
     // If our hitpoints is over 0,
     // AND we are not currently being hit.
     if (hitpoints > 0 && sprite_index != start_sprite)
