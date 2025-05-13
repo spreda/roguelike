@@ -6,6 +6,7 @@
 	"cast_function": "cast_electro_shield",
     "projectile_object": "obj_electro_shield",
     "base_damage": 1,
+    "knockback": 10,
     "range": 10000,
 	"speed": 0,
     "cooldown": 3,

@@ -24,7 +24,12 @@ function calculate_aoe_damage()
 
 init = function()  { }
 
-apply_to_target = function(_mob) { }
+apply_to_target = function(_mob)
+{
+    var _damage = calculate_damage();
+    
+    _mob.take_hit(_damage);
+}
 
 collision_with_mob = function(_mob)
 {

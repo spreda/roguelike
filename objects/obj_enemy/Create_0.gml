@@ -53,3 +53,39 @@ function update_target()
         }
     }
 }
+
+function take_hit(_damage)
+{
+    // If our hitpoints is over 0,
+    // AND we are not currently being hit.
+    if (hitpoints > 0 && sprite_index != hit_sprite)
+    {
+        // Set the healthbar timer to 60.
+        // This will cause the healthbar to be visible for that many game steps.
+        show_healthbar = 60;
+
+        // Reduce hitpoints by the damage caused by weapon.
+        hitpoints -= _damage;
+
+        // Create text popup to indicate damage.
+        var _text = instance_create_layer(x + 0, y + 0, "UpgradeScreen", obj_text_popup);
+
+        // Set text to the damage amount.
+        _text.text = _damage;
+
+        // Set sprite to the hit sprite.
+        sprite_index = hit_sprite;
+        image_index = 0;
+
+        // If hitpoints has reached zero...
+        if (hitpoints <= 0)
+        {
+            // Destroy this instance.
+            instance_destroy();
+        }
+        
+        return _damage;
+    }
+    
+    return 0;
+}

@@ -192,7 +192,6 @@
     {"id":{"name":"obj_hero_chain_lightning","path":"objects/obj_hero_chain_lightning/obj_hero_chain_lightning.yy",},},
     {"id":{"name":"obj_hero_explosion","path":"objects/obj_hero_explosion/obj_hero_explosion.yy",},},
     {"id":{"name":"obj_hero_fireball","path":"objects/obj_hero_fireball/obj_hero_fireball.yy",},},
-    {"id":{"name":"obj_hero_meteor","path":"objects/obj_hero_meteor/obj_hero_meteor.yy",},},
     {"id":{"name":"obj_hero_outburst","path":"objects/obj_hero_outburst/obj_hero_outburst.yy",},},
     {"id":{"name":"obj_hero_remnant","path":"objects/obj_hero_remnant/obj_hero_remnant.yy",},},
     {"id":{"name":"obj_hero_retraction","path":"objects/obj_hero_retraction/obj_hero_retraction.yy",},},

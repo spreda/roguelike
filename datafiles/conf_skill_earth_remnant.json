@@ -7,6 +7,7 @@
     "projectile_object": "obj_hero_remnant",
     "base_damage": 1,
     "aoe_damage_portion": 2,
+    "knockback": 8,
     "hitpoints": 3,
     "range": 1000,
 	"speed": 0,

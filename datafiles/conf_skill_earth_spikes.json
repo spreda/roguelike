@@ -6,6 +6,7 @@
 	"cast_function": "cast_spikes",
     "projectile_object": "obj_hero_spikes",
     "base_damage": 0.1,
+    "knockback": 4,
     "min_range": 200,
     "range": 1000,
 	"speed": 0,
