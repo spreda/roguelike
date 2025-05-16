@@ -1,4 +1,3 @@
-
 // Create variable for max hitpoints.
 hitpoints_max = 7 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
@@ -54,7 +53,7 @@ function update_target()
     }
 }
 
-function take_hit(_damage)
+function take_hit(_damage, _knockback = 0)
 {
     // If our hitpoints is over 0,
     // AND we are not currently being hit.
@@ -76,6 +75,13 @@ function take_hit(_damage)
         // Set sprite to the hit sprite.
         sprite_index = hit_sprite;
         image_index = 0;
+        
+        if (_knockback != 0)
+        {
+            var _knockback_vec2 = vec2_add(_knockback, direction + 180, knockback, knockback_direction)
+            knockback = _knockback_vec2.length;
+            knockback_direction = _knockback_vec2.direction;
+        }
 
         // If hitpoints has reached zero...
         if (hitpoints <= 0)

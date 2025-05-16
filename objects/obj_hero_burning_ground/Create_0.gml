@@ -1,4 +1,3 @@
-
 // Call parent event to set up general weapon stuff.
 event_inherited();
 
@@ -36,11 +35,5 @@ scale = 6;
 
 // Set ammout of animation loops
 lifespan = 1;
-
-collision_with_mob = function(_mob)
-{
-	// Interaction with mob
-	apply_to_target(_mob);
-}
 
 sprite_index = start_sprite
