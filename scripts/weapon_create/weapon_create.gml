@@ -31,6 +31,7 @@ function init_skill_system()
             "piercing": 0,
             "animation_repeats": 0,
             "projectile_spread_angle": 0,
+            "knockback": 0,
         }
         
         // Use defaul values for absent fields.

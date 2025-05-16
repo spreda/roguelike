@@ -16,9 +16,6 @@ lifespan = 1;
 
 stored_attack_rate_scale = 0;
 
-// Sets default image alpha.
-image_alpha = 1;
-
 apply_to_target = function(_caster) { }
 
 collision_with_mob = function(_mob) { }
