@@ -18,7 +18,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Controls",
-    "path":"folders/Objects/Menu/Controls.yy",
+    "path":"folders/Objects/Game/UI/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,

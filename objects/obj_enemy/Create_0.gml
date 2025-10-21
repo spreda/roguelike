@@ -1,5 +1,5 @@
 // Create variable for max hitpoints.
-hitpoints_max = 7 * global.enemy_health_bonus * global.enemy_hp_multiplier;
+hitpoints_max = 4 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
 // Create variable for hitpoints.
 hitpoints = hitpoints_max;
@@ -89,6 +89,8 @@ function take_hit(_damage, _knockback = 0)
             // Destroy this instance.
             instance_destroy();
         }
+        
+        screenshake(_damage, _damage, 0.4); 
         
         return _damage;
     }

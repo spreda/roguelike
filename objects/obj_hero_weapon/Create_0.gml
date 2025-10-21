@@ -36,7 +36,7 @@ collision_with_mob = function(_mob)
 	// Choose a random shooting sound effect.
 	var _sound = array_shuffle(sounds)[0];
 			
-	// Play the chosen sound.
+	// Player feedback
 	audio_play_sound(_sound, 0, 0, 0.1, undefined, 1.0);
 	
 	// Interaction with mob.
