@@ -22,9 +22,9 @@ nearest_distance = 10000;
 walk_speed = 7;
 
 // Variables for tracking actions and movement states.
-dash_speed = 17;
+dash_speed = walk_speed * 2;
 dash_duration = 20;
-dash_cooldown = 25;
+dash_cooldown = 20;
 dash_time_counter = 0;
 dash_queued = false;
 dash_coyote_time = 5;

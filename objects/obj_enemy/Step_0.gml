@@ -5,7 +5,7 @@ if (global.paused)
 
 update_target();
 
-speed = walk_speed;
+speed = walk_speed * speed_scale;
 
 // Set direction towards the hero.
 if (instance_exists(target))

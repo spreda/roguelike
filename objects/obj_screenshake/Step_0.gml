@@ -14,17 +14,20 @@ if (shake)
        } 
     } 
 }
-
-if (instance_exists(obj_hero)) {
-    hero_speed.x = (obj_hero.x - hero_pos.x) * 10;
-    hero_speed.y = (obj_hero.y - hero_pos.y) * 10;
+ 
+if (!global.paused)
+{
+    if (instance_exists(obj_hero)) {
+        hero_speed.x = (obj_hero.x - hero_pos.x) * 10;
+        hero_speed.y = (obj_hero.y - hero_pos.y) * 10;
+        
+        hero_pos.x = obj_hero.x;
+        hero_pos.y = obj_hero.y;
+    }
     
-    hero_pos.x = obj_hero.x;
-    hero_pos.y = obj_hero.y;
+    camera_pos.x = lerp(camera_pos.x, hero_speed.x * 3, 0.03);
+    camera_pos.y = lerp(camera_pos.y, hero_speed.y * 3, 0.03);
 }
-
-camera_pos.x = lerp(camera_pos.x, hero_speed.x * 3, 0.02);
-camera_pos.y = lerp(camera_pos.y, hero_speed.y * 3, 0.02);
 
 var _final_x = clamp(hero_pos.x + camera_pos.x + target_pos.x - display_get_width() / 2, 0, room_width - display_get_width());
 var _final_y = clamp(hero_pos.y + camera_pos.y + target_pos.y - display_get_height() / 2, 0, room_height - display_get_height());

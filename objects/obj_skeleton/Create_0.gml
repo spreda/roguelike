@@ -5,7 +5,7 @@ event_inherited();
 image_speed = 1;
 
 // Set max hitpoints specifically for this enemy type.
-hitpoints_max = 5 * global.enemy_health_bonus * global.enemy_hp_multiplier;
+hitpoints_max *= 1.4;
 
 // Set hitpoints specifically for this enemy type.
 hitpoints = hitpoints_max;

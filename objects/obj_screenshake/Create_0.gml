@@ -1,7 +1,7 @@
 shake = false;
 shake_time = 0;
 shake_magnitude = 0;
-shake_fade = 0.25;
+shake_fade = 0.2;
 
 hero_pos = { "x": 0, "y": 0 };
 hero_speed = { "x": 0, "y": 0 };
