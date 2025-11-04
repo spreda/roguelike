@@ -46,9 +46,12 @@ function update_target()
         if (array_length(target_queue) > 0)
         {
             target = array_pop(target_queue);
-        } else
+        } else if (instance_exists(obj_hero))
         {
             target = obj_hero;
+        } else
+        {
+            break;
         }
     }
 }
