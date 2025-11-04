@@ -65,5 +65,6 @@ cast = function(skill)
 
 // Sygnal system.
 signal_attacked = signal_create();
-    
+
+// Setup camera    
 instance_create_layer(0, 0, layer, obj_screenshake);
