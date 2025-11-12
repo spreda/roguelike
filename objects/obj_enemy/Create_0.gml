@@ -1,11 +1,11 @@
 // Create variable for max hitpoints.
-hitpoints_max = 2 * global.enemy_health_bonus * global.enemy_hp_multiplier;
+hitpoints_max = 1 * global.enemy_health_bonus * global.enemy_hp_multiplier;
 
 // Create variable for hitpoints.
 hitpoints = hitpoints_max;
 
 // Set speed.
-walk_speed = 5;
+walk_speed = 4;
 speed_scale = 1;
 
 // Set image scale.
