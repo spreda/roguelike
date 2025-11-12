@@ -1,7 +1,7 @@
 {
     "name":	"Chain Lightning",
     "element": "Electro",
-	"description": "Unlock Chain Lightning Skill",
+	"description": "Jumps between enemies,\ndealing damage.",
     "icon": "spr_chain_lighting_icon",
 	"cast_function": "cast_chain_lightning",
     "projectile_object": "obj_hero_chain_lightning",

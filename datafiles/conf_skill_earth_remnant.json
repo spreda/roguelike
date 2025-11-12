@@ -1,7 +1,7 @@
 {
     "name":	"Remnant",
     "element": "Earth",
-	"description": "Unlock Remnant Skill",
+	"description": "Lures enemies\nand explodes.",
     "icon": "spr_remnant_icon",
 	"cast_function": "cast_thunderbolt",
     "projectile_object": "obj_hero_remnant",

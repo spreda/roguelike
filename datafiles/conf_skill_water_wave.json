@@ -1,7 +1,7 @@
 {
     "name":	"Wave",
     "element": "Water",
-	"description": "Unlock Wave Skill",
+	"description": "Deals damage and\npushes back.",
     "icon": "spr_wave_icon",
 	"cast_function": "cast_wave",
     "projectile_object": "obj_hero_wave",

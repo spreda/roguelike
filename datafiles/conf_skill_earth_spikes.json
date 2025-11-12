@@ -1,7 +1,7 @@
 {
     "name":	"Spikes",
     "element": "Earth",
-	"description": "Unlock Spikes Skill",
+	"description": "A circle of spikes that\nslowdown enemies.",
     "icon": "spr_spikes_icon",
 	"cast_function": "cast_spikes",
     "projectile_object": "obj_hero_spikes",

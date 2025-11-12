@@ -1,7 +1,7 @@
 {
     "name":	"Thunderbolt",
     "element": "Electro",
-	"description": "Unlock Thunderbolt Skill",
+	"description": "Strikes the target with\nthe highest health.",
     "icon": "spr_thunderbolt_icon",
 	"cast_function": "cast_thunderbolt",
     "projectile_object": "obj_hero_thunderbolt",

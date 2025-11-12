@@ -1,7 +1,7 @@
 {
     "name":	"Electro Shield",
     "element": "Electro",
-	"description": "Unlock Electro Shield Skill",
+	"description": "Protects hero and\nstrikes enemies.",
     "icon": "spr_electro_shield_icon",
 	"cast_function": "cast_electro_shield",
     "projectile_object": "obj_electro_shield",

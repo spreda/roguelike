@@ -1,7 +1,7 @@
 {
     "name":	"Scorch",
     "element": "Fire",
-	"description": "Unlock Scorch Skill",
+	"description": "Burning earth that\ndeals damage.",
     "icon": "spr_burning_ground_Icon",
 	"cast_function": "cast_burning_ground",
     "projectile_object": "obj_hero_burning_ground",

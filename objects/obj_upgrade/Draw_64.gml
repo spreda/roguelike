@@ -48,7 +48,7 @@ draw_set_alpha(1);
 draw_set_font(fnt_card_name);
 
 // Draw the upgrade text.
-draw_set_colour($000000);
+draw_set_colour($e4a46f);
 draw_text(x, y - 55 + 1, string(upgrade_data.skill_name));
 draw_text(x, y - 55 - 1, string(upgrade_data.skill_name));
 draw_text(x + 1, y - 55, string(upgrade_data.skill_name));
@@ -60,12 +60,12 @@ draw_text(x, y - 55, string(upgrade_data.skill_name));
 draw_set_font(fnt_card_description);
 
 // Draw the upgrade text.
-draw_set_colour($000000);
+draw_set_colour($aad4ea);
 draw_text(x, y + _description_offset_y + 1, string(upgrade_data.description));
 draw_text(x, y + _description_offset_y - 1, string(upgrade_data.description));
 draw_text(x + 1, y + _description_offset_y, string(upgrade_data.description));
 draw_text(x - 1, y + _description_offset_y, string(upgrade_data.description));
-draw_set_colour(c_white);
+draw_set_colour($29395e); 
 draw_text(x, y + _description_offset_y, string(upgrade_data.description));
 
 // Draw the upgrade icon.

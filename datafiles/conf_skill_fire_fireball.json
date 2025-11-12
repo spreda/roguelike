@@ -1,7 +1,7 @@
 {
 	"name": "Fireball",
 	"element": "Fire",
-	"description": "Unlock Fireball Skill",
+	"description": "Shoots a fireball at\nthe nearest enemy.",
 	"icon": "spr_fireball_icon",
 	"cast_function": "cast_fireball",
 	"projectile_object": "obj_hero_fireball",

@@ -1,7 +1,7 @@
 {
     "name":	"Splash",
     "element": "Water",
-	"description": "Unlock Splash Skill",
+	"description": "Circular splash that\nincreases damage.",
     "icon": "spr_splash_icon",
 	"cast_function": "cast_splash",
     "projectile_object": "obj_hero_splash_cast",

@@ -1,7 +1,7 @@
 {
     "name":	"Beam",
     "element": "Water",
-	"description": "Unlock Beam Skill",
+	"description": "Deals damage and \nrestores health.",
     "icon": "spr_beam_icon",
 	"cast_function": "cast_beam",
     "projectile_object": "obj_hero_beam",

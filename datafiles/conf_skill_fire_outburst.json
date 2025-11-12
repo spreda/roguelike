@@ -1,7 +1,7 @@
 {
     "name":	"Outburst",
     "element": "Fire",
-	"description": "Unlock Outburst Skill",
+	"description": "Circular fireballs\nthat deals damage.",
     "icon": "spr_outburst_icon",
 	"cast_function": "cast_outburst",
     "projectile_object": "obj_hero_outburst",

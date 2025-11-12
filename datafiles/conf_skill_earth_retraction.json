@@ -1,7 +1,7 @@
 {
     "name":	"Retraction",
     "element": "Earth",
-	"description": "Unlock Retraction Skill",
+	"description": "Draws in enemies\nand deals damage.",
     "icon": "spr_retraction_icon",
 	"cast_function": "cast_retraction",
     "projectile_object": "obj_hero_retraction",
