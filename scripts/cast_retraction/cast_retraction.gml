@@ -72,6 +72,7 @@ function cast_retraction(hero, skill) {
                 image_angle = 0;
                 
                 skill_config = skill;
+                piercing = skill.piercing
                 
                 lifespan = skill.animation_repeats;
             }

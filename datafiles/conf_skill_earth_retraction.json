@@ -10,6 +10,7 @@
     "range": 500,
 	"speed": 0,
     "cooldown": 2,
+    "piercing": -1,
     "projectile_count": 1,
     "upgrade_branches": [
     	[

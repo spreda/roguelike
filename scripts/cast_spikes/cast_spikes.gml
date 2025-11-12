@@ -39,6 +39,7 @@ function cast_spikes(hero, skill)
                     image_angle = 0;
                     
                     skill_config = skill;
+                    piercing = skill.piercing
                     
                     lifespan = skill.animation_repeats;
                 }

@@ -7,6 +7,7 @@ loop_sprite = undefined;
 end_sprite = undefined;
 
 lifespan = undefined;
+piercing = undefined;
 
 skill_config = undefined;
 
@@ -42,5 +43,13 @@ collision_with_mob = function(_mob)
 	// Interaction with mob.
 	apply_to_target(_mob);
 	
-	instance_destroy();
+    show_debug_message(piercing)
+    if (piercing == 0)
+    {
+	   instance_destroy();
+    }
+    else if (piercing > 0)
+    {
+        piercing -= 1;
+    }
 }

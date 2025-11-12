@@ -33,6 +33,7 @@ function spawn_bullet(angle, skill, projectile_object = undefined, caster_object
         image_angle = direction;
         
         skill_config = skill;
+        piercing = skill.piercing
         
         caster = caster_object;
     }	

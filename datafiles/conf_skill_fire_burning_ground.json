@@ -11,6 +11,7 @@
 	"speed": 0,
     "cooldown": 5,
     "animation_repeats": 3,
+    "piercing": -1,
     "projectile_count": 3,
     "upgrade_branches": [
     	[

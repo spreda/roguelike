@@ -36,7 +36,8 @@ function cast_fireball(hero, skill)
                     // Rotate the bullet to face it's moving direction.
                     image_angle = direction;
                     
-                    skill_config = skill;
+                    skill_config = skill; 
+                    piercing = skill.piercing
                 }
             
                 // Increment the angle for the next bullet.

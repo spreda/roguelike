@@ -35,7 +35,8 @@ function cast_burning_ground(hero, skill)
                     // Rotate the bullet to face it's moving direction.
                     image_angle = 0;
                     
-                    skill_config = skill;
+                    skill_config = skill; 
+                    piercing = skill.piercing
                     
                     lifespan = skill.animation_repeats;
                 }

@@ -9,6 +9,7 @@
     "range": 1500,
 	"speed": 0,
     "cooldown": 3,
+    "piercing": -1,
     "upgrade_branches": [
     	[
             {
