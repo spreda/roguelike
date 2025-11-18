@@ -37,3 +37,5 @@ scale = 6;
 lifespan = 1;
 
 sprite_index = start_sprite
+
+sounds = [0, ];

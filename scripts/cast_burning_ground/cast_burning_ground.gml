@@ -5,6 +5,9 @@ function cast_burning_ground(hero, skill)
         // If there is an enemy found...
       	if (nearest_enemy)
       	{ 
+      		// Play sound effect.
+      		audio_play_sound(fire_sound, 0, 1, 10.0, undefined, 1.0);
+
             var _number_of_shots = skill.projectile_count;
       	
       		// Create burning_ground attack object.
